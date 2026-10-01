@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "nine_point_root_cases": 150,
+  "nine_point_cases_by_cycle_length": {
+    "2": 28,
+    "3": 42,
+    "4": 60,
+    "5": 10,
+    "6": 6,
+    "7": 3,
+    "8": 1
+  },
+  "ten_point_root_cases": 316,
+  "ten_point_longer_cycle_leaves": 280,
+  "ten_point_two_cycle_leaves": 292,
+  "ten_point_two_cycle_breakdown": [
+    32,
+    240,
+    18,
+    2
+  ],
+  "ten_point_terminal_obligations": 572,
+  "unresolved": [],
+  "final_inputs_regenerated_exactly": true,
+  "component_mask_runs_used_as_proof_leaves": false,
+  "scope": "Exhaustive case coverage, saved outcomes and exit codes, exact final-input regeneration, and hashes. No solver reruns or independent checking of Z3 proof certificates."
+}
