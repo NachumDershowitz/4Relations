@@ -1,7 +1,0 @@
-{
-  "name": "v8_a4_baseline",
-  "result": "unsat",
-  "elapsed_seconds": 119.612,
-  "finished_utc": "2026-09-08T11:50:54Z",
-  "input_sha256": "b847b75a38bf3389de10c50280f8fe5315ab0e07321ca8b7f67103da8064b4de"
-}
