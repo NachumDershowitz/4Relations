@@ -1,0 +1,149 @@
+{
+  "format_version": 1,
+  "title": "Four Relations: Companion Archive",
+  "version": "1.0.0",
+  "repository": "https://github.com/NachumDershowitz/4Relations",
+  "release": "https://github.com/NachumDershowitz/4Relations/releases/tag/v1.0.0",
+  "files": {
+    ".gitignore": {
+      "bytes": 115,
+      "sha256": "b8565316b3ae0fb178d9fde797b0c212ba8c19564322c1ec6ee4ddba080178ab"
+    },
+    "CITATION.cff": {
+      "bytes": 650,
+      "sha256": "55f366c1fa6bb75eb0be8d9afc140f22b62d3f8384acd8e89cf58393455ca0d7"
+    },
+    "README.md": {
+      "bytes": 5756,
+      "sha256": "73f4440390d0462819a78aa1fd64be88f21e3ead77e8571af300950925d53946"
+    },
+    "RELEASE_NOTES.txt": {
+      "bytes": 918,
+      "sha256": "61b1e0bcf7f3d8399033a3d0d1eae0cc1ba2bb6261d506d5c5e473202fbc61ff"
+    },
+    "UPLOAD_TO_GITHUB.txt": {
+      "bytes": 3336,
+      "sha256": "9fff558eb06304fc19eff20cbebe86cde9ed9e908dc4dbfeab3683756be95284"
+    },
+    "finite/completion/audit_completed_cover.py": {
+      "bytes": 4091,
+      "sha256": "7cdfd4cab06e9315ca8ed7fa9d48e91d2e5a3e549925a727333cbeb559c7e01e"
+    },
+    "finite/completion/completed_cover.json": {
+      "bytes": 1053,
+      "sha256": "b76158de3642f8dab18740d3de6a50d739397cbe1016bb6ffb04eabdc7446af0"
+    },
+    "finite/completion/runs/v7_a3_baseline/input.smt2": {
+      "bytes": 162117,
+      "sha256": "36aae7b4da85ed03d601657ff93b406a425dfd736ccc168b48d1a81b1b6d91e3"
+    },
+    "finite/completion/runs/v7_a3_baseline/metadata.json": {
+      "bytes": 821,
+      "sha256": "73b485589605585ecc35b2b23997ce507076d41150a9f897695f471d005fbc8c"
+    },
+    "finite/completion/runs/v7_a3_baseline/result.json": {
+      "bytes": 210,
+      "sha256": "a69d53c48457ee4902341256d47b5df88f5758c0c21dfacca4630340bfe67827"
+    },
+    "finite/completion/runs/v7_a3_baseline/solver_output.txt": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "finite/completion/runs/v8_a4_baseline/input.smt2": {
+      "bytes": 162295,
+      "sha256": "b847b75a38bf3389de10c50280f8fe5315ab0e07321ca8b7f67103da8064b4de"
+    },
+    "finite/completion/runs/v8_a4_baseline/metadata.json": {
+      "bytes": 821,
+      "sha256": "1b16471b07fefd04688fb1c152116f0ee3a29dd1ebc9f5bdc8d0abbc06ee3395"
+    },
+    "finite/completion/runs/v8_a4_baseline/result.json": {
+      "bytes": 210,
+      "sha256": "1305220a54e947669a68f89eb22b0864fb2330b3bf697fa477c06d15295a9966"
+    },
+    "finite/completion/runs/v8_a4_baseline/solver_output.txt": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "finite/completion/solve_branch.py": {
+      "bytes": 2537,
+      "sha256": "a2d2888791489d8bcae11e76fbf355b13972e03173381c2097b5b81583f49f07"
+    },
+    "finite/computation/bv_residual20_results.tsv": {
+      "bytes": 493,
+      "sha256": "b732cb4b3bd76ec4c57d8d588b04bc04d4f33857277a1227ae7630fccfd8f268"
+    },
+    "finite/computation/escc_v7w3F_results.tsv": {
+      "bytes": 1441,
+      "sha256": "f626d749c65db831a8adb92b4c3a9f899529edf9521bcbe4893fd98bc2cf5f08"
+    },
+    "finite/computation/l2_refine1_results.tsv": {
+      "bytes": 6938,
+      "sha256": "d7b95778c02dd37972285b4dcd24c6014d3aa857e56543b562e8c71ddcf72038"
+    },
+    "finite/computation/n10_strong_results_results.tsv": {
+      "bytes": 6040,
+      "sha256": "f75fa3a12567f66ca68581b7b4c1f93b66378c1e63e002ced2638cc69ed353fd"
+    },
+    "finite/computation/n9_strong_results_results.tsv": {
+      "bytes": 1692,
+      "sha256": "44e3e1338dec25ffb1c327159c4bedd43768b99df96884285e56c61f8c2b6872"
+    },
+    "finite/computation/quad_work_search_quad_bool_strong.py": {
+      "bytes": 8666,
+      "sha256": "0bcc6820dca92d67db3c22c1cbf1d1ef28f816598d9dc4806d3027e69286f06b"
+    },
+    "finite/computation/quad_work_search_quad_bv_strong.py": {
+      "bytes": 10536,
+      "sha256": "ccd38f0887009091930ba8c44ccf18f8b66b50689a7c89cd04a352922fc5ed53"
+    },
+    "finite/computation/remaining_strong_results_results.tsv": {
+      "bytes": 2656,
+      "sha256": "04ed61ae1f34fea1485fb0ea62bbada02d3343e54a79e68edac8d5aaec3fd5ee"
+    },
+    "formal_proofs/FourRelationsCounterexample.v": {
+      "bytes": 9588,
+      "sha256": "e9d26504f57ec42d9532069375edecb41b2b4c464b2bc8e99535e6abf5c3d31d"
+    },
+    "formal_proofs/check.sh": {
+      "bytes": 389,
+      "sha256": "fce89ca6765fe0cfd9077f06ae0551c8ab838039338a7c3be111527b627267f8"
+    },
+    "formal_proofs/verification.log": {
+      "bytes": 141,
+      "sha256": "84f17ac933d046192497046f36d79fe5d6283083c7ccd176c6fa1256bb4a566e"
+    },
+    "formal_proofs/verification.txt": {
+      "bytes": 1091,
+      "sha256": "9f2504c249c3809ef570ba37ebca5dfda50be94fdd219d912f4acfc64f608561"
+    },
+    "paper/Four_Well_Founded_Relations.pdf": {
+      "bytes": 335376,
+      "sha256": "0f48f7b39a52a4720f95406e8dcc724c9020fb5c581c5ed2fddc807468da09f7"
+    },
+    "paper/Four_Well_Founded_Relations.tex": {
+      "bytes": 21531,
+      "sha256": "42aacbc0251a32b5ac480ddf5a86d5e16ecd29b19d2f4d88882e89e5c7b0dcb0"
+    },
+    "paper/build.sh": {
+      "bytes": 444,
+      "sha256": "8070188397bc749990ad9b5ca834a3efaeeb4b41a5d5bd1057719dda9a3b93ab"
+    },
+    "paper/figure/counterexample.tikz": {
+      "bytes": 2451,
+      "sha256": "f81fe606eb1a8826d3e7e240b04e24305e0b50cd97da5abed1435673fae12519"
+    },
+    "verification/finite_results.json": {
+      "bytes": 708,
+      "sha256": "42917d0e210727b3d085b2a640b254a625edf4201b7bddc2d381bfb65a530988"
+    },
+    "verification/verify_archive.py": {
+      "bytes": 968,
+      "sha256": "d2510b0ecfef1627fa17e8d9a42584741c090f6775ebfc11823cd7cb06241b80"
+    },
+    "verification/verify_results.py": {
+      "bytes": 5064,
+      "sha256": "7a2041dcd0cce87500fdd70f75ac83941fba69bd4818c4401290663290e9c342"
+    }
+  }
+}

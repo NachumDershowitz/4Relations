@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+paper/build/
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+.lia.cache

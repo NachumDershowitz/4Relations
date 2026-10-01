@@ -1,0 +1,46 @@
+% Full-width vector drawing; the same named colors are used in the paper.
+\begin{tikzpicture}[x=1.15cm,y=1.15cm,
+ vertex/.style={circle,draw=black!55,fill=white,minimum size=7mm,inner sep=0pt,font=\normalsize},
+ edge/.style={-{Latex[length=2.4mm,width=1.7mm]},line width=1.25pt},
+ edgeA/.style={edge,draw=RelA},
+ edgeB/.style={edge,draw=RelB,dash pattern=on 4pt off 2.2pt},
+ edgeC/.style={edge,draw=RelC,line width=1.6pt},
+ edgeD/.style={edge,draw=RelD,line width=1.6pt},
+ lab/.style={fill=white,inner sep=1.8pt,font=\small}]
+\node[vertex] (p) at (-3.1,3.1) {$p$};
+\node[vertex] (q) at (3.1,3.1) {$q$};
+\node[vertex] (n0) at (-4.8,0) {$0$};
+\node[vertex] (n1) at (-1.6,0) {$1$};
+\node[vertex] (n2) at (1.6,0) {$2$};
+\node[vertex] (n3) at (4.8,0) {$3$};
+\node (more) at (6.0,0) {$\cdots$};
+
+% Long crossing edges run at separate heights. All crossings are unmarked.
+\draw[edgeA] (n0.north east) to[out=60,in=210] node[lab,pos=.68] {$\Arel$} (q.south west);
+\draw[edgeA] (n3.north west) to[out=150,in=330] node[lab,pos=.68] {$\Arel$} (p.south east);
+\draw[edgeB] (p.south) to[out=300,in=140] node[lab,pos=.61] {$\Brel$} (n2.north west);
+\draw[edgeB] (q.south) to[out=240,in=40] node[lab,pos=.61] {$\Brel$} (n1.north east);
+
+% Short A edges and the two outer B edges.
+\draw[edgeA] (n1.north west) to[out=115,in=295] node[lab,pos=.47] {$\Arel$} (p.south west);
+\draw[edgeA] (n2.north east) to[out=65,in=245] node[lab,pos=.47] {$\Arel$} (q.south east);
+\draw[edgeB] (p.west) to[out=195,in=85] node[lab,pos=.50] {$\Brel$} (n0.north);
+\draw[edgeB] (q.east) to[out=-15,in=95] node[lab,pos=.50] {$\Brel$} (n3.north);
+
+% The natural-number descent and the extra D edge.
+\draw[edgeB] (n1.west) -- node[lab] {$\Brel$} (n0.east);
+\draw[edgeB] (n2.west) -- node[lab] {$\Brel$} (n1.east);
+\draw[edgeB] (n3.west) -- node[lab] {$\Brel$} (n2.east);
+\draw[edgeB] (more.west) -- (n3.east);
+\draw[edgeD] (n0.west) to[out=135,in=170] node[lab,pos=.50] {$\Drel$} (p.north west);
+
+% The cycle is visually isolated above the infinite family of edges.
+\draw[edgeD] (p.north east) to[out=28,in=152] node[lab,pos=.5] {$\Drel$} (q.north west);
+\draw[edgeC] (q.west) -- node[lab,pos=.5] {$\Crel$} (p.east);
+
+\node[anchor=north,font=\small,align=center] at (.4,-.55)
+ {$\textcolor{RelA}{\Arel\ \text{vermilion}}\qquad
+   \textcolor{RelB}{\Brel\ \text{blue, dashed}}\qquad
+   \textcolor{RelC}{\Crel\ \text{purple}}\qquad
+   \textcolor{RelD}{\Drel\ \text{green}}$};
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+Four Relations companion archive, version 1.0.0
+
+This release contains the current paper and editable source, its enlarged
+vector figure, the Rocq formal proof of the infinite counterexample,
+and the finite-search encoders, tables, final SMT inputs/outputs, and
+coverage checks.
+
+Verified results:
+- Rocq 9.1.1 compilation and independent kernel check pass.
+- The combined Rocq theorem is closed under the global context.
+- The finite-coverage audit passes: 150 nine-point cases and 572 terminal
+  ten-point obligations, with no unresolved cases.
+- The two final SMT inputs regenerate byte for byte from the archived
+  generator, with matching SHA-256 hashes.
+
+The finite audit checks coverage and saved solver results; it does not
+independently check Z3 proof certificates. The Rocq formalization covers
+the explicit infinite counterexample.
+
+Start with README.md. The paper is paper/Four_Well_Founded_Relations.pdf.

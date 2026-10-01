@@ -1,0 +1,31 @@
+{
+  "branch": {
+    "n": 10,
+    "s0": 5,
+    "s1": 5,
+    "pattern": "DC",
+    "witness": 8,
+    "aescape": 4,
+    "h1": "F"
+  },
+  "options": {
+    "witness": 8,
+    "aescape": 4,
+    "timeout_ms": 300000,
+    "seed": 0,
+    "tactic": "solver",
+    "mask": null,
+    "first": null,
+    "first_color": null,
+    "last": null,
+    "last_color": null,
+    "name": "v8_a4_baseline",
+    "libz3": "/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib"
+  },
+  "z3_version": "4.12.2.0",
+  "machine": "arm64",
+  "input_sha256": "b847b75a38bf3389de10c50280f8fe5315ab0e07321ca8b7f67103da8064b4de",
+  "generator_sha256": "ccd38f0887009091930ba8c44ccf18f8b66b50689a7c89cd04a352922fc5ed53",
+  "library_sha256": "f4aeb5f85065f3b1f191be776b5c03ce2a13c43dc50ee76f1a74dd3eec4b1de7",
+  "started_utc": "2026-09-08T11:48:54Z"
+}

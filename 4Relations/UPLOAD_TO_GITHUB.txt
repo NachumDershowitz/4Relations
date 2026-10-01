@@ -1,0 +1,69 @@
+Upload 4Relations to GitHub
+
+Repository: https://github.com/NachumDershowitz/4Relations
+Paper's archive citation: release v1.0.0 in that repository
+
+1. Download 4Relations-v1.0.0.zip and double-click it on your Mac.
+   This creates a folder named 4Relations. Keep the original ZIP too;
+   you will attach it to the release in step 8.
+
+2. Sign in to GitHub and open https://github.com/new.
+   Set Owner to NachumDershowitz and Repository name to 4Relations.
+   Suggested description:
+   Paper, Rocq proof, and finite-search archive for four well-founded relations.
+
+3. Choose Public so readers can follow the paper's archive link.
+   Leave the initialization options (README, .gitignore, license) off.
+   Click Create repository.
+
+4. On the new repository's Quick Setup page, click "uploading an existing
+   file". If files already appear, choose Add file > Upload files instead.
+
+5. In Finder, open the extracted 4Relations folder. Press Command-Shift-.
+   to show hidden files so that .gitignore is included. Select the contents
+   INSIDE the folder and drag them into GitHub's upload area. Keep the
+   paper, formal_proofs, finite, and verification subfolders intact.
+   README.md must appear at the repository root, not under another
+   enclosing 4Relations folder. Upload the extracted files here, not the ZIP.
+
+6. Enter the commit message "Add paper, formal proof, and finite-search archive"
+   and click Commit changes. Wait for the repository file list to appear.
+
+7. Check that README.md displays on the repository home page. Open the
+   "Read the paper" link and formal_proofs/FourRelationsCounterexample.v
+   to confirm that the directory structure was preserved.
+
+8. Open Releases on the repository page and choose Draft a new release
+   (or Create a new release). Create the tag v1.0.0 and select the branch
+   containing the uploaded files, normally main. Use this title:
+   Four Relations companion archive v1.0.0
+   Paste the contents of RELEASE_NOTES.txt into the description. Attach
+   the original 4Relations-v1.0.0.zip as a release asset. You may also attach
+   paper/Four_Well_Founded_Relations.pdf for a direct PDF download.
+   Leave "pre-release" off and click Publish release.
+
+9. Open https://github.com/NachumDershowitz/4Relations/releases/tag/v1.0.0.
+   This is the versioned archive URL already linked from reference [2]
+   in the paper. Confirm that the ZIP can be downloaded.
+
+Optional local verification (no Git commands required)
+
+Open Terminal in the extracted 4Relations folder and run:
+  python3 verification/verify_archive.py
+  sh formal_proofs/check.sh
+
+The first needs Python 3; the second needs Rocq. Successful outputs are
+included in the package. To rebuild the paper, run:
+  cd paper
+  sh build.sh
+
+Later revisions
+
+Use a new release tag for changed evidence. Update the paper's archive
+citation, CITATION.cff, and manifest when preparing a new version, so the
+cited version continues to identify the files actually checked.
+
+Official GitHub instructions consulted on 30 September 2026:
+https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
