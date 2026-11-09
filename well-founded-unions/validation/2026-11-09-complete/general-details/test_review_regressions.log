@@ -1,0 +1,28 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'supplement/checks/test_review_regressions.py']
+Cwd: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general
+
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_folding_obligations.py",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_existential_folding.py",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "invariant_checks_survive_python_optimization",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "true_invariant_is_accepted",
+      "exit_status": 0,
+      "passed": true
+    }
+  ]
+}

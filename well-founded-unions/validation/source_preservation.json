@@ -1,9 +1,12 @@
 {
-  "collected_files": 292,
+  "collected_files": 347,
   "missing_files": [],
   "modified_files": [
-    "supplement-2026-10-20/checks/z3_runner.py"
+    "supplement-2026-10-20/checks/z3_runner.py",
+    "general/supplement/checks/exhaustive_three_points.py",
+    "general/supplement/checks/z3_runner.py"
   ],
   "current_rocq_sources_modified": false,
+  "general_certificate_and_export_modified": false,
   "finite_evidence_modified": false
 }

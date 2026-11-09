@@ -1,0 +1,8 @@
+Command: ['c++', '--version']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+Apple clang version 21.0.0 (clang-2100.4.1.1)
+Target: arm64-apple-darwin27.2.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin

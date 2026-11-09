@@ -1,0 +1,97 @@
+{
+  "all_passed": true,
+  "solver": "(:version \"4.12.2\")",
+  "scope": "Symbolic all-integer-index checks of exact edge definitions, explicit reroutings, rankings and infinite alternating chain",
+  "proof_traces_retained": true,
+  "independently_kernel_checked": false,
+  "standard_mathematical_bridge": "Lexicographic N x N and N are well-founded; an edge-decreasing ranking implies termination.",
+  "results": [
+    {
+      "obligation": "01_endpoint_domain",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0214,
+      "input_sha256": "7c1e025f9c43d09f14b6ea88366a0c2124b0a77764a5c19a59c8265428351c7c"
+    },
+    {
+      "obligation": "02_nonnegative_ranks",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0192,
+      "input_sha256": "b732b5ab0b024376f427fabc8fe7e8c08d1dc55df39e0a1b9c990450efe43755"
+    },
+    {
+      "obligation": "03_A_rank_decrease",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0201,
+      "input_sha256": "490353a08199b5c9d18b4dcfa34fda92606d5d965b8e508298e13100f2e0524e"
+    },
+    {
+      "obligation": "04_B_lex_rank_decrease",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0203,
+      "input_sha256": "1e0f55d8d89ea71b2d077f8c8888e09c609a4442d7cf4e81af34c4d39b848255"
+    },
+    {
+      "obligation": "05_C_rank_decrease",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0192,
+      "input_sha256": "67b517683d597ce95a42542a043f193feed5d343f7be90936d78542faec331bf"
+    },
+    {
+      "obligation": "06_D_rank_decrease",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0195,
+      "input_sha256": "6155cf6528d7ad1da8b6776f83fdf1a9045299c4369a57d98bf051340635ea89"
+    },
+    {
+      "obligation": "07_P0_stronger_explicit_witness",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0198,
+      "input_sha256": "2f2efb414afd4de82c9c5b808c33f6d71d802fc583c1dddc14aca6d2ec2c98bc"
+    },
+    {
+      "obligation": "08_P1_stronger_explicit_witness",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0196,
+      "input_sha256": "8f34998f0304ed73ba4fe20e4e9e3e4b11f748556d9b34147254b3975bf6ad45"
+    },
+    {
+      "obligation": "09_Q2_stronger_explicit_witness",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0191,
+      "input_sha256": "e59c31c731adcb03e4d729a98ece22e97aec6f0523073cd562a07eac8a4b6e01"
+    },
+    {
+      "obligation": "10_two_cycle",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.018,
+      "input_sha256": "61a4328c8db008ac63dbd2aa6fe14ca4e7d1ebeee316cd2c44376dc2ced35231"
+    },
+    {
+      "obligation": "11_cycle_even_steps",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0189,
+      "input_sha256": "7a3af64ed6c2675f9d7abcac386853a55f43ff2fb8dd7c3dacda6c4b67926bbe"
+    },
+    {
+      "obligation": "12_nonvacuity",
+      "status": "sat",
+      "expected": "sat"
+    },
+    {
+      "obligation": "13_negative_control",
+      "status": "sat",
+      "expected": "sat"
+    }
+  ]
+}

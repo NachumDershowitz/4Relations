@@ -1,0 +1,24 @@
+{
+  "sample_register_bounds": [
+    0,
+    8
+  ],
+  "state_count": 162,
+  "tested_paths_and_edges": {
+    "A_rank_edges": 3240,
+    "B_rank_edges": 36,
+    "C_rank_edges": 3069,
+    "D_rank_edges": 3456,
+    "EA_paths": 95706,
+    "FB_paths": 1449,
+    "DC_paths": 87102,
+    "UV_paths": 87948
+  },
+  "run_parameters_checked": [
+    0,
+    10
+  ],
+  "figure_edges_checked": 5,
+  "all_checks_passed": true,
+  "scope": "Finite sanity checks only. The section gives the general mathematical proofs; no proof assistant was run."
+}

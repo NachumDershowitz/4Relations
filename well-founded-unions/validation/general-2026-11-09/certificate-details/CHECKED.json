@@ -1,0 +1,92 @@
+{
+  "status": "PASSED_STANDALONE_CERTIFICATE_REPLAY",
+  "checked_at_utc": "2026-11-09T14:49:20.218902+00:00",
+  "framework": "Classical higher-order natural deduction",
+  "implementations": [
+    "kernel.py: named variables",
+    "check_debruijn.py: de Bruijn indices"
+  ],
+  "inference_steps": 7583,
+  "closed_named_theorems": 114,
+  "logical_axioms": [
+    "excluded_middle"
+  ],
+  "unproved_mathematical_lemmas": [],
+  "rule_inventory": {
+    "all_e": 1554,
+    "all_i": 767,
+    "and_i": 273,
+    "and_l": 334,
+    "and_r": 390,
+    "assume": 1301,
+    "em": 38,
+    "ex_e": 208,
+    "ex_i": 182,
+    "false_e": 70,
+    "imp_e": 1412,
+    "imp_i": 857,
+    "or_e": 118,
+    "or_l": 27,
+    "or_r": 24,
+    "type_inst": 28
+  },
+  "checked_results": [
+    "arbitrary finite families on finite domains, with every shortcut",
+    "finite branching at internal indices on unrestricted domains, with shortened internal conditions",
+    "finite reachability, representative elimination and the final two-relation step",
+    "exclusion of infinite forward chains",
+    "mixed uniform and pointwise internal-height theorem",
+    "successor-ordinal layer elimination, minimum-rank and limit-layer theorems",
+    "mixed height and zero-or-successor ordinal-rank termination",
+    "pointwise accessibility equivalence with the maximal serial subset"
+  ],
+  "exact_statement_audits": 18,
+  "regression_tests": 30,
+  "byte_for_byte_regeneration": true,
+  "established_proof_assistant_kernel_acceptance": false,
+  "rocq_compiled": false,
+  "not_covered": [
+    "infinite counterexample",
+    "construction of set-theoretic ordinals and their canonical rank assignments"
+  ],
+  "ordinal_interface": "Explicit strict total well-order, rank decrease, and least strict-upper-bound property.",
+  "height_encoding": "Finite iteration of successor-preimage closure from the empty predicate; one shared iterate for uniform bounds.",
+  "python": "3.14.5 (v3.14.5:5607950ef23, May 10 2026, 07:38:09) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "certificate_sha256": "7bad71221bc0d24f8d4115346f69a4b681fdeb261036c1d8a032b010afb97797",
+  "source_sha256": {
+    "STATEMENT.md": "0a16060d9e56cceb95825e1c882e1cf32a2d92e1b3e71f142d3ff81b0d6579e1",
+    "THEOREM_MAP.md": "1945bf3c4002c6672fb81abc6f3327b82239fc28fb293ce89bb60eeb5b7314a4",
+    "WellFoundedUnionsProofTerms.v": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77",
+    "audit_branching.py": "2bab6a8d9b9fab250e79d6cb71b72f15470131c83c1967a4c4fe58b09758ade7",
+    "audit_extensions.py": "cdbaebb9e8a10e1b33b29399c76bf525b97b5e8c9eca9a21ee24a61be130c6cd",
+    "audit_finite.py": "da6e481198a019887eb796e84367b010f5bd4b742a6692161ab44cab5c95259f",
+    "base_build.py": "98ff65bb6e11934a5fc2ef6a99544e2a575d5610f1dcf6230ae8f8c1b73b5cc4",
+    "build_branching.py": "2147d5d60aa4f5fc5a2e9d91c4c521be5c82f125f178f4bf2698a6884c560b70",
+    "build_extensions.py": "eb08e0cb7105a898925e1d9189a29ea4bc36a8174818423e7e3ff9f5164629b7",
+    "check.sh": "c829e7c71a95db4e785658cdec4e1424504bc539f2c5df0e59e0ef4eca503e3e",
+    "check_debruijn.py": "be668ee6a0e17b1f7c4a8cd4f8e27ca37a9fcc6b23307ac943623bbad0bbf62d",
+    "check_rocq.sh": "a25115ce1042491155e04a8b275df76ecaf21d6a7d774464dc090f41559c1f03",
+    "export_rocq.py": "f29f60e4df2afac962f0079447465703a0ba206eb5eaa36c0ed43dd34268bf9d",
+    "kernel.py": "a93668e9928940da394e9fa88a271859dcc91bd4b6b42e5499c6cc38ecc3b59f",
+    "proof.json": "7bad71221bc0d24f8d4115346f69a4b681fdeb261036c1d8a032b010afb97797",
+    "rebuild.sh": "e5e3e3a4008893f941e4fe7d963b919a72411775d34618f4f5023b8df20b0916",
+    "statement_syntax.py": "95a7c449917d9dc72c7fedb2f9c7d410acf2ef0c356821f8167689fead640693",
+    "test_certificates.py": "0b36c41921bdba6cd732bb3e8d3866b49ec18630ab181900dccbef27afde56bf",
+    "test_extension_audit.py": "359d7f3661dba43f2ca092cac7055c84dd1407b3966c29e45a9d0adb366f471a",
+    "test_kernels.py": "208b2b3217ee582a108d518b14901a0fde72f2d02dea67d1306f3ea64b5fa7b7",
+    "test_statement_audit.py": "05f4c3523c8770bbc3c74ae4437a36bf98f25ca6c1742d3d1e91eff0ec5856bc"
+  },
+  "logs_sha256": {
+    "logs/branching-audit.log": "696be45e925096d6a3d8e0f7887ceb0a38ad828911fdd91500c7ae123ca14439",
+    "logs/certificate-tests.log": "af4cf4765a6148141c89d1b19382b00722949358f09aa5879cc6f7ff1ec62aa0",
+    "logs/debruijn-kernel.log": "139ea03161da32884104d4b1cf41b9564425cbd50e05df9da1d2337eb3a62d37",
+    "logs/extension-tests.log": "c6c36afdf178f5c18aad4887abb01137e66bdaca23d5e132be98740533943a01",
+    "logs/extensions-audit.log": "0716a281a02f952c9e9d5f9954f09989af7d47a7d509fe4e8865cd726e7b3a05",
+    "logs/finite-audit.log": "f24fccfcab754220be082786d1782242e166db4793d098a01cf36d8aabf69563",
+    "logs/kernel-tests.log": "a14647dd7857414db669d4e2779691d06eac93790b1df05826ba6ef062131818",
+    "logs/named-kernel.log": "77e5facd79214171545454ae6ece39317dc2c5c3e0fc882aa0a0e0eaf7186ca7",
+    "logs/rebuild.log": "80bf3a2d4193d60a9ea46552b7c63abc380c4eeb8d5b820460e5eee15ea1715e",
+    "logs/statement-tests.log": "52f48ee57945cc7c74bd86cb4e5d0be347e5b66053f039aace9f3ae8058ad6d5"
+  }
+}

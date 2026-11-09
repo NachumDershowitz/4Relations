@@ -1,0 +1,11 @@
+test_alpha_renaming_invariant (__main__.StatementTests.test_alpha_renaming_invariant) ... ok
+test_branching_is_not_required_at_endpoints (__main__.StatementTests.test_branching_is_not_required_at_endpoints) ... ok
+test_finite_carrier_is_not_silently_assumed (__main__.StatementTests.test_finite_carrier_is_not_silently_assumed) ... ok
+test_independent_closed_statement (__main__.StatementTests.test_independent_closed_statement) ... ok
+test_last_shortcut_is_retained (__main__.StatementTests.test_last_shortcut_is_retained) ... ok
+test_shortened_conditions_cannot_be_dropped (__main__.StatementTests.test_shortened_conditions_cannot_be_dropped) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.015s
+
+OK

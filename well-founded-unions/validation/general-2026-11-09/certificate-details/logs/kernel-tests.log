@@ -1,0 +1,19 @@
+test_bad_modus_ponens (__main__.KernelTests.test_bad_modus_ponens) ... ok
+test_escaping_existential_witness (__main__.KernelTests.test_escaping_existential_witness) ... ok
+test_false_conversion (__main__.KernelTests.test_false_conversion) ... ok
+test_identity_and_beta (__main__.KernelTests.test_identity_and_beta) ... ok
+test_illegal_generalization (__main__.KernelTests.test_illegal_generalization) ... ok
+test_invalid_existential_witness (__main__.KernelTests.test_invalid_existential_witness) ... ok
+test_keeps_undischarged_hypotheses (__main__.KernelTests.test_keeps_undischarged_hypotheses) ... ok
+test_no_circular_reference (__main__.KernelTests.test_no_circular_reference) ... ok
+test_no_unproved_axiom_rule (__main__.KernelTests.test_no_unproved_axiom_rule) ... ok
+test_nonfresh_existential_witness (__main__.KernelTests.test_nonfresh_existential_witness) ... ok
+test_proposition_type_cannot_change (__main__.KernelTests.test_proposition_type_cannot_change) ... ok
+test_type_instantiation_avoids_capture (__main__.KernelTests.test_type_instantiation_avoids_capture) ... ok
+test_type_mismatch (__main__.KernelTests.test_type_mismatch) ... ok
+test_valid_existential_elimination (__main__.KernelTests.test_valid_existential_elimination) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK

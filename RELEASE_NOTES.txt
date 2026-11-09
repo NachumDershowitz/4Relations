@@ -1,16 +1,25 @@
-Proposed proofs-and-tests publication — 9 November 2026
+Well-founded unions: proofs and experiments — prepared 9 November 2026
 
-Remove the ten tracked files under paper/ from the current branch. Preserve
-existing history and releases. Update the README, citation metadata, and manifest
-for a proofs-and-tests package, and ignore paper/ to avoid accidental re-addition.
+Adds the complete paper-free well-founded-unions/ verification artifact and
+removes ten previously tracked paper/ files from the current tree. Existing
+history and releases are preserved. Root documentation and checksums are updated;
+paper/ is ignored to prevent accidental re-addition.
 
-Add the recovered well-founded-unions/ artifact with fresh Rocq checks, an
-assumption audit, saved finite-search evidence, exhaustive tests, local SMT
-diagnostics, source provenance, and complete logs.
+Verified: both custom checkers, 7,583 inferences, 114 named general theorems,
+18 exact-statement audits, 30 regression tests, exact certificate/export
+regeneration, Rocq compilation and independent kernel checking, and per-theorem
+assumptions (63 closed; 51 using only excluded middle). The separate infinite
+counterexample and the older October development also pass Rocq verification.
 
-The requested general certificate/checkers, five-relation and reset experiments,
-and current-paper theorem correspondence remain incomplete. The recovered-scope
-checks passed; full scope reports incompleteness. See well-founded-unions/STATUS.md.
+Audited: 722 historical finite-search cases with exact regeneration of the final
+two inputs. Freshly rerun: all 9,765,625 five-relation tuples on three points,
+exhaustive representative/height tests, supplementary SMT diagnostics and harness
+regressions, and the bounded reset-example test.
 
-This is a local preparation, not a published release. Final publication requires
-user approval. Do not overwrite earlier releases or attach any paper files.
+Historical solver outcomes, new experiments, custom replay, and Rocq acceptance
+are explicitly distinguished. No set-theoretic ordinal construction or general
+infinite-domain reset proof is claimed. See well-founded-unions/STATUS.md and
+THEOREM_MAP.md. No paper, runtime binary, or compiled proof object is included.
+
+Prepared locally; publication requires final user approval. Use a new release;
+do not replace earlier tags or assets.

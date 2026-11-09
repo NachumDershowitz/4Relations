@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "python3",
+      "supplement/checks/exhaustive_three_points.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.17783950000011828
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/check_folding_obligations.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.5258606669995061
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/check_height_obligations.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.423401541000203
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/check_existential_folding.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.22722583399809082
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/check_infinite_counterexample.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.32285200000114855
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/test_review_regressions.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.29440591700040386
+  },
+  {
+    "command": [
+      "python3",
+      "reset/checks/check_reset.py"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.20895191700037685
+  }
+]

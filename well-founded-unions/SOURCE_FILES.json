@@ -1458,5 +1458,280 @@
     "destination": "historical/supplement-2026-10-20/PROVENANCE.json",
     "source": "october-supplement/PROVENANCE.json",
     "sha256": "e387da83ea4aea1b18c6fd6065ef1aaa5794f9ba1afae7f3409f625af1a96c5e"
+  },
+  {
+    "destination": "general/check.sh",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/check.sh",
+    "sha256": "d16af48c05d91d0a390d87cf52de9093e773e3e1a604af2b936bb0558a2e8f94"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/CHECKED.json",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/CHECKED.json",
+    "sha256": "9c968fa153129e832142b8e225217a74221503c254810e243f09d50c338897c6"
+  },
+  {
+    "destination": "general/formal/MANIFEST.json",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/MANIFEST.json",
+    "sha256": "e3609c24b13b2378b68eb75ea11018d1c2f6a1b987ae997f2e31f5716af008e8"
+  },
+  {
+    "destination": "general/formal/STATEMENT.md",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/STATEMENT.md",
+    "sha256": "0a16060d9e56cceb95825e1c882e1cf32a2d92e1b3e71f142d3ff81b0d6579e1"
+  },
+  {
+    "destination": "general/formal/THEOREM_MAP.md",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/THEOREM_MAP.md",
+    "sha256": "1945bf3c4002c6672fb81abc6f3327b82239fc28fb293ce89bb60eeb5b7314a4"
+  },
+  {
+    "destination": "general/formal/WellFoundedUnionsProofTerms.v",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/WellFoundedUnionsProofTerms.v",
+    "sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77"
+  },
+  {
+    "destination": "general/formal/audit_branching.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/audit_branching.py",
+    "sha256": "2bab6a8d9b9fab250e79d6cb71b72f15470131c83c1967a4c4fe58b09758ade7"
+  },
+  {
+    "destination": "general/formal/audit_extensions.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/audit_extensions.py",
+    "sha256": "cdbaebb9e8a10e1b33b29399c76bf525b97b5e8c9eca9a21ee24a61be130c6cd"
+  },
+  {
+    "destination": "general/formal/audit_finite.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/audit_finite.py",
+    "sha256": "da6e481198a019887eb796e84367b010f5bd4b742a6692161ab44cab5c95259f"
+  },
+  {
+    "destination": "general/formal/base_build.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/base_build.py",
+    "sha256": "98ff65bb6e11934a5fc2ef6a99544e2a575d5610f1dcf6230ae8f8c1b73b5cc4"
+  },
+  {
+    "destination": "general/formal/build_branching.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/build_branching.py",
+    "sha256": "2147d5d60aa4f5fc5a2e9d91c4c521be5c82f125f178f4bf2698a6884c560b70"
+  },
+  {
+    "destination": "general/formal/build_extensions.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/build_extensions.py",
+    "sha256": "eb08e0cb7105a898925e1d9189a29ea4bc36a8174818423e7e3ff9f5164629b7"
+  },
+  {
+    "destination": "general/formal/check.sh",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/check.sh",
+    "sha256": "c829e7c71a95db4e785658cdec4e1424504bc539f2c5df0e59e0ef4eca503e3e"
+  },
+  {
+    "destination": "general/formal/check_debruijn.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/check_debruijn.py",
+    "sha256": "be668ee6a0e17b1f7c4a8cd4f8e27ca37a9fcc6b23307ac943623bbad0bbf62d"
+  },
+  {
+    "destination": "general/formal/check_rocq.sh",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/check_rocq.sh",
+    "sha256": "a25115ce1042491155e04a8b275df76ecaf21d6a7d774464dc090f41559c1f03"
+  },
+  {
+    "destination": "general/formal/export_rocq.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/export_rocq.py",
+    "sha256": "f29f60e4df2afac962f0079447465703a0ba206eb5eaa36c0ed43dd34268bf9d"
+  },
+  {
+    "destination": "general/formal/kernel.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/kernel.py",
+    "sha256": "a93668e9928940da394e9fa88a271859dcc91bd4b6b42e5499c6cc38ecc3b59f"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/branching-audit.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/branching-audit.log",
+    "sha256": "696be45e925096d6a3d8e0f7887ceb0a38ad828911fdd91500c7ae123ca14439"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/build.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/build.log",
+    "sha256": "d6506ab19867465e6f5e9ecc596e72fe33bfdec6eb92cf4ab2613767d11075b4"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/certificate-tests.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/certificate-tests.log",
+    "sha256": "9205d8e6be615abfabba374ff4e333b5756785ed40c50ecb8bd71e0b0f9a6e05"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/debruijn-kernel.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/debruijn-kernel.log",
+    "sha256": "139ea03161da32884104d4b1cf41b9564425cbd50e05df9da1d2337eb3a62d37"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/extension-tests.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/extension-tests.log",
+    "sha256": "c6c36afdf178f5c18aad4887abb01137e66bdaca23d5e132be98740533943a01"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/extensions-audit.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/extensions-audit.log",
+    "sha256": "0716a281a02f952c9e9d5f9954f09989af7d47a7d509fe4e8865cd726e7b3a05"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/finite-audit.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/finite-audit.log",
+    "sha256": "f24fccfcab754220be082786d1782242e166db4793d098a01cf36d8aabf69563"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/kernel-tests.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/kernel-tests.log",
+    "sha256": "4c2c80302e9af83200f63a0b00c970180133b73b2a9e81a998f07612395b38db"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/named-kernel.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/named-kernel.log",
+    "sha256": "77e5facd79214171545454ae6ece39317dc2c5c3e0fc882aa0a0e0eaf7186ca7"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/rebuild.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/rebuild.log",
+    "sha256": "80bf3a2d4193d60a9ea46552b7c63abc380c4eeb8d5b820460e5eee15ea1715e"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/rocq-export.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/rocq-export.log",
+    "sha256": "18e02420e8478bf8960669e2631139dbb1dd3fc8fd4a3029052f6771a629d76e"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/rocq_attempt.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/rocq_attempt.log",
+    "sha256": "83742c89812233f3c39d604358e6bf1c82187c364757978273d0b3dc8fe2f36f"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/logs/statement-tests.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/logs/statement-tests.log",
+    "sha256": "a412eba734cd41a9d835b3c41802f3998ec8a695bc8c26910348d9f725f9865d"
+  },
+  {
+    "destination": "general/formal/proof.json",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/proof.json",
+    "sha256": "7bad71221bc0d24f8d4115346f69a4b681fdeb261036c1d8a032b010afb97797"
+  },
+  {
+    "destination": "general/formal/rebuild.sh",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/rebuild.sh",
+    "sha256": "e5e3e3a4008893f941e4fe7d963b919a72411775d34618f4f5023b8df20b0916"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/formal/rocq-results/compiler.log",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/rocq-results/compiler.log",
+    "sha256": "83742c89812233f3c39d604358e6bf1c82187c364757978273d0b3dc8fe2f36f"
+  },
+  {
+    "destination": "general/formal/statement_syntax.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/statement_syntax.py",
+    "sha256": "95a7c449917d9dc72c7fedb2f9c7d410acf2ef0c356821f8167689fead640693"
+  },
+  {
+    "destination": "general/formal/test_certificates.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/test_certificates.py",
+    "sha256": "0b36c41921bdba6cd732bb3e8d3866b49ec18630ab181900dccbef27afde56bf"
+  },
+  {
+    "destination": "general/formal/test_extension_audit.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/test_extension_audit.py",
+    "sha256": "359d7f3661dba43f2ca092cac7055c84dd1407b3966c29e45a9d0adb366f471a"
+  },
+  {
+    "destination": "general/formal/test_kernels.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/test_kernels.py",
+    "sha256": "208b2b3217ee582a108d518b14901a0fde72f2d02dea67d1306f3ea64b5fa7b7"
+  },
+  {
+    "destination": "general/formal/test_statement_audit.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/formal/test_statement_audit.py",
+    "sha256": "05f4c3523c8770bbc3c74ae4437a36bf98f25ca6c1742d3d1e91eff0ec5856bc"
+  },
+  {
+    "destination": "general/supplement/README.md",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/README.md",
+    "sha256": "020bf2cb5c72904a7f8d0a652543f20036e38cb5ca9e9482feab0b71878d4589"
+  },
+  {
+    "destination": "general/supplement/check_generalization.cpp",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/check_generalization.cpp",
+    "sha256": "61f1c2e101e8f86b1539c3a619bb4061f1817efec796074bf9e4cb690389a898"
+  },
+  {
+    "destination": "general/supplement/check_height_elimination.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/check_height_elimination.py",
+    "sha256": "1377ee31252ca7ecf31ab3799656c39659c7fed2dead70e1aa5088686dd6728b"
+  },
+  {
+    "destination": "general/supplement/check_representative_elimination.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/check_representative_elimination.py",
+    "sha256": "d4eb348250b3ac720fa4cdc004624669907550caec75de38a5ef197816ffafcc"
+  },
+  {
+    "destination": "general/supplement/checks/check_existential_folding.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/check_existential_folding.py",
+    "sha256": "68c246f2ae27a4cdce2ab76ef7ea1a486e4b6163a8bf3e2731f1ead6dd75ae1e"
+  },
+  {
+    "destination": "general/supplement/checks/check_folding_obligations.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/check_folding_obligations.py",
+    "sha256": "692e1837fe983b17a42fbb81eec0e1429779a0f49321a9bd3e4704a0f0450c65"
+  },
+  {
+    "destination": "general/supplement/checks/check_height_obligations.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/check_height_obligations.py",
+    "sha256": "2e75158356d95546eeec3f76fce94525de350f3ccb9c6df65c76b76b4a80ee06"
+  },
+  {
+    "destination": "general/supplement/checks/check_infinite_counterexample.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/check_infinite_counterexample.py",
+    "sha256": "dad5d24107473462723e51f263279687985556bd574ad5cbbcd1386561842950"
+  },
+  {
+    "destination": "general/supplement/checks/exhaustive_original_conditions.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/exhaustive_original_conditions.py",
+    "sha256": "9039dcac8b4ddb9544514ea6b682b601006ecc3319fad652193192ae83232512"
+  },
+  {
+    "destination": "general/supplement/checks/exhaustive_three_points.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/exhaustive_three_points.py",
+    "sha256": "3b6e4fa6a1490fcb3c351fdb2c58cf1014133b276cc10dd82400ebea3a5ddfef"
+  },
+  {
+    "destination": "general/supplement/checks/test_review_regressions.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/test_review_regressions.py",
+    "sha256": "2c2796fc6969da4fd7793e08a9fdb806038936314c123ed76f9421c95b789cc1"
+  },
+  {
+    "destination": "general/supplement/checks/z3_runner.py",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/supplement/checks/z3_runner.py",
+    "sha256": "2f827ecd218514f23674efa4883c2fe8d61edb9b3fb8cb0a949e5494c183a4ab"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/README.md",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/README.md",
+    "sha256": "df404e719b75c5b358502316fcd640dda4473a75d4e4709e6378744efa3d696f"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/SHA256SUMS",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/SHA256SUMS",
+    "sha256": "75ca8f46bc9c6225a650db2e3981f26e62552a8a6925fae5a023f17eb5ffef32"
+  },
+  {
+    "destination": "historical/generalized-2026-11-05/reports/RELEASE_CHECKS.md",
+    "source": "WellFoundedUnions_generalized.zip/WellFoundedUnions_generalized/reports/RELEASE_CHECKS.md",
+    "sha256": "5385d21bbb836a8b48c667de78f584067fb9f9e1ee475188c05356dc89be7d8e"
+  },
+  {
+    "destination": "reset/checks/check_reset.py",
+    "source": "WellFoundedUnions_clean_revision_source.zip/WellFoundedUnions/checks/check_reset.py",
+    "sha256": "f9df1e9d823c6b1b2bf82de9a33fbbd1486eda426d3cb10f47c16c6923149769"
+  },
+  {
+    "destination": "historical/reset-clean-revision/checks/reset_checks.json",
+    "source": "WellFoundedUnions_clean_revision_source.zip/WellFoundedUnions/checks/reset_checks.json",
+    "sha256": "4253435366f9f01316ec8a6526b0b740878850beef620e0af7db3319f23ad9bc"
   }
 ]

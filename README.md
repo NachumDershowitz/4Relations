@@ -1,57 +1,56 @@
-# Well-founded unions: formal proofs and tests
+# Well-founded unions: formal proofs and experiments
 
-This branch contains formal proof sources, test programs, saved experimental
-evidence, and verification records. Paper files are excluded from the current
-branch. Earlier commits and releases remain unchanged and may retain them.
+This branch distributes formal proofs, tests, experimental evidence, and
+verification records for well-founded unions. The current tree excludes paper
+files. Earlier commits and releases retain their existing contents.
 
-The recovered November preparation is in
-[well-founded-unions/](well-founded-unions/README.md). Its
-[status](well-founded-unions/STATUS.md) explicitly records missing source
-components; it is not a complete recovery of the general certificate development.
+The complete artifact is in [well-founded-unions/](well-founded-unions/README.md).
+Its [theorem map](well-founded-unions/THEOREM_MAP.md) and
+[verification status](well-founded-unions/STATUS.md) identify the exact scope.
 
 | Path | Contents |
 | --- | --- |
-| `well-founded-unions/` | Recovered October Rocq development, counterexample, tests, evidence, fresh logs, theorem-map limitations, and checksums |
-| `formal_proofs/` | Original standalone infinite-counterexample source and checker |
-| `finite/` | Original encoders, saved result tables, and final SMT inputs/outputs |
-| `verification/` | Root manifest and saved finite-coverage verification |
-| `MANIFEST.json` | SHA-256 hashes and sizes for the current tracked source package |
+| `well-founded-unions/general/formal/` | Certificate, two replay checkers, generators, audits, regressions, and Rocq proof-term export |
+| `well-founded-unions/general/supplement/` | Five-relation experiment and supplementary diagnostics |
+| `well-founded-unions/reset/` | Bounded reset-example check |
+| `well-founded-unions/validation/2026-11-09-complete/` | Fresh complete verification and experiment records |
+| `formal_proofs/`, `finite/`, `verification/` | Original counterexample, finite-search evidence, and portable archive audit |
+| `MANIFEST.json` | Checksums of the current proof-and-test tree |
 
-## Verification
+## Reproduce verification
 
-With Python 3 and Rocq 9.1.1 (`rocq` and `rocqchk`) installed:
+Python 3, Rocq 9.1.1 (`rocq` and `rocqchk`), and a C++17 compiler are required.
+With Z3 installed, the full validation command is:
 
 ```sh
 python3 verification/verify_archive.py
-python3 well-founded-unions/verify.py --scope recovered
+python3 well-founded-unions/verify.py --with-smt
 ```
 
-The first command checks current package integrity and the historical finite
-coverage audit. The second compiles and independently kernel-checks the recovered
-proofs, audits assumptions and statement preservation, and reruns the exhaustive
-small tests. Add `--with-smt` with Z3 installed to repeat the local SMT diagnostics.
-The default full-scope command deliberately exits 2 until missing evidence is
-recovered and integrated; see the detailed status before citing coverage.
+Omit `--with-smt` to skip the supplementary SMT diagnostics. All general proof,
+Rocq, finite-coverage, five-tuple, regression, and bounded reset checks still run.
+See the artifact README for LIBZ3/CXX overrides and individual checks.
 
-Freshly checked results include the axiom-free infinite counterexample and the
-separate October development's 183 declarations (130 closed; 53 using only
-classical excluded middle). The saved-result audit checks 150 nine-point cases
-plus 572 ten-point terminal obligations. It regenerates the final two inputs
-exactly, but does not rerun historical SMT searches or check Z3 proof certificates.
-Fresh local SMT checks are separate evidence. Full logs and experimental records
-are included under `well-founded-unions/validation/`.
+Fresh validation passed: 7,583 inferences and 114 named general theorems replay
+in both independent checkers; 18 exact statements and 30 regression tests pass;
+the certificate and Rocq export regenerate exactly; Rocq compiles and independently
+kernel-checks the export. Of the 114 named theorems, 63 are closed and 51 use only
+classical excluded middle. The separate infinite counterexample is axiom-free.
+The October development remains separately identified and kernel-checked.
+
+The archived search audit covers 722 cases and exactly regenerates the last two
+SMT inputs. It does not rerun historical solver calls or check their proof
+certificates. The five-relation experiment was freshly rerun on all 9,765,625
+ordered tuples, finding no counterexample. The reset check is bounded testing.
+The rank theorems use an explicit abstract well-order/canonical-rank interface;
+set-theoretic ordinals and rank existence are not constructed here.
 
 ## Publication scope
 
-Only proofs, tests, supporting evidence, and documentation belong in this
-branch's publication package. `paper/` is ignored to prevent accidental additions.
-No source history or existing release has been rewritten. No release of this
-recovery has been published; the user's final approval is required.
+Only proofs, tests, supporting evidence, and documentation belong in the current
+publication tree. `/paper/` is ignored to prevent accidental re-addition. The
+paper-folder removal is prepared; publication requires the user's final approval.
+No existing repository history or release has been replaced.
 
-The November general certificate and independent replay checkers, the original
-five-relation experiment, the reset check, and an authoritative current-paper
-numbering map remain unavailable. The recovered October proof is explicitly
-identified as a distinct development.
-
-Use [CITATION.cff](CITATION.cff) for repository attribution and identify the exact
-commit or a verified release when citing checked artifacts.
+Use [CITATION.cff](CITATION.cff) for attribution and identify the exact commit or
+verified release when citing the artifact.

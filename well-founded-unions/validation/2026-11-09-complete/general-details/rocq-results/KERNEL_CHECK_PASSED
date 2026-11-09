@@ -1,0 +1,10 @@
+{
+  "status": "ROCQ_KERNEL_CHECK_PASSED",
+  "run_directory": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general/formal/rocq-results/run.Att3xuqp",
+  "source_sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77",
+  "logs": {
+    "version.log": "21d70c5468e7fb42f1d3b049a670071a88bf999b53319004e1f834435b87686b",
+    "compile.log": "dd838f75deb4ae67bcf29dbec0001782c47f74741678c26986eb2d8153ab8bf2",
+    "kernel-check.log": "fdc8ac373f9b5aafb57864ba8af22a60ca2a7d533c2ba0ebc758fbe549eaaf86"
+  }
+}

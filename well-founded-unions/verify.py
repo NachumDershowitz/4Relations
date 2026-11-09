@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify recovered WFU artifacts without modifying archived sources or records.
+"""Verify WFU artifacts without modifying archived sources or records.
 
 The default full scope also requires every requested component. Missing evidence
 is a nonzero result, even when all recovered checks pass. No historical SMT
@@ -25,7 +25,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--scope', choices=['full', 'recovered'], default='full')
     parser.add_argument('--with-smt', action='store_true',
-                        help='also run the 25 local folding/height SMT diagnostics')
+                        help='also run all supplementary SMT diagnostics')
     parser.add_argument('--log-dir', type=Path,
                         help='new directory for complete logs; default is a temporary directory')
     args = parser.parse_args()
@@ -107,6 +107,16 @@ def main():
                         target = dest / path.relative_to(copied / 'checks')
                         target.parent.mkdir(parents=True, exist_ok=True)
                         shutil.copy2(path, target)
+        command = [sys.executable, 'verification/verify_general.py', '--log-dir', str(logs / 'general-details')]
+        if args.with_smt:
+            command.append('--with-smt')
+        run('general_development', command, ROOT)
+        details = json.loads((logs / 'general-details/RESULT.json').read_text())
+        if not details.get('passed') or not details.get('general_kernel_verified'):
+            raise RuntimeError('General development verification did not establish success.')
+        report['general_development'] = {key: details[key] for key in
+            ['passed', 'general_kernel_verified', 'named_theorems', 'inference_steps',
+             'closed_theorems', 'classical_theorems', 'source_sha256']}
         report['recovered_checks_passed'] = True
         missing = json.loads((ROOT / 'MISSING_COMPONENTS.json').read_text())
         report['missing_components'] = missing
@@ -116,11 +126,9 @@ def main():
             report['exit_status'] = 2
             print('Recovered checks passed; the requested package is incomplete. See MISSING_COMPONENTS.json.')
             return 2
-        if args.scope == 'full':
-            raise RuntimeError('The missing general certificate checks must be integrated before full-scope verification can pass.')
-        report['outcome'] = 'RECOVERED_SCOPE_PASS'
+        report['outcome'] = 'FULL_SCOPE_PASS' if args.scope == 'full' else 'RECOVERED_SCOPE_PASS'
         report['exit_status'] = 0
-        print('PASS for recovered scope only. Logs:', logs)
+        print('PASS for', args.scope, 'scope. Logs:', logs)
         return 0
     except Exception as error:
         report['outcome'] = 'FAILED'

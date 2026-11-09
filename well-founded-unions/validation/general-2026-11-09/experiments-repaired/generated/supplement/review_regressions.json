@@ -1,0 +1,34 @@
+{
+  "scope": "test-harness failure handling only; not theorem verification",
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_folding_obligations.py",
+      "exit_status": 1,
+      "passed": true,
+      "stdout": "Base assumptions with an explicit three-point model: sat\n{\"obligation\": \"01_surviving_target\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n{\"obligation\": \"02_transfer\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n{\"obligation\": \"03_new_range\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n{\"obligation\": \"04_new_identity\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n{\"obligation\": \"05_new_projection\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n{\"obligation\": \"06_strict_image_decrease\", \"status\": \"sat\", \"seconds\": 0.0, \"solver\": \"(:version \\\"test-double\\\")\"}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/four-relations-regressions-9gudcz__/check_folding_obligations.py\", line 81, in <module>\n    raise RuntimeError('An obligation did not close.')\nRuntimeError: An obligation did not close.\n"
+    },
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_existential_folding.py",
+      "exit_status": 1,
+      "passed": true,
+      "stdout": "{\"name\": \"00_consistent_witnesses\", \"expected\": \"sat\", \"status\": \"sat\", \"seconds\": 0.00016, \"solver\": \"(:version \\\"test-double\\\")\", \"smt_sha256\": \"7c13d60830b3a1221144ebe4c5fbacd98d2daff914ca46fd073a693ad77a2709\"}\n{\"name\": \"01_target_survives\", \"expected\": \"unsat\", \"status\": \"sat\", \"seconds\": 0.00014, \"solver\": \"(:version \\\"test-double\\\")\", \"smt_sha256\": \"c5e5b5f6a69965455df4c70aca0c1bd1342961055527674d9d810f3b4d7835d8\"}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/four-relations-regressions-9gudcz__/check_existential_folding.py\", line 126, in <module>\n    main()\n    ~~~~^^\n  File \"/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/four-relations-regressions-9gudcz__/check_existential_folding.py\", line 122, in main\n    raise RuntimeError(f'{name}: expected {expected}, got {status!r}')\nRuntimeError: 01_target_survives: expected unsat, got 'sat'\n"
+    },
+    {
+      "test": "invariant_checks_survive_python_optimization",
+      "exit_status": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    from exhaustive_three_points import require; require(False, \"injected failure\")\n                                                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/four-relations-regressions-9gudcz__/exhaustive_three_points.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: injected failure\n"
+    },
+    {
+      "test": "true_invariant_is_accepted",
+      "exit_status": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

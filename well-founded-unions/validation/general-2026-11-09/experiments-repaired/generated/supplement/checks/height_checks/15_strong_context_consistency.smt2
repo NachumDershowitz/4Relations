@@ -1,0 +1,17 @@
+
+(set-option :timeout 15000)
+(set-logic ALL)
+(declare-sort X 0)
+(declare-fun B (X X) Bool)
+(declare-fun Bp (X X) Bool)
+(declare-fun F (X X) Bool)
+(declare-fun M (X) Bool)
+(declare-fun h (X) Int)
+(assert (forall ((x X)) (>= (h x) 0)))
+(assert (forall ((x X) (y X)) (=> (Bp x y) (< (h y) (h x)))))
+(assert (forall ((x X) (y X) (z X))
+  (=> (and (M x) (F x y) (B y z)) (Bp x z))))
+(assert (forall ((y X)) (=> (> (h y) 0)
+  (exists ((z X)) (and (B y z) (= (h z) (- (h y) 1)))))))
+
+(check-sat)

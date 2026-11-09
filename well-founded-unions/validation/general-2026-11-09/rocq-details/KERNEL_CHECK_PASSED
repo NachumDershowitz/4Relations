@@ -1,0 +1,10 @@
+{
+  "status": "ROCQ_KERNEL_CHECK_PASSED",
+  "run_directory": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/rocq-run/formal/rocq-results/run.qdeIyuyf",
+  "source_sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77",
+  "logs": {
+    "version.log": "21d70c5468e7fb42f1d3b049a670071a88bf999b53319004e1f834435b87686b",
+    "compile.log": "dd838f75deb4ae67bcf29dbec0001782c47f74741678c26986eb2d8153ab8bf2",
+    "kernel-check.log": "d79b8caa7fe08cfe4537f4bfdb0bc0a6fe7fa534651a947670f87e93201a59a4"
+  }
+}

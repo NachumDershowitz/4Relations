@@ -1,0 +1,70 @@
+[
+  {
+    "command": [
+      "c++",
+      "--version"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 2.592028167000535
+  },
+  {
+    "command": [
+      "c++",
+      "-O2",
+      "-std=c++17",
+      "supplement/check_generalization.cpp",
+      "-o",
+      "check_generalization"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 1.5133485839978675
+  },
+  {
+    "command": [
+      "./check_generalization",
+      "3",
+      "5"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 0.881754957998055
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/check_representative_elimination.py"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 0.4654420830011077
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/check_height_elimination.py"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 0.4616332500008866
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/exhaustive_original_conditions.py"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 0,
+    "elapsed_seconds": 1.1355143330001738
+  },
+  {
+    "command": [
+      "python3",
+      "supplement/checks/exhaustive_three_points.py"
+    ],
+    "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments",
+    "exit_status": 1,
+    "elapsed_seconds": 0.3408365409995895
+  }
+]

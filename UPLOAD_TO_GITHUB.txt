@@ -11,8 +11,7 @@ it has not been published. Earlier history/releases retain their existing copies
 The older upload instructions bundled papers and are superseded by this policy.
 Do not recreate the repository, force-push, or replace existing releases.
 
-Resolve the missing components recorded in well-founded-unions/STATUS.md, or
-obtain an explicit decision to publish only the recovered scope. Run the checks,
-refresh the manifests and artifact ZIP, present the exact public contents, and
+The complete verification record is well-founded-unions/STATUS.md. Preserve the
+checked sources and package checksums, present the exact public contents, and
 obtain final user approval before any push or release. Use a new, unused release
 tag and verify the public artifact links after publication.

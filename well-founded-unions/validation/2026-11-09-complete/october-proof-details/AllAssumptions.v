@@ -1,0 +1,551 @@
+From FourRelations Require Import FourRelations Refinements FourRelationsCounterexample Audit.
+Set Printing Width 100.
+Check FourRelations.FourRelations.rel.
+Print Assumptions FourRelations.FourRelations.rel.
+Redirect "assumption_000" Print Assumptions FourRelations.FourRelations.rel.
+Check FourRelations.FourRelations.cup.
+Print Assumptions FourRelations.FourRelations.cup.
+Redirect "assumption_001" Print Assumptions FourRelations.FourRelations.cup.
+Check FourRelations.FourRelations.flip.
+Print Assumptions FourRelations.FourRelations.flip.
+Redirect "assumption_002" Print Assumptions FourRelations.FourRelations.flip.
+Check FourRelations.FourRelations.WF.
+Print Assumptions FourRelations.FourRelations.WF.
+Redirect "assumption_003" Print Assumptions FourRelations.FourRelations.WF.
+Check FourRelations.FourRelations.normal.
+Print Assumptions FourRelations.FourRelations.normal.
+Redirect "assumption_004" Print Assumptions FourRelations.FourRelations.normal.
+Check FourRelations.FourRelations.bad.
+Print Assumptions FourRelations.FourRelations.bad.
+Redirect "assumption_005" Print Assumptions FourRelations.FourRelations.bad.
+Check FourRelations.FourRelations.cut.
+Print Assumptions FourRelations.FourRelations.cut.
+Redirect "assumption_006" Print Assumptions FourRelations.FourRelations.cut.
+Check FourRelations.FourRelations.star.
+Print Assumptions FourRelations.FourRelations.star.
+Redirect "assumption_007" Print Assumptions FourRelations.FourRelations.star.
+Check FourRelations.FourRelations.plus.
+Print Assumptions FourRelations.FourRelations.plus.
+Redirect "assumption_008" Print Assumptions FourRelations.FourRelations.plus.
+Check FourRelations.FourRelations.star_one.
+Print Assumptions FourRelations.FourRelations.star_one.
+Redirect "assumption_009" Print Assumptions FourRelations.FourRelations.star_one.
+Check FourRelations.FourRelations.star_trans.
+Print Assumptions FourRelations.FourRelations.star_trans.
+Redirect "assumption_010" Print Assumptions FourRelations.FourRelations.star_trans.
+Check FourRelations.FourRelations.star_mono.
+Print Assumptions FourRelations.FourRelations.star_mono.
+Redirect "assumption_011" Print Assumptions FourRelations.FourRelations.star_mono.
+Check FourRelations.FourRelations.plus_one.
+Print Assumptions FourRelations.FourRelations.plus_one.
+Redirect "assumption_012" Print Assumptions FourRelations.FourRelations.plus_one.
+Check FourRelations.FourRelations.plus_star.
+Print Assumptions FourRelations.FourRelations.plus_star.
+Redirect "assumption_013" Print Assumptions FourRelations.FourRelations.plus_star.
+Check FourRelations.FourRelations.plus_mono.
+Print Assumptions FourRelations.FourRelations.plus_mono.
+Redirect "assumption_014" Print Assumptions FourRelations.FourRelations.plus_mono.
+Check FourRelations.FourRelations.plus_trans.
+Print Assumptions FourRelations.FourRelations.plus_trans.
+Redirect "assumption_015" Print Assumptions FourRelations.FourRelations.plus_trans.
+Check FourRelations.FourRelations.plus_split.
+Print Assumptions FourRelations.FourRelations.plus_split.
+Redirect "assumption_016" Print Assumptions FourRelations.FourRelations.plus_split.
+Check FourRelations.FourRelations.acc_mono.
+Print Assumptions FourRelations.FourRelations.acc_mono.
+Redirect "assumption_017" Print Assumptions FourRelations.FourRelations.acc_mono.
+Check FourRelations.FourRelations.wf_mono.
+Print Assumptions FourRelations.FourRelations.wf_mono.
+Redirect "assumption_018" Print Assumptions FourRelations.FourRelations.wf_mono.
+Check FourRelations.FourRelations.acc_star.
+Print Assumptions FourRelations.FourRelations.acc_star.
+Redirect "assumption_019" Print Assumptions FourRelations.FourRelations.acc_star.
+Check FourRelations.FourRelations.wf_plus.
+Print Assumptions FourRelations.FourRelations.wf_plus.
+Redirect "assumption_020" Print Assumptions FourRelations.FourRelations.wf_plus.
+Check FourRelations.FourRelations.wf_minimum.
+Print Assumptions FourRelations.FourRelations.wf_minimum.
+Redirect "assumption_021" Print Assumptions FourRelations.FourRelations.wf_minimum.
+Check FourRelations.FourRelations.wf_no_serial.
+Print Assumptions FourRelations.FourRelations.wf_no_serial.
+Redirect "assumption_022" Print Assumptions FourRelations.FourRelations.wf_no_serial.
+Check FourRelations.FourRelations.wf_irrefl.
+Print Assumptions FourRelations.FourRelations.wf_irrefl.
+Redirect "assumption_023" Print Assumptions FourRelations.FourRelations.wf_irrefl.
+Check FourRelations.FourRelations.wf_normal_form.
+Print Assumptions FourRelations.FourRelations.wf_normal_form.
+Redirect "assumption_024" Print Assumptions FourRelations.FourRelations.wf_normal_form.
+Check FourRelations.FourRelations.bad_step.
+Print Assumptions FourRelations.FourRelations.bad_step.
+Redirect "assumption_025" Print Assumptions FourRelations.FourRelations.bad_step.
+Check FourRelations.FourRelations.bad_star.
+Print Assumptions FourRelations.FourRelations.bad_star.
+Redirect "assumption_026" Print Assumptions FourRelations.FourRelations.bad_star.
+Check FourRelations.FourRelations.bad_mono.
+Print Assumptions FourRelations.FourRelations.bad_mono.
+Redirect "assumption_027" Print Assumptions FourRelations.FourRelations.bad_mono.
+Check FourRelations.FourRelations.bad_successor.
+Print Assumptions FourRelations.FourRelations.bad_successor.
+Redirect "assumption_028" Print Assumptions FourRelations.FourRelations.bad_successor.
+Check FourRelations.FourRelations.not_wf_has_bad.
+Print Assumptions FourRelations.FourRelations.not_wf_has_bad.
+Redirect "assumption_029" Print Assumptions FourRelations.FourRelations.not_wf_has_bad.
+Check FourRelations.FourRelations.serial_rerouting_impossible.
+Print Assumptions FourRelations.FourRelations.serial_rerouting_impossible.
+Redirect "assumption_030" Print Assumptions FourRelations.FourRelations.serial_rerouting_impossible.
+Check FourRelations.FourRelations.weak_jumping.
+Print Assumptions FourRelations.FourRelations.weak_jumping.
+Redirect "assumption_031" Print Assumptions FourRelations.FourRelations.weak_jumping.
+Check FourRelations.FourRelations.detour_tail.
+Print Assumptions FourRelations.FourRelations.detour_tail.
+Redirect "assumption_032" Print Assumptions FourRelations.FourRelations.detour_tail.
+Check FourRelations.FourRelations.finite_source.
+Print Assumptions FourRelations.FourRelations.finite_source.
+Redirect "assumption_033" Print Assumptions FourRelations.FourRelations.finite_source.
+Check FourRelations.FourRelations.finite_acyclic_wf.
+Print Assumptions FourRelations.FourRelations.finite_acyclic_wf.
+Redirect "assumption_034" Print Assumptions FourRelations.FourRelations.finite_acyclic_wf.
+Check FourRelations.FourRelations.star_cut.
+Print Assumptions FourRelations.FourRelations.star_cut.
+Redirect "assumption_035" Print Assumptions FourRelations.FourRelations.star_cut.
+Check FourRelations.FourRelations.plus_cut.
+Print Assumptions FourRelations.FourRelations.plus_cut.
+Redirect "assumption_036" Print Assumptions FourRelations.FourRelations.plus_cut.
+Check FourRelations.FourRelations.transitive_subunion_wf.
+Print Assumptions FourRelations.FourRelations.transitive_subunion_wf.
+Redirect "assumption_037" Print Assumptions FourRelations.FourRelations.transitive_subunion_wf.
+Check FourRelations.FourRelations.long.
+Print Assumptions FourRelations.FourRelations.long.
+Redirect "assumption_038" Print Assumptions FourRelations.FourRelations.long.
+Check FourRelations.FourRelations.height_le.
+Print Assumptions FourRelations.FourRelations.height_le.
+Redirect "assumption_039" Print Assumptions FourRelations.FourRelations.height_le.
+Check FourRelations.FourRelations.long_down.
+Print Assumptions FourRelations.FourRelations.long_down.
+Redirect "assumption_040" Print Assumptions FourRelations.FourRelations.long_down.
+Check FourRelations.FourRelations.long_le.
+Print Assumptions FourRelations.FourRelations.long_le.
+Redirect "assumption_041" Print Assumptions FourRelations.FourRelations.long_le.
+Check FourRelations.FourRelations.long_mono.
+Print Assumptions FourRelations.FourRelations.long_mono.
+Redirect "assumption_042" Print Assumptions FourRelations.FourRelations.long_mono.
+Check FourRelations.FourRelations.star_long.
+Print Assumptions FourRelations.FourRelations.star_long.
+Redirect "assumption_043" Print Assumptions FourRelations.FourRelations.star_long.
+Check FourRelations.FourRelations.plus_long.
+Print Assumptions FourRelations.FourRelations.plus_long.
+Redirect "assumption_044" Print Assumptions FourRelations.FourRelations.plus_long.
+Check FourRelations.FourRelations.height_edge.
+Print Assumptions FourRelations.FourRelations.height_edge.
+Redirect "assumption_045" Print Assumptions FourRelations.FourRelations.height_edge.
+Check FourRelations.FourRelations.height_mono.
+Print Assumptions FourRelations.FourRelations.height_mono.
+Redirect "assumption_046" Print Assumptions FourRelations.FourRelations.height_mono.
+Check FourRelations.FourRelations.height_implies_acc.
+Print Assumptions FourRelations.FourRelations.height_implies_acc.
+Redirect "assumption_047" Print Assumptions FourRelations.FourRelations.height_implies_acc.
+Check FourRelations.FourRelations.bounded_implies_wf.
+Print Assumptions FourRelations.FourRelations.bounded_implies_wf.
+Redirect "assumption_048" Print Assumptions FourRelations.FourRelations.bounded_implies_wf.
+Check FourRelations.FourRelations.finite_family_bound.
+Print Assumptions FourRelations.FourRelations.finite_family_bound.
+Redirect "assumption_049" Print Assumptions FourRelations.FourRelations.finite_family_bound.
+Check FourRelations.FourRelations.finitely_branching.
+Print Assumptions FourRelations.FourRelations.finitely_branching.
+Redirect "assumption_050" Print Assumptions FourRelations.FourRelations.finitely_branching.
+Check FourRelations.FourRelations.finitely_branching_wf_height.
+Print Assumptions FourRelations.FourRelations.finitely_branching_wf_height.
+Redirect "assumption_051" Print Assumptions FourRelations.FourRelations.finitely_branching_wf_height.
+Check FourRelations.FourRelations.R0.
+Print Assumptions FourRelations.FourRelations.R0.
+Redirect "assumption_052" Print Assumptions FourRelations.FourRelations.R0.
+Check FourRelations.FourRelations.E0.
+Print Assumptions FourRelations.FourRelations.E0.
+Redirect "assumption_053" Print Assumptions FourRelations.FourRelations.E0.
+Check FourRelations.FourRelations.F0.
+Print Assumptions FourRelations.FourRelations.F0.
+Redirect "assumption_054" Print Assumptions FourRelations.FourRelations.F0.
+Check FourRelations.FourRelations.P0.
+Print Assumptions FourRelations.FourRelations.P0.
+Redirect "assumption_055" Print Assumptions FourRelations.FourRelations.P0.
+Check FourRelations.FourRelations.P1.
+Print Assumptions FourRelations.FourRelations.P1.
+Redirect "assumption_056" Print Assumptions FourRelations.FourRelations.P1.
+Check FourRelations.FourRelations.P1_strong.
+Print Assumptions FourRelations.FourRelations.P1_strong.
+Redirect "assumption_057" Print Assumptions FourRelations.FourRelations.P1_strong.
+Check FourRelations.FourRelations.P1_strong_implies.
+Print Assumptions FourRelations.FourRelations.P1_strong_implies.
+Redirect "assumption_058" Print Assumptions FourRelations.FourRelations.P1_strong_implies.
+Check FourRelations.FourRelations.Q2.
+Print Assumptions FourRelations.FourRelations.Q2.
+Redirect "assumption_059" Print Assumptions FourRelations.FourRelations.Q2.
+Check FourRelations.FourRelations.M.
+Print Assumptions FourRelations.FourRelations.M.
+Redirect "assumption_060" Print Assumptions FourRelations.FourRelations.M.
+Check FourRelations.FourRelations.representatives.
+Print Assumptions FourRelations.FourRelations.representatives.
+Redirect "assumption_061" Print Assumptions FourRelations.FourRelations.representatives.
+Check FourRelations.FourRelations.active.
+Print Assumptions FourRelations.FourRelations.active.
+Redirect "assumption_062" Print Assumptions FourRelations.FourRelations.active.
+Check FourRelations.FourRelations.E_irrefl.
+Print Assumptions FourRelations.FourRelations.E_irrefl.
+Redirect "assumption_063" Print Assumptions FourRelations.FourRelations.E_irrefl.
+Check FourRelations.FourRelations.E_to_normal.
+Print Assumptions FourRelations.FourRelations.E_to_normal.
+Redirect "assumption_064" Print Assumptions FourRelations.FourRelations.E_to_normal.
+Check FourRelations.FourRelations.initial_representatives.
+Print Assumptions FourRelations.FourRelations.initial_representatives.
+Redirect "assumption_065" Print Assumptions FourRelations.FourRelations.initial_representatives.
+Check FourRelations.FourRelations.representatives_serial.
+Print Assumptions FourRelations.FourRelations.representatives_serial.
+Redirect "assumption_066" Print Assumptions FourRelations.FourRelations.representatives_serial.
+Check FourRelations.FourRelations.empty_active_impossible.
+Print Assumptions FourRelations.FourRelations.empty_active_impossible.
+Redirect "assumption_067" Print Assumptions FourRelations.FourRelations.empty_active_impossible.
+Check FourRelations.FourRelations.fold_step.
+Print Assumptions FourRelations.FourRelations.fold_step.
+Redirect "assumption_068" Print Assumptions FourRelations.FourRelations.fold_step.
+Check FourRelations.FourRelations.finite_active_impossible.
+Print Assumptions FourRelations.FourRelations.finite_active_impossible.
+Redirect "assumption_069" Print Assumptions FourRelations.FourRelations.finite_active_impossible.
+Check FourRelations.FourRelations.serial_domain_finite_image_impossible.
+Print Assumptions FourRelations.FourRelations.serial_domain_finite_image_impossible.
+Redirect "assumption_070" Print Assumptions FourRelations.FourRelations.serial_domain_finite_image_impossible.
+Check FourRelations.FourRelations.domination.
+Print Assumptions FourRelations.FourRelations.domination.
+Redirect "assumption_071" Print Assumptions FourRelations.FourRelations.domination.
+Check FourRelations.FourRelations.domination_transitive.
+Print Assumptions FourRelations.FourRelations.domination_transitive.
+Redirect "assumption_072" Print Assumptions FourRelations.FourRelations.domination_transitive.
+Check FourRelations.FourRelations.domination_path_transfer.
+Print Assumptions FourRelations.FourRelations.domination_path_transfer.
+Redirect "assumption_073" Print Assumptions FourRelations.FourRelations.domination_path_transfer.
+Check FourRelations.FourRelations.top_domination_successor.
+Print Assumptions FourRelations.FourRelations.top_domination_successor.
+Redirect "assumption_074" Print Assumptions FourRelations.FourRelations.top_domination_successor.
+Check FourRelations.FourRelations.top_domination_wf.
+Print Assumptions FourRelations.FourRelations.top_domination_wf.
+Redirect "assumption_075" Print Assumptions FourRelations.FourRelations.top_domination_wf.
+Check FourRelations.FourRelations.lower_representatives.
+Print Assumptions FourRelations.FourRelations.lower_representatives.
+Redirect "assumption_076" Print Assumptions FourRelations.FourRelations.lower_representatives.
+Check FourRelations.FourRelations.bounded_representatives_impossible.
+Print Assumptions FourRelations.FourRelations.bounded_representatives_impossible.
+Redirect "assumption_077" Print Assumptions FourRelations.FourRelations.bounded_representatives_impossible.
+Check FourRelations.FourRelations.serial_domain_bounded_height_impossible.
+Print Assumptions FourRelations.FourRelations.serial_domain_bounded_height_impossible.
+Redirect "assumption_078" Print Assumptions FourRelations.FourRelations.serial_domain_bounded_height_impossible.
+Check FourRelations.FourRelations.strong_F_long.
+Print Assumptions FourRelations.FourRelations.strong_F_long.
+Redirect "assumption_079" Print Assumptions FourRelations.FourRelations.strong_F_long.
+Check FourRelations.FourRelations.serial_domain_pointwise_height_impossible.
+Print Assumptions FourRelations.FourRelations.serial_domain_pointwise_height_impossible.
+Redirect "assumption_080" Print Assumptions FourRelations.FourRelations.serial_domain_pointwise_height_impossible.
+Check FourRelations.FourRelations.rank_le_antisym.
+Print Assumptions FourRelations.FourRelations.rank_le_antisym.
+Redirect "assumption_081" Print Assumptions FourRelations.FourRelations.rank_le_antisym.
+Check FourRelations.FourRelations.rank_star.
+Print Assumptions FourRelations.FourRelations.rank_star.
+Redirect "assumption_082" Print Assumptions FourRelations.FourRelations.rank_star.
+Check FourRelations.FourRelations.rank_plus.
+Print Assumptions FourRelations.FourRelations.rank_plus.
+Redirect "assumption_083" Print Assumptions FourRelations.FourRelations.rank_plus.
+Check FourRelations.FourRelations.rank_F_nonincrease.
+Print Assumptions FourRelations.FourRelations.rank_F_nonincrease.
+Redirect "assumption_084" Print Assumptions FourRelations.FourRelations.rank_F_nonincrease.
+Check FourRelations.FourRelations.rank_min_representatives.
+Print Assumptions FourRelations.FourRelations.rank_min_representatives.
+Redirect "assumption_085" Print Assumptions FourRelations.FourRelations.rank_min_representatives.
+Check FourRelations.FourRelations.least_rank_nonzero.
+Print Assumptions FourRelations.FourRelations.least_rank_nonzero.
+Redirect "assumption_086" Print Assumptions FourRelations.FourRelations.least_rank_nonzero.
+Check FourRelations.FourRelations.least_rank_not_successor.
+Print Assumptions FourRelations.FourRelations.least_rank_not_successor.
+Redirect "assumption_087" Print Assumptions FourRelations.FourRelations.least_rank_not_successor.
+Check FourRelations.FourRelations.least_rank_is_nonzero_limit.
+Print Assumptions FourRelations.FourRelations.least_rank_is_nonzero_limit.
+Redirect "assumption_088" Print Assumptions FourRelations.FourRelations.least_rank_is_nonzero_limit.
+Check FourRelations.FourRelations.cut_R_equiv.
+Print Assumptions FourRelations.FourRelations.cut_R_equiv.
+Redirect "assumption_089" Print Assumptions FourRelations.FourRelations.cut_R_equiv.
+Check FourRelations.FourRelations.cut_E_equiv.
+Print Assumptions FourRelations.FourRelations.cut_E_equiv.
+Redirect "assumption_090" Print Assumptions FourRelations.FourRelations.cut_E_equiv.
+Check FourRelations.FourRelations.cut_F_equiv.
+Print Assumptions FourRelations.FourRelations.cut_F_equiv.
+Redirect "assumption_091" Print Assumptions FourRelations.FourRelations.cut_F_equiv.
+Check FourRelations.FourRelations.I_backward.
+Print Assumptions FourRelations.FourRelations.I_backward.
+Redirect "assumption_092" Print Assumptions FourRelations.FourRelations.I_backward.
+Check FourRelations.FourRelations.cut_R_path.
+Print Assumptions FourRelations.FourRelations.cut_R_path.
+Redirect "assumption_093" Print Assumptions FourRelations.FourRelations.cut_R_path.
+Check FourRelations.FourRelations.cut_E_path.
+Print Assumptions FourRelations.FourRelations.cut_E_path.
+Redirect "assumption_094" Print Assumptions FourRelations.FourRelations.cut_E_path.
+Check FourRelations.FourRelations.cut_B_plus.
+Print Assumptions FourRelations.FourRelations.cut_B_plus.
+Redirect "assumption_095" Print Assumptions FourRelations.FourRelations.cut_B_plus.
+Check FourRelations.FourRelations.cut_C_plus.
+Print Assumptions FourRelations.FourRelations.cut_C_plus.
+Redirect "assumption_096" Print Assumptions FourRelations.FourRelations.cut_C_plus.
+Check FourRelations.FourRelations.P0_restrict.
+Print Assumptions FourRelations.FourRelations.P0_restrict.
+Redirect "assumption_097" Print Assumptions FourRelations.FourRelations.P0_restrict.
+Check FourRelations.FourRelations.P1_restrict.
+Print Assumptions FourRelations.FourRelations.P1_restrict.
+Redirect "assumption_098" Print Assumptions FourRelations.FourRelations.P1_restrict.
+Check FourRelations.FourRelations.Q2_restrict.
+Print Assumptions FourRelations.FourRelations.Q2_restrict.
+Redirect "assumption_099" Print Assumptions FourRelations.FourRelations.Q2_restrict.
+Check FourRelations.FourRelations.minimal_immortal.
+Print Assumptions FourRelations.FourRelations.minimal_immortal.
+Redirect "assumption_100" Print Assumptions FourRelations.FourRelations.minimal_immortal.
+Check FourRelations.FourRelations.finite_escape_target_termination.
+Print Assumptions FourRelations.FourRelations.finite_escape_target_termination.
+Redirect "assumption_101" Print Assumptions FourRelations.FourRelations.finite_escape_target_termination.
+Check FourRelations.FourRelations.finite_termination.
+Print Assumptions FourRelations.FourRelations.finite_termination.
+Redirect "assumption_102" Print Assumptions FourRelations.FourRelations.finite_termination.
+Check FourRelations.FourRelations.cut_well_founded.
+Print Assumptions FourRelations.FourRelations.cut_well_founded.
+Redirect "assumption_103" Print Assumptions FourRelations.FourRelations.cut_well_founded.
+Check FourRelations.FourRelations.cut_domain.
+Print Assumptions FourRelations.FourRelations.cut_domain.
+Redirect "assumption_104" Print Assumptions FourRelations.FourRelations.cut_domain.
+Check FourRelations.FourRelations.cut_serial.
+Print Assumptions FourRelations.FourRelations.cut_serial.
+Redirect "assumption_105" Print Assumptions FourRelations.FourRelations.cut_serial.
+Check FourRelations.FourRelations.cut_minimal_equiv.
+Print Assumptions FourRelations.FourRelations.cut_minimal_equiv.
+Redirect "assumption_106" Print Assumptions FourRelations.FourRelations.cut_minimal_equiv.
+Check FourRelations.FourRelations.P1_strong_restrict.
+Print Assumptions FourRelations.FourRelations.P1_strong_restrict.
+Redirect "assumption_107" Print Assumptions FourRelations.FourRelations.P1_strong_restrict.
+Check FourRelations.FourRelations.bounded_immortal_height_termination.
+Print Assumptions FourRelations.FourRelations.bounded_immortal_height_termination.
+Redirect "assumption_108" Print Assumptions FourRelations.FourRelations.bounded_immortal_height_termination.
+Check FourRelations.FourRelations.bounded_height_termination.
+Print Assumptions FourRelations.FourRelations.bounded_height_termination.
+Redirect "assumption_109" Print Assumptions FourRelations.FourRelations.bounded_height_termination.
+Check FourRelations.FourRelations.minimal_immortal_unbounded.
+Print Assumptions FourRelations.FourRelations.minimal_immortal_unbounded.
+Redirect "assumption_110" Print Assumptions FourRelations.FourRelations.minimal_immortal_unbounded.
+Check FourRelations.FourRelations.pointwise_minimal_height_termination.
+Print Assumptions FourRelations.FourRelations.pointwise_minimal_height_termination.
+Redirect "assumption_111" Print Assumptions FourRelations.FourRelations.pointwise_minimal_height_termination.
+Check FourRelations.FourRelations.pointwise_height_termination.
+Print Assumptions FourRelations.FourRelations.pointwise_height_termination.
+Redirect "assumption_112" Print Assumptions FourRelations.FourRelations.pointwise_height_termination.
+Check FourRelations.FourRelations.finitely_branching_termination.
+Print Assumptions FourRelations.FourRelations.finitely_branching_termination.
+Redirect "assumption_113" Print Assumptions FourRelations.FourRelations.finitely_branching_termination.
+Check FourRelations.FourRelations.well_founded_has_no_infinite_chain.
+Print Assumptions FourRelations.FourRelations.well_founded_has_no_infinite_chain.
+Redirect "assumption_114" Print Assumptions FourRelations.FourRelations.well_founded_has_no_infinite_chain.
+Check FourRelations.FourRelations.finite_acyclic_four_relations.
+Print Assumptions FourRelations.FourRelations.finite_acyclic_four_relations.
+Redirect "assumption_115" Print Assumptions FourRelations.FourRelations.finite_acyclic_four_relations.
+Check FourRelations.Refinements.core_representatives.
+Print Assumptions FourRelations.Refinements.core_representatives.
+Redirect "assumption_116" Print Assumptions FourRelations.Refinements.core_representatives.
+Check FourRelations.Refinements.finite_representative_core_impossible.
+Print Assumptions FourRelations.Refinements.finite_representative_core_impossible.
+Redirect "assumption_117" Print Assumptions FourRelations.Refinements.finite_representative_core_impossible.
+Check FourRelations.Refinements.bounded_representative_core_impossible.
+Print Assumptions FourRelations.Refinements.bounded_representative_core_impossible.
+Redirect "assumption_118" Print Assumptions FourRelations.Refinements.bounded_representative_core_impossible.
+Check FourRelations.Refinements.long_reachable_cut.
+Print Assumptions FourRelations.Refinements.long_reachable_cut.
+Redirect "assumption_119" Print Assumptions FourRelations.Refinements.long_reachable_cut.
+Check FourRelations.Refinements.reachable_finitely_branching_height.
+Print Assumptions FourRelations.Refinements.reachable_finitely_branching_height.
+Redirect "assumption_120" Print Assumptions FourRelations.Refinements.reachable_finitely_branching_height.
+Check FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.
+Print Assumptions FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.
+Redirect "assumption_121" Print Assumptions FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.
+Check FourRelations.Refinements.locally_finitely_branching_termination.
+Print Assumptions FourRelations.Refinements.locally_finitely_branching_termination.
+Redirect "assumption_122" Print Assumptions FourRelations.Refinements.locally_finitely_branching_termination.
+Check FourRelations.FourRelationsCounterexample.FourRelations.vertex.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.vertex.
+Redirect "assumption_123" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.vertex.
+Check FourRelations.FourRelationsCounterexample.FourRelations.relation.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.relation.
+Redirect "assumption_124" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.relation.
+Check FourRelations.FourRelationsCounterexample.FourRelations.union.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.union.
+Redirect "assumption_125" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.union.
+Check FourRelations.FourRelationsCounterexample.FourRelations.comp.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.comp.
+Redirect "assumption_126" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.comp.
+Check FourRelations.FourRelationsCounterexample.FourRelations.included.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.included.
+Redirect "assumption_127" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.included.
+Check FourRelations.FourRelationsCounterexample.FourRelations.star.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.star.
+Redirect "assumption_128" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.star.
+Check FourRelations.FourRelationsCounterexample.FourRelations.plus.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.plus.
+Redirect "assumption_129" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.plus.
+Check FourRelations.FourRelationsCounterexample.FourRelations.WF.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.WF.
+Redirect "assumption_130" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.WF.
+Check FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.
+Redirect "assumption_131" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.
+Check FourRelations.FourRelationsCounterexample.FourRelations.A.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A.
+Redirect "assumption_132" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A.
+Check FourRelations.FourRelationsCounterexample.FourRelations.B.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B.
+Redirect "assumption_133" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B.
+Check FourRelations.FourRelationsCounterexample.FourRelations.C.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C.
+Redirect "assumption_134" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C.
+Check FourRelations.FourRelationsCounterexample.FourRelations.D.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D.
+Redirect "assumption_135" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D.
+Check FourRelations.FourRelationsCounterexample.FourRelations.F.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.F.
+Redirect "assumption_136" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.F.
+Check FourRelations.FourRelationsCounterexample.FourRelations.E.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.E.
+Redirect "assumption_137" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.E.
+Check FourRelations.FourRelationsCounterexample.FourRelations.R.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R.
+Redirect "assumption_138" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R.
+Check FourRelations.FourRelationsCounterexample.FourRelations.num_injective.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.num_injective.
+Redirect "assumption_139" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.num_injective.
+Check FourRelations.FourRelationsCounterexample.FourRelations.enumerate.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.enumerate.
+Redirect "assumption_140" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.enumerate.
+Check FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.
+Redirect "assumption_141" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.
+Check FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.
+Redirect "assumption_142" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.
+Check FourRelations.FourRelationsCounterexample.FourRelations.rank_A.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_A.
+Redirect "assumption_143" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_A.
+Check FourRelations.FourRelationsCounterexample.FourRelations.rank_C.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_C.
+Redirect "assumption_144" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_C.
+Check FourRelations.FourRelationsCounterexample.FourRelations.rank_D.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_D.
+Redirect "assumption_145" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.rank_D.
+Check FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.
+Redirect "assumption_146" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.
+Check FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.
+Redirect "assumption_147" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.
+Check FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.
+Redirect "assumption_148" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.
+Check FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.
+Redirect "assumption_149" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.
+Check FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.
+Redirect "assumption_150" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.
+Check FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.
+Redirect "assumption_151" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.
+Check FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.
+Redirect "assumption_152" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.
+Check FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.
+Redirect "assumption_153" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.
+Check FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.
+Redirect "assumption_154" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.
+Check FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.
+Redirect "assumption_155" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.
+Check FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.
+Redirect "assumption_156" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.
+Check FourRelations.FourRelationsCounterexample.FourRelations.P0.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.P0.
+Redirect "assumption_157" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.P0.
+Check FourRelations.FourRelationsCounterexample.FourRelations.P1.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.P1.
+Redirect "assumption_158" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.P1.
+Check FourRelations.FourRelationsCounterexample.FourRelations.Q2.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.Q2.
+Redirect "assumption_159" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.Q2.
+Check FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.
+Redirect "assumption_160" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.
+Check FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.
+Redirect "assumption_161" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.
+Check FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.
+Redirect "assumption_162" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.
+Check FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.
+Redirect "assumption_163" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.
+Check FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.
+Redirect "assumption_164" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.
+Check FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.
+Redirect "assumption_165" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.
+Check FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.
+Redirect "assumption_166" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.
+Check FourRelations.FourRelationsCounterexample.FourRelations.alternating.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating.
+Redirect "assumption_167" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating.
+Check FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.
+Redirect "assumption_168" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.
+Check FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.
+Redirect "assumption_169" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.
+Check FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.
+Redirect "assumption_170" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.
+Check FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.
+Redirect "assumption_171" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.
+Check FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.
+Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.
+Redirect "assumption_172" Print Assumptions FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.
+Check FourRelations.Audit.audited_core_finite_statement.
+Print Assumptions FourRelations.Audit.audited_core_finite_statement.
+Redirect "assumption_173" Print Assumptions FourRelations.Audit.audited_core_finite_statement.
+Check FourRelations.Audit.audited_core_height_statement.
+Print Assumptions FourRelations.Audit.audited_core_height_statement.
+Redirect "assumption_174" Print Assumptions FourRelations.Audit.audited_core_height_statement.
+Check FourRelations.Audit.audited_local_branching_statement.
+Print Assumptions FourRelations.Audit.audited_local_branching_statement.
+Redirect "assumption_175" Print Assumptions FourRelations.Audit.audited_local_branching_statement.
+Check FourRelations.Audit.audited_finite_statement.
+Print Assumptions FourRelations.Audit.audited_finite_statement.
+Redirect "assumption_176" Print Assumptions FourRelations.Audit.audited_finite_statement.
+Check FourRelations.Audit.audited_finite_image_statement.
+Print Assumptions FourRelations.Audit.audited_finite_image_statement.
+Redirect "assumption_177" Print Assumptions FourRelations.Audit.audited_finite_image_statement.
+Check FourRelations.Audit.audited_uniform_height_statement.
+Print Assumptions FourRelations.Audit.audited_uniform_height_statement.
+Redirect "assumption_178" Print Assumptions FourRelations.Audit.audited_uniform_height_statement.
+Check FourRelations.Audit.audited_pointwise_statement.
+Print Assumptions FourRelations.Audit.audited_pointwise_statement.
+Redirect "assumption_179" Print Assumptions FourRelations.Audit.audited_pointwise_statement.
+Check FourRelations.Audit.audited_unbounded_minimal_points_statement.
+Print Assumptions FourRelations.Audit.audited_unbounded_minimal_points_statement.
+Redirect "assumption_180" Print Assumptions FourRelations.Audit.audited_unbounded_minimal_points_statement.
+Check FourRelations.Audit.audited_finite_branching_statement.
+Print Assumptions FourRelations.Audit.audited_finite_branching_statement.
+Redirect "assumption_181" Print Assumptions FourRelations.Audit.audited_finite_branching_statement.
+Check FourRelations.Audit.audited_expanded_finite_statement.
+Print Assumptions FourRelations.Audit.audited_expanded_finite_statement.
+Redirect "assumption_182" Print Assumptions FourRelations.Audit.audited_expanded_finite_statement.

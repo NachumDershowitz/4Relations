@@ -1,0 +1,344 @@
+Require Import WellFoundedUnionsProofTerms.
+Set Printing Width 100.
+Check eq_refl.
+Print Assumptions eq_refl.
+Redirect "assumption_000" Print Assumptions eq_refl.
+Check eq_sym.
+Print Assumptions eq_sym.
+Redirect "assumption_001" Print Assumptions eq_sym.
+Check star_refl.
+Print Assumptions star_refl.
+Redirect "assumption_002" Print Assumptions star_refl.
+Check star_cons.
+Print Assumptions star_cons.
+Redirect "assumption_003" Print Assumptions star_cons.
+Check star_trans.
+Print Assumptions star_trans.
+Redirect "assumption_004" Print Assumptions star_trans.
+Check plus_one.
+Print Assumptions plus_one.
+Redirect "assumption_005" Print Assumptions plus_one.
+Check plus_star.
+Print Assumptions plus_star.
+Redirect "assumption_006" Print Assumptions plus_star.
+Check plus_cons.
+Print Assumptions plus_cons.
+Redirect "assumption_007" Print Assumptions plus_cons.
+Check star_plus.
+Print Assumptions star_plus.
+Redirect "assumption_008" Print Assumptions star_plus.
+Check plus_trans.
+Print Assumptions plus_trans.
+Redirect "assumption_009" Print Assumptions plus_trans.
+Check wf_acyclic.
+Print Assumptions wf_acyclic.
+Redirect "assumption_010" Print Assumptions wf_acyclic.
+Check wf_minimum.
+Print Assumptions wf_minimum.
+Redirect "assumption_011" Print Assumptions wf_minimum.
+Check wf_no_serial.
+Print Assumptions wf_no_serial.
+Redirect "assumption_012" Print Assumptions wf_no_serial.
+Check wf_mono.
+Print Assumptions wf_mono.
+Redirect "assumption_013" Print Assumptions wf_mono.
+Check wf_normal.
+Print Assumptions wf_normal.
+Redirect "assumption_014" Print Assumptions wf_normal.
+Check star_split.
+Print Assumptions star_split.
+Redirect "assumption_015" Print Assumptions star_split.
+Check finite_source.
+Print Assumptions finite_source.
+Redirect "assumption_016" Print Assumptions finite_source.
+Check subset_refl.
+Print Assumptions subset_refl.
+Redirect "assumption_017" Print Assumptions subset_refl.
+Check subset_trans.
+Print Assumptions subset_trans.
+Redirect "assumption_018" Print Assumptions subset_trans.
+Check finite_minimal_subset.
+Print Assumptions finite_minimal_subset.
+Redirect "assumption_019" Print Assumptions finite_minimal_subset.
+Check star_forward.
+Print Assumptions star_forward.
+Redirect "assumption_020" Print Assumptions star_forward.
+Check star_mono.
+Print Assumptions star_mono.
+Redirect "assumption_021" Print Assumptions star_mono.
+Check fold_representatives.
+Print Assumptions fold_representatives.
+Redirect "assumption_022" Print Assumptions fold_representatives.
+Check color_total.
+Print Assumptions color_total.
+Redirect "assumption_023" Print Assumptions color_total.
+Check tail_total.
+Print Assumptions tail_total.
+Redirect "assumption_024" Print Assumptions tail_total.
+Check earlier_total.
+Print Assumptions earlier_total.
+Redirect "assumption_025" Print Assumptions earlier_total.
+Check union_irrefl.
+Print Assumptions union_irrefl.
+Redirect "assumption_026" Print Assumptions union_irrefl.
+Check normal_tail.
+Print Assumptions normal_tail.
+Redirect "assumption_027" Print Assumptions normal_tail.
+Check initial_representatives.
+Print Assumptions initial_representatives.
+Redirect "assumption_028" Print Assumptions initial_representatives.
+Check initial_nonempty.
+Print Assumptions initial_nonempty.
+Redirect "assumption_029" Print Assumptions initial_nonempty.
+Check serial_family_impossible.
+Print Assumptions serial_family_impossible.
+Redirect "assumption_030" Print Assumptions serial_family_impossible.
+Check not_wf_serial.
+Print Assumptions not_wf_serial.
+Redirect "assumption_031" Print Assumptions not_wf_serial.
+Check predecessor_closure_nonempty.
+Print Assumptions predecessor_closure_nonempty.
+Redirect "assumption_032" Print Assumptions predecessor_closure_nonempty.
+Check predecessor_closure_backward.
+Print Assumptions predecessor_closure_backward.
+Redirect "assumption_033" Print Assumptions predecessor_closure_backward.
+Check predecessor_closure_serial.
+Print Assumptions predecessor_closure_serial.
+Redirect "assumption_034" Print Assumptions predecessor_closure_serial.
+Check star_restrict.
+Print Assumptions star_restrict.
+Redirect "assumption_035" Print Assumptions star_restrict.
+Check star_backward.
+Print Assumptions star_backward.
+Redirect "assumption_036" Print Assumptions star_backward.
+Check restricted_union_to_cut.
+Print Assumptions restricted_union_to_cut.
+Redirect "assumption_037" Print Assumptions restricted_union_to_cut.
+Check cut_to_restricted_union.
+Print Assumptions cut_to_restricted_union.
+Redirect "assumption_038" Print Assumptions cut_to_restricted_union.
+Check restricted_colors_wf.
+Print Assumptions restricted_colors_wf.
+Redirect "assumption_039" Print Assumptions restricted_colors_wf.
+Check restricted_domain.
+Print Assumptions restricted_domain.
+Redirect "assumption_040" Print Assumptions restricted_domain.
+Check restricted_serial.
+Print Assumptions restricted_serial.
+Redirect "assumption_041" Print Assumptions restricted_serial.
+Check tail_restriction_out.
+Print Assumptions tail_restriction_out.
+Redirect "assumption_042" Print Assumptions tail_restriction_out.
+Check tail_restriction_in.
+Print Assumptions tail_restriction_in.
+Redirect "assumption_043" Print Assumptions tail_restriction_in.
+Check earlier_restriction_out.
+Print Assumptions earlier_restriction_out.
+Redirect "assumption_044" Print Assumptions earlier_restriction_out.
+Check earlier_restriction_in.
+Print Assumptions earlier_restriction_in.
+Redirect "assumption_045" Print Assumptions earlier_restriction_in.
+Check star_family_restriction.
+Print Assumptions star_family_restriction.
+Redirect "assumption_046" Print Assumptions star_family_restriction.
+Check plus_family_restriction.
+Print Assumptions plus_family_restriction.
+Redirect "assumption_047" Print Assumptions plus_family_restriction.
+Check restricted_G0.
+Print Assumptions restricted_G0.
+Redirect "assumption_048" Print Assumptions restricted_G0.
+Check restricted_Gi.
+Print Assumptions restricted_Gi.
+Redirect "assumption_049" Print Assumptions restricted_Gi.
+Check finite_family_termination.
+Print Assumptions finite_family_termination.
+Redirect "assumption_050" Print Assumptions finite_family_termination.
+Check arbitrary_finite_family_well_founded_union.
+Print Assumptions arbitrary_finite_family_well_founded_union.
+Redirect "assumption_051" Print Assumptions arbitrary_finite_family_well_founded_union.
+Check finite_empty.
+Print Assumptions finite_empty.
+Redirect "assumption_052" Print Assumptions finite_empty.
+Check finite_insert.
+Print Assumptions finite_insert.
+Redirect "assumption_053" Print Assumptions finite_insert.
+Check finite_acyclic_well_founded.
+Print Assumptions finite_acyclic_well_founded.
+Redirect "assumption_054" Print Assumptions finite_acyclic_well_founded.
+Check finite_acyclic_family_termination.
+Print Assumptions finite_acyclic_family_termination.
+Redirect "assumption_055" Print Assumptions finite_acyclic_family_termination.
+Check arbitrary_finite_acyclic_family_termination.
+Print Assumptions arbitrary_finite_acyclic_family_termination.
+Redirect "assumption_056" Print Assumptions arbitrary_finite_acyclic_family_termination.
+Check well_founded_excludes_forward_chain.
+Print Assumptions well_founded_excludes_forward_chain.
+Redirect "assumption_057" Print Assumptions well_founded_excludes_forward_chain.
+Check finite_union_cover.
+Print Assumptions finite_union_cover.
+Redirect "assumption_058" Print Assumptions finite_union_cover.
+Check finite_pointwise_cover_aggregation.
+Print Assumptions finite_pointwise_cover_aggregation.
+Redirect "assumption_059" Print Assumptions finite_pointwise_cover_aggregation.
+Check well_founded_finitely_branching_finite_reachability.
+Print Assumptions well_founded_finitely_branching_finite_reachability.
+Redirect "assumption_060" Print Assumptions well_founded_finitely_branching_finite_reachability.
+Check positive_path_followed_by_path.
+Print Assumptions positive_path_followed_by_path.
+Redirect "assumption_061" Print Assumptions positive_path_followed_by_path.
+Check finite_image_representative_elimination.
+Print Assumptions finite_image_representative_elimination.
+Redirect "assumption_062" Print Assumptions finite_image_representative_elimination.
+Check short_rerouting_propagates_positive_paths.
+Print Assumptions short_rerouting_propagates_positive_paths.
+Redirect "assumption_063" Print Assumptions short_rerouting_propagates_positive_paths.
+Check finite_reachability_clears_shortened_stage.
+Print Assumptions finite_reachability_clears_shortened_stage.
+Redirect "assumption_064" Print Assumptions finite_reachability_clears_shortened_stage.
+Check finitely_branching_representative_elimination.
+Print Assumptions finitely_branching_representative_elimination.
+Redirect "assumption_065" Print Assumptions finitely_branching_representative_elimination.
+Check serial_binary_jumping_impossible.
+Print Assumptions serial_binary_jumping_impossible.
+Redirect "assumption_066" Print Assumptions serial_binary_jumping_impossible.
+Check binary_jumping_well_founded.
+Print Assumptions binary_jumping_well_founded.
+Redirect "assumption_067" Print Assumptions binary_jumping_well_founded.
+Check final_two_relations_no_branching_needed.
+Print Assumptions final_two_relations_no_branching_needed.
+Redirect "assumption_068" Print Assumptions final_two_relations_no_branching_needed.
+Check tail_at_penultimate_is_last.
+Print Assumptions tail_at_penultimate_is_last.
+Redirect "assumption_069" Print Assumptions tail_at_penultimate_is_last.
+Check serial_domain_arbitrary_family_branching_impossible.
+Print Assumptions serial_domain_arbitrary_family_branching_impossible.
+Redirect "assumption_070" Print Assumptions serial_domain_arbitrary_family_branching_impossible.
+Check finite_branching_preserved_by_restriction.
+Print Assumptions finite_branching_preserved_by_restriction.
+Redirect "assumption_071" Print Assumptions finite_branching_preserved_by_restriction.
+Check shortened_conditions_preserved_by_restriction.
+Print Assumptions shortened_conditions_preserved_by_restriction.
+Redirect "assumption_072" Print Assumptions shortened_conditions_preserved_by_restriction.
+Check internal_branching_data_preserved_by_restriction.
+Print Assumptions internal_branching_data_preserved_by_restriction.
+Redirect "assumption_073" Print Assumptions internal_branching_data_preserved_by_restriction.
+Check arbitrary_finite_family_branching_termination.
+Print Assumptions arbitrary_finite_family_branching_termination.
+Redirect "assumption_074" Print Assumptions arbitrary_finite_family_branching_termination.
+Check branching_termination_excludes_infinite_forward_chains.
+Print Assumptions branching_termination_excludes_infinite_forward_chains.
+Redirect "assumption_075" Print Assumptions branching_termination_excludes_infinite_forward_chains.
+Check shortened_internal_and_final_conditions_suffice.
+Print Assumptions shortened_internal_and_final_conditions_suffice.
+Redirect "assumption_076" Print Assumptions shortened_internal_and_final_conditions_suffice.
+Check finitely_branching_internal_relations_terminate.
+Print Assumptions finitely_branching_internal_relations_terminate.
+Redirect "assumption_077" Print Assumptions finitely_branching_internal_relations_terminate.
+Check finite_union_transitive_subrelation_well_founded.
+Print Assumptions finite_union_transitive_subrelation_well_founded.
+Redirect "assumption_078" Print Assumptions finite_union_transitive_subrelation_well_founded.
+Check family_union_transitive_subrelations_well_founded.
+Print Assumptions family_union_transitive_subrelations_well_founded.
+Redirect "assumption_079" Print Assumptions family_union_transitive_subrelations_well_founded.
+Check representative_domination_well_founded.
+Print Assumptions representative_domination_well_founded.
+Redirect "assumption_080" Print Assumptions representative_domination_well_founded.
+Check successor_layer_removal_preserves_representatives.
+Print Assumptions successor_layer_removal_preserves_representatives.
+Redirect "assumption_081" Print Assumptions successor_layer_removal_preserves_representatives.
+Check height_profile_zero.
+Print Assumptions height_profile_zero.
+Redirect "assumption_082" Print Assumptions height_profile_zero.
+Check height_profile_successor.
+Print Assumptions height_profile_successor.
+Redirect "assumption_083" Print Assumptions height_profile_successor.
+Check finite_height_profile_elimination.
+Print Assumptions finite_height_profile_elimination.
+Redirect "assumption_084" Print Assumptions finite_height_profile_elimination.
+Check uniform_height_representative_elimination.
+Print Assumptions uniform_height_representative_elimination.
+Redirect "assumption_085" Print Assumptions uniform_height_representative_elimination.
+Check pointwise_height_representative_elimination.
+Print Assumptions pointwise_height_representative_elimination.
+Redirect "assumption_086" Print Assumptions pointwise_height_representative_elimination.
+Check rank_order_antisymmetry.
+Print Assumptions rank_order_antisymmetry.
+Redirect "assumption_087" Print Assumptions rank_order_antisymmetry.
+Check rank_strict_then_nonstrict.
+Print Assumptions rank_strict_then_nonstrict.
+Redirect "assumption_088" Print Assumptions rank_strict_then_nonstrict.
+Check positive_paths_strictly_decrease_rank.
+Print Assumptions positive_paths_strictly_decrease_rank.
+Redirect "assumption_089" Print Assumptions positive_paths_strictly_decrease_rank.
+Check shortened_rerouting_does_not_increase_rank.
+Print Assumptions shortened_rerouting_does_not_increase_rank.
+Redirect "assumption_090" Print Assumptions shortened_rerouting_does_not_increase_rank.
+Check successor_rank_has_predecessor_rank_successor.
+Print Assumptions successor_rank_has_predecessor_rank_successor.
+Redirect "assumption_091" Print Assumptions successor_rank_has_predecessor_rank_successor.
+Check path_into_predecessor_rank_is_one_edge.
+Print Assumptions path_into_predecessor_rank_is_one_edge.
+Redirect "assumption_092" Print Assumptions path_into_predecessor_rank_is_one_edge.
+Check successor_ordinal_layer_elimination.
+Print Assumptions successor_ordinal_layer_elimination.
+Redirect "assumption_093" Print Assumptions successor_ordinal_layer_elimination.
+Check minimum_rank_stratum_has_representatives.
+Print Assumptions minimum_rank_stratum_has_representatives.
+Redirect "assumption_094" Print Assumptions minimum_rank_stratum_has_representatives.
+Check minimum_layer_rank_is_not_a_successor.
+Print Assumptions minimum_layer_rank_is_not_a_successor.
+Redirect "assumption_095" Print Assumptions minimum_layer_rank_is_not_a_successor.
+Check well_ordered_ranks_attain_a_minimum.
+Print Assumptions well_ordered_ranks_attain_a_minimum.
+Redirect "assumption_096" Print Assumptions well_ordered_ranks_attain_a_minimum.
+Check serial_domain_with_eliminable_internal_stages_impossible.
+Print Assumptions serial_domain_with_eliminable_internal_stages_impossible.
+Redirect "assumption_097" Print Assumptions serial_domain_with_eliminable_internal_stages_impossible.
+Check earlier_free_stage_full_rerouting.
+Print Assumptions earlier_free_stage_full_rerouting.
+Redirect "assumption_098" Print Assumptions earlier_free_stage_full_rerouting.
+Check earlier_free_stage_strong_rerouting.
+Print Assumptions earlier_free_stage_strong_rerouting.
+Redirect "assumption_099" Print Assumptions earlier_free_stage_strong_rerouting.
+Check mixed_height_bounds_eliminate_each_internal_stage.
+Print Assumptions mixed_height_bounds_eliminate_each_internal_stage.
+Redirect "assumption_100" Print Assumptions mixed_height_bounds_eliminate_each_internal_stage.
+Check serial_domain_mixed_height_impossible.
+Print Assumptions serial_domain_mixed_height_impossible.
+Redirect "assumption_101" Print Assumptions serial_domain_mixed_height_impossible.
+Check immortal_set_is_serial.
+Print Assumptions immortal_set_is_serial.
+Redirect "assumption_102" Print Assumptions immortal_set_is_serial.
+Check immortal_set_is_backward_closed.
+Print Assumptions immortal_set_is_backward_closed.
+Redirect "assumption_103" Print Assumptions immortal_set_is_backward_closed.
+Check non_well_founded_union_has_immortal_point.
+Print Assumptions non_well_founded_union_has_immortal_point.
+Redirect "assumption_104" Print Assumptions non_well_founded_union_has_immortal_point.
+Check arbitrary_family_mixed_height_termination.
+Print Assumptions arbitrary_family_mixed_height_termination.
+Redirect "assumption_105" Print Assumptions arbitrary_family_mixed_height_termination.
+Check zero_minimum_rank_clears_the_stage.
+Print Assumptions zero_minimum_rank_clears_the_stage.
+Redirect "assumption_106" Print Assumptions zero_minimum_rank_clears_the_stage.
+Check serial_family_has_a_nonzero_limit_rank_layer.
+Print Assumptions serial_family_has_a_nonzero_limit_rank_layer.
+Redirect "assumption_107" Print Assumptions serial_family_has_a_nonzero_limit_rank_layer.
+Check arbitrary_family_limit_rank_obstruction.
+Print Assumptions arbitrary_family_limit_rank_obstruction.
+Redirect "assumption_108" Print Assumptions arbitrary_family_limit_rank_obstruction.
+Check zero_or_successor_internal_ranks_imply_termination.
+Print Assumptions zero_or_successor_internal_ranks_imply_termination.
+Redirect "assumption_109" Print Assumptions zero_or_successor_internal_ranks_imply_termination.
+Check arbitrary_finite_acyclic_family_has_acyclic_union.
+Print Assumptions arbitrary_finite_acyclic_family_has_acyclic_union.
+Redirect "assumption_110" Print Assumptions arbitrary_finite_acyclic_family_has_acyclic_union.
+Check mixed_height_and_ordinal_stages_are_eliminable.
+Print Assumptions mixed_height_and_ordinal_stages_are_eliminable.
+Redirect "assumption_111" Print Assumptions mixed_height_and_ordinal_stages_are_eliminable.
+Check arbitrary_family_mixed_height_and_ordinal_termination.
+Print Assumptions arbitrary_family_mixed_height_and_ordinal_termination.
+Redirect "assumption_112" Print Assumptions arbitrary_family_mixed_height_and_ordinal_termination.
+Check immortal_iff_nonaccessible.
+Print Assumptions immortal_iff_nonaccessible.
+Redirect "assumption_113" Print Assumptions immortal_iff_nonaccessible.

@@ -1,0 +1,11 @@
+EXACT STATEMENT VERIFIED: finitely_branching_internal_relations_terminate
+EXACT STATEMENT VERIFIED: arbitrary_finite_family_branching_termination
+EXACT STATEMENT VERIFIED: branching_termination_excludes_infinite_forward_chains
+EXACT STATEMENT VERIFIED: well_founded_finitely_branching_finite_reachability
+EXACT STATEMENT VERIFIED: finitely_branching_representative_elimination
+Carrier X unrestricted; only the ordered index type K is finite.
+Finite branching and shortened conditions required only at internal indices.
+No branching assumption on the first or final two relations.
+The final interaction retains its later-color shortcut.
+No uniform bound on branching degrees, depths, or carrier size.
+Reachability and finite covering sets reconstructed independently of the generator.

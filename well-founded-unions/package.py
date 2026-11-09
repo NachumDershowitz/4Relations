@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a deterministic source-only recovery ZIP and SHA-256 checksums."""
+"""Build a deterministic source-only verification ZIP and SHA-256 checksums."""
 from pathlib import Path
 import argparse
 import hashlib
@@ -34,7 +34,7 @@ manifest.write_text(''.join(
     hashlib.sha256(path.read_bytes()).hexdigest() + '  ' + str(path.relative_to(ROOT)) + '\n'
     for path in paths if path != manifest))
 paths = source_files()
-archive = output / 'well-founded-unions-recovered-2026-11-09.zip'
+archive = output / 'well-founded-unions-2026-11-09.zip'
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as zipped:
     for path in paths:
         info = zipfile.ZipInfo('well-founded-unions/' + str(path.relative_to(ROOT)),

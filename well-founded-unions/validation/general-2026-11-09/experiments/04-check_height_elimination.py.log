@@ -1,0 +1,14 @@
+Command: ['python3', 'supplement/check_height_elimination.py']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{
+  "vertices": 3,
+  "irreflexive_relations": 64,
+  "acyclic_relations": 25,
+  "applicable_settings": 790,
+  "elimination_rounds": 312,
+  "strong_condition_settings": 766,
+  "status": "passed",
+  "scope": "exhaustive three-point regression; not an arbitrary-domain proof"
+}

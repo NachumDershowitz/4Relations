@@ -1,0 +1,17 @@
+[
+  {
+    "archive": "WellFoundedUnions_generalized.zip",
+    "bytes": 3252550,
+    "sha256": "875f1330a78955b22a1cc563684573ecdd2a6edaf89bd6c1db8c514109ac8f4a",
+    "entries": 71,
+    "source_modified": false
+  },
+  {
+    "archive": "WellFoundedUnions_clean_revision_source.zip",
+    "bytes": 540470,
+    "sha256": "a62f6c53d83564385bbfee88a57b5e6450fb0981027f18634704d768c2db18fc",
+    "entries": 12,
+    "source_modified": false,
+    "correspondence_source_sha256": "828e586c423ade105ccbe42272c9297a80f0cdfed857f9d335fcef418a739cf1"
+  }
+]

@@ -1,0 +1,8 @@
+Command: ['sh', 'check.sh']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/certificate-run
+
+Source manifest verified.
+PASS: both standalone checkers, 18 exact-statement audits, and 30 regression tests.
+7,583 inferences; 114 closed named theorems.
+The certificate and explicit Rocq export regenerate byte for byte.
+This record is not a Rocq compilation or Rocq kernel-check certificate.

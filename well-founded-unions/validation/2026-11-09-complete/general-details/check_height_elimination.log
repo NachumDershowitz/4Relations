@@ -1,0 +1,13 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'supplement/check_height_elimination.py']
+Cwd: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general
+
+{
+  "vertices": 3,
+  "irreflexive_relations": 64,
+  "acyclic_relations": 25,
+  "applicable_settings": 790,
+  "elimination_rounds": 312,
+  "strong_condition_settings": 766,
+  "status": "passed",
+  "scope": "exhaustive three-point regression; not an arbitrary-domain proof"
+}

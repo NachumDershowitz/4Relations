@@ -1,0 +1,49 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'checks/exhaustive_three_points.py']
+Working directory: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement
+
+{
+  "points": 3,
+  "acyclic_relations": 25,
+  "irreflexive_F": 64,
+  "triples_tested": 40000,
+  "triples_satisfying_relaxed_premises": 279,
+  "triples_requiring_folds": 60,
+  "maximum_folds": 1,
+  "all_invariants_passed": true,
+  "example": {
+    "A": [],
+    "B": [
+      [
+        0,
+        1
+      ]
+    ],
+    "F": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "steps": [
+      {
+        "target": 1,
+        "removed": [
+          0
+        ],
+        "replacement": 1,
+        "remaining": [
+          1,
+          2
+        ]
+      }
+    ],
+    "terminal": [
+      1,
+      2
+    ]
+  }
+}

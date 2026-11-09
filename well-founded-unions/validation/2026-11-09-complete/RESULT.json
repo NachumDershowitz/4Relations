@@ -1,0 +1,159 @@
+{
+  "started_utc": "2026-11-09T14:53:25.488854+00:00",
+  "scope": "full",
+  "python": "3.14.5 (v3.14.5:5607950ef23, May 10 2026, 07:38:09) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "requested_package_complete": true,
+  "recovered_checks_passed": true,
+  "historical_smt_searches_rerun": false,
+  "stages": [
+    {
+      "name": "python_version",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.016
+    },
+    {
+      "name": "rocq_version",
+      "command": [
+        "/usr/local/bin/rocq",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.037
+    },
+    {
+      "name": "rocqchk_version",
+      "command": [
+        "/usr/local/bin/rocqchk",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.045
+    },
+    {
+      "name": "integrity",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions/verify_integrity.py"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.18
+    },
+    {
+      "name": "finite_coverage",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verification/verify_results.py"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.141
+    },
+    {
+      "name": "counterexample",
+      "command": [
+        "sh",
+        "formal_proofs/check.sh"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 20.95
+    },
+    {
+      "name": "october_rocq",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "scripts/verify.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 41.082
+    },
+    {
+      "name": "exhaustive_three_points",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/exhaustive_three_points.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.18
+    },
+    {
+      "name": "exhaustive_original_conditions",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/exhaustive_original_conditions.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.431
+    },
+    {
+      "name": "check_folding_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/check_folding_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.281
+    },
+    {
+      "name": "check_height_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/check_height_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.428
+    },
+    {
+      "name": "general_development",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verification/verify_general.py",
+        "--log-dir",
+        "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions/validation/2026-11-09-complete/general-details",
+        "--with-smt"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 78.404
+    }
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "LIBZ3": "/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib"
+  },
+  "october_rocq": {
+    "kernel_verified": true,
+    "checked_declarations": 183,
+    "global_axioms": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ]
+  },
+  "general_development": {
+    "passed": true,
+    "general_kernel_verified": true,
+    "named_theorems": 114,
+    "inference_steps": 7583,
+    "closed_theorems": 63,
+    "classical_theorems": 51,
+    "source_sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77"
+  },
+  "missing_components": [],
+  "outcome": "FULL_SCOPE_PASS",
+  "exit_status": 0,
+  "finished_utc": "2026-11-09T14:55:47.834340+00:00"
+}

@@ -1,0 +1,13 @@
+EXACT STATEMENT VERIFIED: immortal_iff_nonaccessible
+EXACT STATEMENT VERIFIED: arbitrary_family_mixed_height_and_ordinal_termination
+EXACT STATEMENT VERIFIED: family_union_transitive_subrelations_well_founded
+EXACT STATEMENT VERIFIED: uniform_height_representative_elimination
+EXACT STATEMENT VERIFIED: pointwise_height_representative_elimination
+EXACT STATEMENT VERIFIED: arbitrary_family_mixed_height_termination
+EXACT STATEMENT VERIFIED: successor_ordinal_layer_elimination
+EXACT STATEMENT VERIFIED: minimum_layer_rank_is_not_a_successor
+EXACT STATEMENT VERIFIED: arbitrary_family_limit_rank_obstruction
+EXACT STATEMENT VERIFIED: zero_or_successor_internal_ranks_imply_termination
+EXACT STATEMENT VERIFIED: arbitrary_finite_acyclic_family_has_acyclic_union
+Eleven extension statements independently reconstructed and matched.
+Heights use finite iteration; ordinal ranks have explicit order and least-upper-bound hypotheses.

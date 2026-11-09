@@ -1,0 +1,7 @@
+PASS: rejected hidden finite-domain assumption
+PASS: rejected pointwise bound with full shortcuts
+PASS: rejected omitted least-upper-bound rank requirement
+PASS: rejected omitted shortened interaction
+PASS: rejected nonzero rank without the limit condition
+PASS: rejected only ordinal alternatives instead of the mixed theorem
+All six extension statement mutation tests passed.

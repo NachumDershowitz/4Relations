@@ -1,60 +1,58 @@
-# Theorem correspondence and its limits
+# Theorem map to the supplied current paper
 
-The current paper, *Well-Founded Unions on Finite and Infinite Sets*, and its
-authoritative general-development `THEOREM_MAP.md` were not recovered. Numbered
-correspondences must be checked against their exact statements, not inferred
-from an older manuscript or from matching topic names.
+Checked against the theorem statements and labels in `WellFoundedUnions/WFU.tex`
+inside the supplied `WellFoundedUnions_clean_revision_source.zip`, together with
+the original general-development map and independent exact-statement audits.
+The manuscript is read only for correspondence and is not distributed here.
 
-| Requested current-paper item | Correspondence status |
+| Current paper result | Formal coverage |
 | --- | --- |
-| Proposition 3.1 | Unresolved: current statement/map unavailable |
-| Theorem 4.2 | Unresolved: current statement/map unavailable |
-| Lemma 5.1 | Unresolved: current statement/map unavailable |
-| Lemma 5.2 | Unresolved: current statement/map unavailable |
-| Theorem 5.3 | Unresolved: current statement/map unavailable |
-| Corollary 5.4 | Unresolved: current statement/map unavailable |
-| Lemma 5.5 | Unresolved: current statement/map unavailable |
-| Theorem 5.6 | Unresolved: current statement/map unavailable |
-| Corollary 5.7 | Unresolved: current statement/map unavailable |
-| Corollary 5.8 | Unresolved: current statement/map unavailable |
+| Proposition 3.1: infinite four-relation counterexample | `formal_proofs/FourRelationsCounterexample.v`: `FourRelations.FourRelationsCounterexample`; `num_injective` and `enumerate_surjective` establish the carrier facts |
+| Theorem 4.2: finite acyclicity | `arbitrary_finite_acyclic_family_has_acyclic_union`; `arbitrary_finite_acyclic_family_termination` |
+| Lemma 5.1: transitive subrelations | `family_union_transitive_subrelations_well_founded` |
+| Lemma 5.2: height elimination | `uniform_height_representative_elimination`, with the family transitive-subrelation and restriction results; its pointwise companion is `pointwise_height_representative_elimination` |
+| Theorem 5.3: mixed height criteria | `arbitrary_family_mixed_height_termination` |
+| Corollary 5.4: finite branching | `finitely_branching_internal_relations_terminate`; `arbitrary_finite_family_branching_termination` |
+| Lemma 5.5: successor-layer elimination | `successor_ordinal_layer_elimination` |
+| Theorem 5.6: minimum layer rank | `minimum_rank_stratum_has_representatives`; `minimum_layer_rank_is_not_a_successor`; `zero_minimum_rank_clears_the_stage` |
+| Corollary 5.7: nonzero limit-layer obstruction | `arbitrary_family_limit_rank_obstruction` |
+| Corollary 5.8: mixed height/ordinal criterion | `arbitrary_family_mixed_height_and_ordinal_termination` |
 
-The following source-level map **is** supported by fresh compilation and the
-typed aliases in `supplement-2026-10-20/rocq/Audit.v`. These are separate October
-results; this table does not assign them to the current paper's numbers.
+Unqualified symbols are in `general/formal/proof.json` and exported under the
+same names in `general/formal/WellFoundedUnionsProofTerms.v`. Each named theorem
+has no undischarged certificate hypotheses. Its explicit mathematical premises
+remain universally quantified in its statement. Fresh Rocq acceptance is recorded
+in `validation/2026-11-09-complete/general-details/`.
 
-| Checked statement/topic | Source symbol |
-| --- | --- |
-| Countable infinite counterexample; four individual WF claims; interaction inclusions; explicit infinite chain and non-WF union | `FourRelationsCounterexample.v`: `FourRelations.FourRelationsCounterexample` |
-| Finite carrier termination under WF A/B/C/D and P0/P1/Q2 | `FourRelations.v`: `finite_termination` |
-| Finite acyclic formulation | `finite_acyclic_four_relations` |
-| Finite set of immortal B-targets from A-minimal immortal points | `finite_escape_target_termination` |
-| Finite targets for an explicitly given representative core | `Refinements.v`: `finite_representative_core_impossible` |
-| Uniform finite B-height on A-minimal immortal points | `bounded_immortal_height_termination` |
-| Uniform finite height of a representative core | `Refinements.v`: `bounded_representative_core_impossible` |
-| Unbounded finite B-path lengths at minimal immortal points, under stronger P1 | `minimal_immortal_unbounded` |
-| Pointwise height termination, under stronger P1 | `pointwise_minimal_height_termination`, `pointwise_height_termination` |
-| Finite branching termination, under stronger P1 | `finitely_branching_termination` |
-| Reachable failure of finite branching; local branching criterion | `Refinements.v`: `minimal_immortal_reaches_infinite_branching`, `locally_finitely_branching_termination` |
-| Least attained abstract rank has a nonempty lower segment with no greatest member | `least_rank_is_nonzero_limit` |
-| Specialized detour / transitive subunion facts | `detour_tail`, `transitive_subunion_wf` |
-| Accessibility excludes an explicit infinite forward chain | `well_founded_has_no_infinite_chain` |
+Additional coverage includes `zero_or_successor_internal_ranks_imply_termination`,
+`immortal_iff_nonaccessible`, `well_founded_excludes_forward_chain`, finite
+reachability, representative elimination, and the final two-relation stage.
+The independent audit modules reconstruct 18 exact statements without importing
+proof generators. The full 114-theorem inventory is in the certificate and the
+fresh per-theorem assumption audit.
 
-Unqualified symbols above are in `supplement-2026-10-20/rocq/FourRelations.v`.
-The standalone counterexample also appears under `formal_proofs/`; both copies
-are retained with their source structure and checked separately.
+Composition is left to right. Well-foundedness uses accessibility for forward
+steps (the converse of Rocq's predecessor relation). The maximal serial set in
+the certificate is proved equivalent to nonaccessibility. Height is encoded by
+finite iterations of successor-preimage closure from the empty predicate. A
+uniform bound shares one iterate; a pointwise bound selects an iterate after
+the point is quantified. Intermediate stages may mix the alternatives. Shortened
+conditions genuinely remove the tail-shortcut alternative; these stronger
+premises are not interchangeable with the full conditions.
 
-Conventions: `P x y` is a forward edge; `WF P` is accessibility for the converse
-relation. Composition is left to right. `bad P x` is nonaccessibility;
-`cut I P` restricts both endpoints. P0/P1/Q2 are expanded in the typed finite
-statement audit. `P1_strong` removes the F-shortcut alternative from P1; it is a
-genuine stronger premise for the pointwise/branching results. The full printed
-types and assumption records are in `validation/.../october-proof-details/`.
+Ordinal results assume an explicit strict total order whose converse is
+well-founded, rank decrease on edges, and the least-strict-upper-bound law:
+if every B-successor has rank below alpha, the source rank is at most alpha.
+Zero has no predecessor; a successor has an immediate predecessor with no
+intermediate value. The checked results use this interface. They do not construct
+set-theoretic ordinals or canonical rank assignments.
 
-Not formalized in this recovered package: the general published Jumping,
-Tripartite, Detour, Preferential Jumping and Rearrangement theorems in their full
-generality; set-theoretic ordinal construction and canonical-rank existence;
-finite-search normal-form completeness, exact-size reduction, encoder correctness
-and SMT proof certificates; the missing five-relation experiment and reset
-example on an infinite domain. Specialized facts actually used by the October
-proofs are proved internally. No claim is made about what the missing November
-certificate development may formalize.
+Not claimed as separately formalized here: the cited published Jumping, Tripartite,
+Detour, Preferential Jumping and Rearrangement results in full generality; the
+construction of ordinals/ranks; finite-search normalization and encoder
+correctness; independent proof-certificate checking of saved SMT UNSAT answers;
+and the general infinite reset-system argument. Its executable check is bounded.
+The four-relation least-rank corollary is a specialization of the general layer
+result plus final-pair argument, not a separate general-certificate export under
+a four-relation name. The older October Rocq development, including its local
+branching refinements, remains separately identified in `supplement-2026-10-20/`.

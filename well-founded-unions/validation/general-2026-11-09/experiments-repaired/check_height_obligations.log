@@ -1,0 +1,22 @@
+Command: ['python3', 'supplement/checks/check_height_obligations.py']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{"obligation": "00_base_consistency", "status": "sat", "expected": "sat", "seconds": 0.0341}
+{"obligation": "01_incoming_top_edge_is_F", "status": "unsat", "expected": "unsat", "seconds": 0.0175}
+{"obligation": "02_two_step_path_to_top_successor_impossible", "status": "unsat", "expected": "unsat", "seconds": 0.0181}
+{"obligation": "03_top_transfer", "status": "unsat", "expected": "unsat", "seconds": 0.0188}
+{"obligation": "04_top_has_dominating_representative", "status": "unsat", "expected": "unsat", "seconds": 0.0183}
+{"obligation": "05_domination_is_transitive", "status": "unsat", "expected": "unsat", "seconds": 0.0195}
+{"obligation": "06_top_domination_is_in_F", "status": "unsat", "expected": "unsat", "seconds": 0.0183}
+{"obligation": "07_lower_has_smaller_uniform_bound", "status": "unsat", "expected": "unsat", "seconds": 0.0173}
+{"obligation": "08_composed_representatives_preserve_edges", "status": "unsat", "expected": "unsat", "seconds": 0.0176}
+{"obligation": "09_composed_representatives_have_lower_range", "status": "unsat", "expected": "unsat", "seconds": 0.0173}
+{"obligation": "10_strong_F_does_not_increase_finite_height", "status": "unsat", "expected": "unsat", "seconds": 0.0187}
+{"obligation": "11_incoming_bounded_subset_forces_bounded_representative", "status": "unsat", "expected": "unsat", "seconds": 0.0191}
+{"obligation": "12_no_incoming_edge_allows_arbitrary_bounded_seed", "status": "unsat", "expected": "unsat", "seconds": 0.0185}
+{"obligation": "13_successor_rank_has_no_intermediate_value", "status": "unsat", "expected": "unsat", "seconds": 0.0187}
+{"obligation": "14_successor_rank_is_strictly_above_predecessor", "status": "unsat", "expected": "unsat", "seconds": 0.0197}
+{"obligation": "15_strong_context_consistency", "status": "sat", "expected": "sat", "seconds": 0.018}
+{"obligation": "16_rank_context_consistency", "status": "sat", "expected": "sat", "seconds": 0.0177}
+{"obligation": "17_negative_control_without_rerouting", "status": "sat", "expected": "sat", "seconds": 0.0159}

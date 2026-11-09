@@ -1,0 +1,9 @@
+test_circular_reference_rejected (__main__.CertificateTests.test_circular_reference_rejected) ... ok
+test_finite_domain_theorem_cannot_masquerade_as_branching (__main__.CertificateTests.test_finite_domain_theorem_cannot_masquerade_as_branching) ... ok
+test_invalid_primitive_rule_rejected (__main__.CertificateTests.test_invalid_primitive_rule_rejected) ... ok
+test_wrong_stored_conclusion_rejected (__main__.CertificateTests.test_wrong_stored_conclusion_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.710s
+
+OK

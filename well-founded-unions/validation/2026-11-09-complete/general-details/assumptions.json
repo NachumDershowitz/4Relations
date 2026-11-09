@@ -1,0 +1,218 @@
+{
+  "eq_refl": [],
+  "eq_sym": [],
+  "star_refl": [],
+  "star_cons": [],
+  "star_trans": [],
+  "plus_one": [],
+  "plus_star": [],
+  "plus_cons": [],
+  "star_plus": [],
+  "plus_trans": [],
+  "wf_acyclic": [],
+  "wf_minimum": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "wf_no_serial": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "wf_mono": [],
+  "wf_normal": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "star_split": [],
+  "finite_source": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "subset_refl": [],
+  "subset_trans": [],
+  "finite_minimal_subset": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "star_forward": [],
+  "star_mono": [],
+  "fold_representatives": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "color_total": [],
+  "tail_total": [],
+  "earlier_total": [],
+  "union_irrefl": [],
+  "normal_tail": [],
+  "initial_representatives": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "initial_nonempty": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "serial_family_impossible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "not_wf_serial": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "predecessor_closure_nonempty": [],
+  "predecessor_closure_backward": [],
+  "predecessor_closure_serial": [],
+  "star_restrict": [],
+  "star_backward": [],
+  "restricted_union_to_cut": [],
+  "cut_to_restricted_union": [],
+  "restricted_colors_wf": [],
+  "restricted_domain": [],
+  "restricted_serial": [],
+  "tail_restriction_out": [],
+  "tail_restriction_in": [],
+  "earlier_restriction_out": [],
+  "earlier_restriction_in": [],
+  "star_family_restriction": [],
+  "plus_family_restriction": [],
+  "restricted_G0": [],
+  "restricted_Gi": [],
+  "finite_family_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_finite_family_well_founded_union": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finite_empty": [],
+  "finite_insert": [],
+  "finite_acyclic_well_founded": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finite_acyclic_family_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_finite_acyclic_family_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "well_founded_excludes_forward_chain": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finite_union_cover": [],
+  "finite_pointwise_cover_aggregation": [],
+  "well_founded_finitely_branching_finite_reachability": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "positive_path_followed_by_path": [],
+  "finite_image_representative_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "short_rerouting_propagates_positive_paths": [],
+  "finite_reachability_clears_shortened_stage": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finitely_branching_representative_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "serial_binary_jumping_impossible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "binary_jumping_well_founded": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "final_two_relations_no_branching_needed": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "tail_at_penultimate_is_last": [],
+  "serial_domain_arbitrary_family_branching_impossible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finite_branching_preserved_by_restriction": [],
+  "shortened_conditions_preserved_by_restriction": [],
+  "internal_branching_data_preserved_by_restriction": [],
+  "arbitrary_finite_family_branching_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "branching_termination_excludes_infinite_forward_chains": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "shortened_internal_and_final_conditions_suffice": [],
+  "finitely_branching_internal_relations_terminate": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "finite_union_transitive_subrelation_well_founded": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "family_union_transitive_subrelations_well_founded": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "representative_domination_well_founded": [],
+  "successor_layer_removal_preserves_representatives": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "height_profile_zero": [],
+  "height_profile_successor": [],
+  "finite_height_profile_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "uniform_height_representative_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "pointwise_height_representative_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "rank_order_antisymmetry": [],
+  "rank_strict_then_nonstrict": [],
+  "positive_paths_strictly_decrease_rank": [],
+  "shortened_rerouting_does_not_increase_rank": [],
+  "successor_rank_has_predecessor_rank_successor": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "path_into_predecessor_rank_is_one_edge": [],
+  "successor_ordinal_layer_elimination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "minimum_rank_stratum_has_representatives": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "minimum_layer_rank_is_not_a_successor": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "well_ordered_ranks_attain_a_minimum": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "serial_domain_with_eliminable_internal_stages_impossible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "earlier_free_stage_full_rerouting": [],
+  "earlier_free_stage_strong_rerouting": [],
+  "mixed_height_bounds_eliminate_each_internal_stage": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "serial_domain_mixed_height_impossible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "immortal_set_is_serial": [],
+  "immortal_set_is_backward_closed": [],
+  "non_well_founded_union_has_immortal_point": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_family_mixed_height_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "zero_minimum_rank_clears_the_stage": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "serial_family_has_a_nonzero_limit_rank_layer": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_family_limit_rank_obstruction": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "zero_or_successor_internal_ranks_imply_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_finite_acyclic_family_has_acyclic_union": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "mixed_height_and_ordinal_stages_are_eliminable": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "arbitrary_family_mixed_height_and_ordinal_termination": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "immortal_iff_nonaccessible": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ]
+}

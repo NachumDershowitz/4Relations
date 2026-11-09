@@ -1,0 +1,3 @@
+Command: ['/usr/bin/c++', '-O2', '-std=c++17', 'general/supplement/check_generalization.cpp', '-o', 'check_generalization']
+Cwd: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l
+

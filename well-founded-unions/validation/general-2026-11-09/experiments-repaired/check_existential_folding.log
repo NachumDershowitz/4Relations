@@ -1,0 +1,11 @@
+Command: ['python3', 'supplement/checks/check_existential_folding.py']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{"name": "00_consistent_witnesses", "expected": "sat", "status": "sat", "seconds": 0.02519, "solver": "(:version \"4.12.2\")", "smt_sha256": "7c13d60830b3a1221144ebe4c5fbacd98d2daff914ca46fd073a693ad77a2709"}
+{"name": "01_target_survives", "expected": "unsat", "status": "unsat", "seconds": 0.01705, "solver": "(:version \"4.12.2\")", "smt_sha256": "c5e5b5f6a69965455df4c70aca0c1bd1342961055527674d9d810f3b4d7835d8"}
+{"name": "02_incoming_edge_transfer", "expected": "unsat", "status": "unsat", "seconds": 0.01687, "solver": "(:version \"4.12.2\")", "smt_sha256": "ef27ca9e653b9f8d71bdd1741840196133e023004a52ca2df8d386a302c73986"}
+{"name": "03_retained_representative", "expected": "unsat", "status": "unsat", "seconds": 0.01701, "solver": "(:version \"4.12.2\")", "smt_sha256": "93ec36c9925f9ef5b1585a794106886b6c1ea670509433482301cd377bb97d7e"}
+{"name": "04_redirected_representative", "expected": "unsat", "status": "unsat", "seconds": 0.01711, "solver": "(:version \"4.12.2\")", "smt_sha256": "03a807d26210c975524fd8ac31a1e823061c223d035121ed80831dab714ec4ed"}
+{"name": "05_witness_case_split", "expected": "unsat", "status": "unsat", "seconds": 0.01719, "solver": "(:version \"4.12.2\")", "smt_sha256": "3a621f285ebece4490e7a6ae51ffa862627ce7027af88e8d3c23cb5ab45f9fbc"}
+{"name": "06_missing_P1_negative_control", "expected": "sat", "status": "sat", "seconds": 0.02658, "solver": "(:version \"4.12.2\")", "smt_sha256": "57e1367a0a6445f4edff710bb6e3bbc22c6b8785fee8b0e63b6fcb230d07f287"}

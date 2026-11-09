@@ -1,0 +1,42 @@
+{
+  "scope": "exhaustive finite sanity check through three points only",
+  "all_passed": true,
+  "results": [
+    {
+      "points": 0,
+      "individual_acyclic_relations": 1,
+      "quadruples_tested": 1,
+      "quadruples_satisfying_original_conditions": 1,
+      "of_these_satisfying_no_shortcut_condition": 1,
+      "counterexamples": [],
+      "seconds": 0.0
+    },
+    {
+      "points": 1,
+      "individual_acyclic_relations": 1,
+      "quadruples_tested": 1,
+      "quadruples_satisfying_original_conditions": 1,
+      "of_these_satisfying_no_shortcut_condition": 1,
+      "counterexamples": [],
+      "seconds": 0.0
+    },
+    {
+      "points": 2,
+      "individual_acyclic_relations": 3,
+      "quadruples_tested": 81,
+      "quadruples_satisfying_original_conditions": 31,
+      "of_these_satisfying_no_shortcut_condition": 31,
+      "counterexamples": [],
+      "seconds": 0.0002
+    },
+    {
+      "points": 3,
+      "individual_acyclic_relations": 25,
+      "quadruples_tested": 390625,
+      "quadruples_satisfying_original_conditions": 22477,
+      "of_these_satisfying_no_shortcut_condition": 22045,
+      "counterexamples": [],
+      "seconds": 0.3866
+    }
+  ]
+}

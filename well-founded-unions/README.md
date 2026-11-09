@@ -1,94 +1,90 @@
-# Well-founded unions: recovered proofs and tests
+# Well-founded unions: formal proofs and experiments
 
-Prepared 9 November 2026. **This is an incomplete recovery package, not the
-complete November general-certificate artifact.** Read [STATUS.md](STATUS.md)
-and [MISSING_COMPONENTS.json](MISSING_COMPONENTS.json) before citing its scope.
-No manuscript, PDF, LaTeX source, proof object, runtime binary, or credential is
-included. Nothing in this preparation has been published.
+Complete source-only verification artifact prepared 9 November 2026. The paper
+is excluded. [STATUS.md](STATUS.md) distinguishes custom replay, established-kernel
+acceptance, archived solver outcomes, and fresh experiments.
 
 | Directory | Contents |
 | --- | --- |
-| `formal_proofs/` | Standalone countable four-relation counterexample from the existing publication clone |
-| `supplement-2026-10-20/rocq/` | Separate October finite-termination, height, branching, and abstract-rank development; typed statement audits |
-| `supplement-2026-10-20/scripts/` | Fresh compilation, all-declaration assumption audit, and independent kernel-check runner |
-| `supplement-2026-10-20/checks/` | Exhaustive small tests and local SMT diagnostic programs |
-| `supplement-2026-10-20/originals/` | Failed historical source used only to check that all 92 original theorem statements are preserved |
-| `finite/` | Original encoders, coverage tables, audit, and exact inputs/outputs for the last two search branches |
-| `verification/` | Portable 722-case saved-result audit |
-| `validation/` | Fresh commands, versions, exit statuses, complete logs, and experimental results |
-| `historical/` | Earlier reports and diagnostic records; never evidence of a new run |
+| `general/formal/` | Certificate, two independent checkers, generators, 18 exact-statement audits, 30 regression tests, reproducible Rocq proof-term export |
+| `general/supplement/` | Five-relation C++ experiment, representative/height tests, supplementary SMT diagnostics and harness regressions |
+| `formal_proofs/` | Separate infinite four-relation counterexample in Rocq |
+| `finite/` | Encoders, saved coverage tables, and exact inputs/outputs for the final two finite-search branches |
+| `reset/checks/` | Small reset-example test, explicitly bounded testing |
+| `supplement-2026-10-20/` | Additional older Rocq development and its tests, retained separately |
+| `verification/` | Current orchestration and portable saved-result audit |
+| `validation/2026-11-09-complete/` | Complete fresh verification, commands, versions, exit statuses, assumption records, and experiments |
+| `historical/` | Original reports, source manifests, and saved diagnostics |
 
-From this directory, with Python 3 and Rocq 9.1.1 (`rocq` and `rocqchk`) on PATH:
-
-```sh
-python3 verify.py --scope recovered
-```
-
-This checks the manifest, audits saved finite results, compiles and independently
-kernel-checks both recovered Rocq developments, audits proof assumptions and
-statement preservation, and reruns both exhaustive small tests. It returns
-nonzero on any failed check. Builds use temporary copies; archived files and
-historical reports remain unchanged. Logs are kept in the temporary directory
-printed at completion. Use `--log-dir /path/to/new-directory` to retain them at
-a chosen location outside this artifact.
-
-To also run the local SMT diagnostics with Z3 installed:
-
-```sh
-python3 verify.py --scope recovered --with-smt
-```
-
-The helper accepts a `z3` executable on PATH or a shared library specified by
-`LIBZ3`. The fresh run used the locally installed Z3 4.12.2 library. It does not
-redistribute that library. Python optimization (`-O`) is rejected because the
-original audits use assertions.
+From this directory, with Python 3, Rocq 9.1.1 (`rocq` and `rocqchk`), and a C++17
+compiler on PATH:
 
 ```sh
 python3 verify.py
 ```
 
-The default **full requested scope currently exits 2** after checking recovered
-material, because the general certificate/checkers, five-relation experiment,
-reset check, and current theorem correspondence remain unavailable. It must not
-be presented as a full-package pass. Integration of the missing checks is still
-required; merely deleting the missing-components list cannot establish a pass.
+To include all supplementary SMT diagnostics, with Z3 available:
 
-For integrity or the historical search audit alone:
+```sh
+python3 verify.py --with-smt
+```
+
+This is the command run for the complete validation. The Z3 helper accepts an
+executable on PATH or an installed shared library specified by `LIBZ3`. `CXX` can
+name the C++ compiler. No compiler, solver, library, or compiled proof object is
+redistributed. The tested toolchain is Python 3.14.5, Rocq 9.1.1 / OCaml 5.4.1,
+Apple clang 21.0.0, and Z3 4.12.2 (library distribution 4.12.2.0).
+
+The verifier returns nonzero on failure, uses fresh temporary build directories,
+and leaves archived sources and reports unchanged. It prints the log directory;
+`--log-dir /path/to/new-directory` retains logs at a chosen location. Python `-O`
+is rejected at the top level because some original bounded tests use assertions.
+The independent certificate checker and adversarial tests also run under `-O`
+where their supplied scripts explicitly test that checks cannot be disabled.
+
+The full run checks both certificate implementations, exact statements, regression
+rejections, byte-for-byte regeneration, fresh Rocq compilation, independent kernel
+checking, assumptions of all 114 named general theorems, the separate counterexample,
+the October supplement, archived finite coverage, all 9,765,625 five-tuples,
+representative/height diagnostics, and the reset test. With `--with-smt`, it also
+runs the local folding/rank and symbolic counterexample diagnostics.
+
+For integrity or saved finite evidence alone:
 
 ```sh
 python3 verify_integrity.py
 python3 verification/verify_results.py
 ```
 
-The 722 total is 150 nine-point cases plus 572 ten-point terminal obligations.
-The audit verifies saved outcomes, coverage, exit codes where recorded, and exact
-regeneration of both final inputs. It does not rerun the historical searches or
-check SMT proof certificates. Earlier leaves are represented by tables; only
-the last two branches have exact inputs and raw solver output in this recovery.
-The incomplete component-mask exploration contributes no terminal leaves.
+The 722-case count is 150 nine-point cases plus 572 ten-point terminal obligations.
+These are audited saved outcomes, not freshly rerun searches. The audit checks
+coverage, recorded exit codes, and exact regeneration of both final inputs.
+Only the last two branches have full saved SMT inputs and raw output here;
+earlier leaves are represented by tables. Z3 proof certificates for these searches
+are not independently verified. The incomplete component-mask exploration adds
+no terminal leaves.
 
-Both final inputs can separately be replayed by a compatible Z3 executable:
+The final historical calls can separately be replayed with a compatible Z3:
 
 ```sh
 z3 finite/completion/runs/v7_a3_baseline/input.smt2
 z3 finite/completion/runs/v8_a4_baseline/input.smt2
 ```
 
-They contain a 300-second timeout. `unknown` is not `unsat`. These reruns were
-not performed during this preparation. The fresh SMT results in `validation/`
-are the separate local folding/height diagnostics.
+Each input sets a 300-second timeout. `unknown` is not `unsat`. The reset check
+covers 162 sample states and specified additional transitions/runs; it is not a
+proof on the infinite domain. See the exact theorem correspondence and explicit
+formalization limits in [THEOREM_MAP.md](THEOREM_MAP.md).
 
-The source inventory is [SOURCE_FILES.json](SOURCE_FILES.json); collection
-choices and the single portability change are in [PROVENANCE.md](PROVENANCE.md).
-The requested paper-number mapping remains unresolved; verified source symbols
-and explicit exclusions are in [THEOREM_MAP.md](THEOREM_MAP.md).
+`general/formal/check.sh` deliberately records only custom replay and leaves its
+Rocq flags false. `general/formal/check_rocq.sh` writes a separate kernel-success
+record. The original export header also describes its historical uncompiled
+state. Both are preserved for byte-for-byte reproducibility; current kernel
+acceptance is established by the fresh logs and aggregate result, not by changing
+those historical descriptions.
 
-Existing source notices are retained. No new license or third-party library is
-introduced by this package.
-
-To rebuild the deterministic ZIP and its external checksum after reviewing any
-source changes, use `python3 package.py --output-dir ../bundles`. The internal
-manifest covers every distributed file except itself; the external ZIP checksum
-covers that manifest too. The packaging command refuses paper and compiled-proof
-files. The validation records include checks that altered evidence and an
-intentionally invalid proof in disposable copies cause verification to fail.
+`SOURCE_FILES.json` records source hashes at collection; `SHA256SUMS` covers final
+artifact bytes. Rebuild the deterministic ZIP and external checksum with
+`python3 package.py --output-dir ../bundles`. Existing notices remain in place;
+no new license is imposed. All paper, LaTeX, third-party manuscript support,
+caches, and compiled objects are excluded.

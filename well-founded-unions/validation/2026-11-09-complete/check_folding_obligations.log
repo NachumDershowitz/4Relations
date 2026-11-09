@@ -1,0 +1,10 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'checks/check_folding_obligations.py']
+Working directory: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-ve_tk_81/supplement
+
+Base assumptions with an explicit three-point model: sat
+{"obligation": "01_surviving_target", "status": "unsat", "seconds": 0.0225, "solver": "(:version \"4.12.2\")"}
+{"obligation": "02_transfer", "status": "unsat", "seconds": 0.0183, "solver": "(:version \"4.12.2\")"}
+{"obligation": "03_new_range", "status": "unsat", "seconds": 0.0242, "solver": "(:version \"4.12.2\")"}
+{"obligation": "04_new_identity", "status": "unsat", "seconds": 0.0193, "solver": "(:version \"4.12.2\")"}
+{"obligation": "05_new_projection", "status": "unsat", "seconds": 0.0191, "solver": "(:version \"4.12.2\")"}
+{"obligation": "06_strict_image_decrease", "status": "unsat", "seconds": 0.0169, "solver": "(:version \"4.12.2\")"}

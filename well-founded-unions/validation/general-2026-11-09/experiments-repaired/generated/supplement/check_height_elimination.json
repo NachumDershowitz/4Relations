@@ -1,0 +1,10 @@
+{
+  "vertices": 3,
+  "irreflexive_relations": 64,
+  "acyclic_relations": 25,
+  "applicable_settings": 790,
+  "elimination_rounds": 312,
+  "strong_condition_settings": 766,
+  "status": "passed",
+  "scope": "exhaustive three-point regression; not an arbitrary-domain proof"
+}

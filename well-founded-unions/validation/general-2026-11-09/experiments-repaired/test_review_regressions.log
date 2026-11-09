@@ -1,0 +1,29 @@
+Command: ['python3', 'supplement/checks/test_review_regressions.py']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_folding_obligations.py",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "reject_wrong_solver_answer_under_optimization_check_existential_folding.py",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "invariant_checks_survive_python_optimization",
+      "exit_status": 1,
+      "passed": true
+    },
+    {
+      "test": "true_invariant_is_accepted",
+      "exit_status": 0,
+      "passed": true
+    }
+  ]
+}

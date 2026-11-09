@@ -1,0 +1,50 @@
+Command: ['python3', 'supplement/checks/exhaustive_three_points.py']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{
+  "points": 3,
+  "acyclic_relations": 25,
+  "irreflexive_F": 64,
+  "triples_tested": 40000,
+  "triples_satisfying_relaxed_premises": 279,
+  "triples_requiring_folds": 60,
+  "maximum_folds": 1,
+  "all_invariants_passed": true,
+  "example": {
+    "A": [],
+    "B": [
+      [
+        0,
+        1
+      ]
+    ],
+    "F": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "steps": [
+      {
+        "target": 1,
+        "removed": [
+          0
+        ],
+        "replacement": 1,
+        "remaining": [
+          1,
+          2
+        ]
+      }
+    ],
+    "terminal": [
+      1,
+      2
+    ]
+  }
+}

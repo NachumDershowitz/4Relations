@@ -1,0 +1,5 @@
+Command: ['./check_generalization', '3', '5']
+Cwd: /Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/work/general-experiments
+LIBZ3=/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib
+
+{"domain_size":3,"colors":5,"acyclic_relations":25,"tuples":9765625,"prefix_detour_qualifying":188605,"previous_color_qualifying":186493,"cyclic_unions":0}

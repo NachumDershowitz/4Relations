@@ -1,0 +1,35 @@
+(set-option :produce-proofs true)
+
+(set-option :timeout 15000)
+(set-logic ALL)
+(define-fun valid ((x Int)) Bool (>= x (- 2)))
+(define-fun A ((x Int) (y Int)) Bool
+  (and (>= x 0)
+    (or (and (= (mod x 2) 0) (= y (- 1)))
+        (and (= (mod x 2) 1) (= y (- 2))))))
+(define-fun B ((x Int) (y Int)) Bool
+  (or (and (= x (- 2)) (>= y 0) (= (mod y 2) 0))
+      (and (= x (- 1)) (>= y 0) (= (mod y 2) 1))
+      (and (>= x 1) (= y (- x 1)))))
+(define-fun C ((x Int) (y Int)) Bool
+  (and (= x (- 1)) (= y (- 2))))
+(define-fun D ((x Int) (y Int)) Bool
+  (or (and (= x (- 2)) (= y (- 1)))
+      (and (= x 0) (= y (- 2)))))
+(define-fun F ((x Int) (y Int)) Bool (or (C x y) (D x y)))
+(define-fun E ((x Int) (y Int)) Bool (or (B x y) (F x y)))
+(define-fun R ((x Int) (y Int)) Bool (or (A x y) (E x y)))
+(define-fun aw ((x Int)) Int (ite (= (mod x 2) 0) (- 1) (- 2)))
+(define-fun ra ((x Int)) Int (ite (>= x 0) 1 0))
+(define-fun rb1 ((x Int)) Int (ite (or (= x (- 2)) (= x (- 1))) 1 0))
+(define-fun rb2 ((x Int)) Int (ite (>= x 0) x 0))
+(define-fun rc ((x Int)) Int (ite (= x (- 1)) 1 0))
+(define-fun rd ((x Int)) Int (ite (= x 0) 2 (ite (= x (- 2)) 1 0)))
+(declare-const x Int)
+(declare-const y Int)
+(declare-const z Int)
+
+(assert (D x y))
+(assert (not (< (rd y) (rd x))))
+(check-sat)
+(get-proof)

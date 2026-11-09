@@ -1,0 +1,188 @@
+{
+  "started_utc": "2026-11-09T14:54:29.520003+00:00",
+  "passed": true,
+  "stages": [
+    {
+      "name": "certificate",
+      "command": [
+        "sh",
+        "check.sh"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 11.604
+    },
+    {
+      "name": "rocq",
+      "command": [
+        "sh",
+        "check_rocq.sh"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general/formal",
+      "exit_status": 0,
+      "elapsed_seconds": 60.628
+    },
+    {
+      "name": "all_named_assumptions",
+      "command": [
+        "rocq",
+        "compile",
+        "-q",
+        "AllGeneralAssumptions.v"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general/formal/rocq-results/run.Att3xuqp",
+      "exit_status": 0,
+      "elapsed_seconds": 1.442
+    },
+    {
+      "name": "cpp_version",
+      "command": [
+        "/usr/bin/c++",
+        "--version"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l",
+      "exit_status": 0,
+      "elapsed_seconds": 0.024
+    },
+    {
+      "name": "compile_five_relations",
+      "command": [
+        "/usr/bin/c++",
+        "-O2",
+        "-std=c++17",
+        "general/supplement/check_generalization.cpp",
+        "-o",
+        "check_generalization"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l",
+      "exit_status": 0,
+      "elapsed_seconds": 0.644
+    },
+    {
+      "name": "five_relations",
+      "command": [
+        "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/check_generalization",
+        "3",
+        "5"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l",
+      "exit_status": 0,
+      "elapsed_seconds": 0.889
+    },
+    {
+      "name": "check_representative_elimination",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/check_representative_elimination.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.068
+    },
+    {
+      "name": "check_height_elimination",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/check_height_elimination.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.064
+    },
+    {
+      "name": "exhaustive_original_conditions",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/exhaustive_original_conditions.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.425
+    },
+    {
+      "name": "exhaustive_three_points",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/exhaustive_three_points.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.18
+    },
+    {
+      "name": "test_review_regressions",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/test_review_regressions.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.308
+    },
+    {
+      "name": "check_folding_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/check_folding_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.247
+    },
+    {
+      "name": "check_height_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/check_height_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.42
+    },
+    {
+      "name": "check_existential_folding",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/check_existential_folding.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.218
+    },
+    {
+      "name": "check_infinite_counterexample",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "supplement/checks/check_infinite_counterexample.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l/general",
+      "exit_status": 0,
+      "elapsed_seconds": 0.335
+    },
+    {
+      "name": "reset_bounded_check",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "reset/checks/check_reset.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-general-94zof32l",
+      "exit_status": 0,
+      "elapsed_seconds": 0.214
+    }
+  ],
+  "general_kernel_verified": true,
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "LIBZ3": "/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib"
+  },
+  "named_theorems": 114,
+  "inference_steps": 7583,
+  "forbidden_tokens": [],
+  "closed_theorems": 63,
+  "classical_theorems": 51,
+  "source_sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77",
+  "reset_record_reproduced_exactly": true,
+  "exit_status": 0,
+  "finished_utc": "2026-11-09T14:55:47.815734+00:00"
+}

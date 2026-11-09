@@ -1,0 +1,9 @@
+{
+  "domain_size": 3,
+  "colors": 5,
+  "acyclic_relations": 25,
+  "tuples": 9765625,
+  "prefix_detour_qualifying": 188605,
+  "previous_color_qualifying": 186493,
+  "cyclic_unions": 0
+}

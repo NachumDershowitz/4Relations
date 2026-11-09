@@ -1,0 +1,5 @@
+EXACT STATEMENT VERIFIED: arbitrary_finite_family_well_founded_union
+EXACT STATEMENT VERIFIED: arbitrary_finite_acyclic_family_termination
+No bound on either domain size or number of relations.
+Every earlier-relation detour and later-relation shortcut retained.
+The closure, finiteness, equality and WF definitions were independently reconstructed.

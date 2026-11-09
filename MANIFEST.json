@@ -1,30 +1,30 @@
 {
   "format_version": 1,
-  "title": "Well-founded unions: formal proofs and tests",
+  "title": "Well-founded unions: formal proofs and experiments",
   "repository": "https://github.com/NachumDershowitz/4Relations",
   "preparation_date": "2026-11-09",
   "publication_status": "not_published",
-  "recovery_status": "incomplete",
+  "verification_status": "complete_pass",
   "files": {
     ".gitignore": {
       "bytes": 194,
       "sha256": "ba56b532558c95f8865498ef3a55415fdd58923121fbe0354c4355564a176820"
     },
     "CITATION.cff": {
-      "bytes": 627,
-      "sha256": "de2e3a36f2052c560621b099c570a7359a6b380ab344d7070ac838f4e456e2cd"
+      "bytes": 644,
+      "sha256": "905a15be7c18e7600d2c2673e1a228d310f8d55ebad07d1c5ddbe16ae8ba1ea9"
     },
     "README.md": {
-      "bytes": 2987,
-      "sha256": "dba1788e8f95e5d6b8b0b1560bb18b5a23ebe559d5058d748c5207a481177b65"
+      "bytes": 3024,
+      "sha256": "368695f806b0f0910ed0316d81feab70875c79b62a71beeb874eac3679539aea"
     },
     "RELEASE_NOTES.txt": {
-      "bytes": 908,
-      "sha256": "4ceddccd2865f2ddce4a98d175f25b39ff0e4a409acfebf0e594d643b5dcdb34"
+      "bytes": 1478,
+      "sha256": "e0379ceb6dec22be78f8a6e4c787f2af43c2ebba68d51e18ead292a4347889ca"
     },
     "UPLOAD_TO_GITHUB.txt": {
-      "bytes": 1045,
-      "sha256": "eaf90596e1128bb0d2efebfb4532c291ba41d6090ceb511416c1873d04506713"
+      "bytes": 966,
+      "sha256": "0c0bb4359161c7d021ce5e18c70d6219d67e4817ba19704b659cf057f8596003"
     },
     "finite/completion/audit_completed_cover.py": {
       "bytes": 4091,
@@ -134,33 +134,37 @@
       "bytes": 222,
       "sha256": "425b8d259049b56fd344f12cd933bc90fb19d63634061c41831482360c0d62b6"
     },
+    "well-founded-unions/ARCHIVES.json": {
+      "bytes": 542,
+      "sha256": "ab243035cc58752281e540de28fa7ec9b777f3d086acc3c15f3c3f0089e079bc"
+    },
     "well-founded-unions/MISSING_COMPONENTS.json": {
-      "bytes": 1211,
-      "sha256": "344f75530bcaa4b12dd498f2402397bd332bd93c162c727fb35bf4440564e2ca"
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
     },
     "well-founded-unions/PROVENANCE.md": {
-      "bytes": 3210,
-      "sha256": "98db2b7cd3ac54095dfc9809335ad1148e9c04a1f24b007dcb7c575786c99c33"
+      "bytes": 3822,
+      "sha256": "add9be4ed6cd5be540fbdc1976f42155535899d7a5557637fe31eefce0a86e29"
     },
     "well-founded-unions/README.md": {
-      "bytes": 4785,
-      "sha256": "b234ab51f9b25edb95535b06eb7c61664d3494dc1c0c629d0c0084ee7ffa7297"
+      "bytes": 4766,
+      "sha256": "509022ff1706d0017dc4a7162692951fee9b31f327422312c3e5d7c25086016c"
     },
     "well-founded-unions/SHA256SUMS": {
-      "bytes": 140989,
-      "sha256": "6b8bbad1db2aac4759beac408d92fb3ea2007cfd000740727173145900b2b249"
+      "bytes": 259782,
+      "sha256": "ac8bec0ef1425574c00913f816d6ef1566d1d635c46af37d977cf4f1956501ca"
     },
     "well-founded-unions/SOURCE_FILES.json": {
-      "bytes": 90369,
-      "sha256": "9c88167fdd3e36685c89eb2ec349dce29e6135954eb8fcafd0fd4ef8da0a18b2"
+      "bytes": 105060,
+      "sha256": "55b7e506754c91f758467c2a0f6764f99132657445028776eb007f41df338076"
     },
     "well-founded-unions/STATUS.md": {
-      "bytes": 4885,
-      "sha256": "154e2fd47bc6813499c19c3e58b756c747104858ab49cb28a29fc6320005cf5d"
+      "bytes": 5541,
+      "sha256": "212a2f9510ee9f8144d6e7119fb9ba1387d0f2b209e770197e3b7f5788820aff"
     },
     "well-founded-unions/THEOREM_MAP.md": {
-      "bytes": 4243,
-      "sha256": "02cbff0b889d59f6e91a60e06c773f313b74161d77e0954ea03ad2727dd07858"
+      "bytes": 4321,
+      "sha256": "ee33ebe457aba62c6e323dc0dc7ee8f0a01c09b47eec88a097c9dae4513787b9"
     },
     "well-founded-unions/finite/completion/audit_completed_cover.py": {
       "bytes": 4091,
@@ -246,6 +250,218 @@
       "bytes": 389,
       "sha256": "fce89ca6765fe0cfd9077f06ae0551c8ab838039338a7c3be111527b627267f8"
     },
+    "well-founded-unions/general/check.sh": {
+      "bytes": 92,
+      "sha256": "d16af48c05d91d0a390d87cf52de9093e773e3e1a604af2b936bb0558a2e8f94"
+    },
+    "well-founded-unions/general/formal/MANIFEST.json": {
+      "bytes": 1895,
+      "sha256": "e3609c24b13b2378b68eb75ea11018d1c2f6a1b987ae997f2e31f5716af008e8"
+    },
+    "well-founded-unions/general/formal/STATEMENT.md": {
+      "bytes": 4771,
+      "sha256": "0a16060d9e56cceb95825e1c882e1cf32a2d92e1b3e71f142d3ff81b0d6579e1"
+    },
+    "well-founded-unions/general/formal/THEOREM_MAP.md": {
+      "bytes": 2054,
+      "sha256": "1945bf3c4002c6672fb81abc6f3327b82239fc28fb293ce89bb60eeb5b7314a4"
+    },
+    "well-founded-unions/general/formal/WellFoundedUnionsProofTerms.v": {
+      "bytes": 14669271,
+      "sha256": "dfb36020b037b71ef408908bd2e4808b4da27c741068071990cfe8e0d027be77"
+    },
+    "well-founded-unions/general/formal/audit_branching.py": {
+      "bytes": 5447,
+      "sha256": "2bab6a8d9b9fab250e79d6cb71b72f15470131c83c1967a4c4fe58b09758ade7"
+    },
+    "well-founded-unions/general/formal/audit_extensions.py": {
+      "bytes": 10505,
+      "sha256": "cdbaebb9e8a10e1b33b29399c76bf525b97b5e8c9eca9a21ee24a61be130c6cd"
+    },
+    "well-founded-unions/general/formal/audit_finite.py": {
+      "bytes": 3681,
+      "sha256": "da6e481198a019887eb796e84367b010f5bd4b742a6692161ab44cab5c95259f"
+    },
+    "well-founded-unions/general/formal/base_build.py": {
+      "bytes": 49656,
+      "sha256": "98ff65bb6e11934a5fc2ef6a99544e2a575d5610f1dcf6230ae8f8c1b73b5cc4"
+    },
+    "well-founded-unions/general/formal/build_branching.py": {
+      "bytes": 45240,
+      "sha256": "2147d5d60aa4f5fc5a2e9d91c4c521be5c82f125f178f4bf2698a6884c560b70"
+    },
+    "well-founded-unions/general/formal/build_extensions.py": {
+      "bytes": 61003,
+      "sha256": "eb08e0cb7105a898925e1d9189a29ea4bc36a8174818423e7e3ff9f5164629b7"
+    },
+    "well-founded-unions/general/formal/check.sh": {
+      "bytes": 3720,
+      "sha256": "c829e7c71a95db4e785658cdec4e1424504bc539f2c5df0e59e0ef4eca503e3e"
+    },
+    "well-founded-unions/general/formal/check_debruijn.py": {
+      "bytes": 7887,
+      "sha256": "be668ee6a0e17b1f7c4a8cd4f8e27ca37a9fcc6b23307ac943623bbad0bbf62d"
+    },
+    "well-founded-unions/general/formal/check_rocq.sh": {
+      "bytes": 2103,
+      "sha256": "a25115ce1042491155e04a8b275df76ecaf21d6a7d774464dc090f41559c1f03"
+    },
+    "well-founded-unions/general/formal/export_rocq.py": {
+      "bytes": 7163,
+      "sha256": "f29f60e4df2afac962f0079447465703a0ba206eb5eaa36c0ed43dd34268bf9d"
+    },
+    "well-founded-unions/general/formal/kernel.py": {
+      "bytes": 10351,
+      "sha256": "a93668e9928940da394e9fa88a271859dcc91bd4b6b42e5499c6cc38ecc3b59f"
+    },
+    "well-founded-unions/general/formal/proof.json": {
+      "bytes": 1039394,
+      "sha256": "7bad71221bc0d24f8d4115346f69a4b681fdeb261036c1d8a032b010afb97797"
+    },
+    "well-founded-unions/general/formal/rebuild.sh": {
+      "bytes": 735,
+      "sha256": "e5e3e3a4008893f941e4fe7d963b919a72411775d34618f4f5023b8df20b0916"
+    },
+    "well-founded-unions/general/formal/statement_syntax.py": {
+      "bytes": 1612,
+      "sha256": "95a7c449917d9dc72c7fedb2f9c7d410acf2ef0c356821f8167689fead640693"
+    },
+    "well-founded-unions/general/formal/test_certificates.py": {
+      "bytes": 2713,
+      "sha256": "0b36c41921bdba6cd732bb3e8d3866b49ec18630ab181900dccbef27afde56bf"
+    },
+    "well-founded-unions/general/formal/test_extension_audit.py": {
+      "bytes": 1958,
+      "sha256": "359d7f3661dba43f2ca092cac7055c84dd1407b3966c29e45a9d0adb366f471a"
+    },
+    "well-founded-unions/general/formal/test_kernels.py": {
+      "bytes": 3660,
+      "sha256": "208b2b3217ee582a108d518b14901a0fde72f2d02dea67d1306f3ea64b5fa7b7"
+    },
+    "well-founded-unions/general/formal/test_statement_audit.py": {
+      "bytes": 1145,
+      "sha256": "05f4c3523c8770bbc3c74ae4437a36bf98f25ca6c1742d3d1e91eff0ec5856bc"
+    },
+    "well-founded-unions/general/supplement/README.md": {
+      "bytes": 950,
+      "sha256": "020bf2cb5c72904a7f8d0a652543f20036e38cb5ca9e9482feab0b71878d4589"
+    },
+    "well-founded-unions/general/supplement/check_generalization.cpp": {
+      "bytes": 3297,
+      "sha256": "61f1c2e101e8f86b1539c3a619bb4061f1817efec796074bf9e4cb690389a898"
+    },
+    "well-founded-unions/general/supplement/check_height_elimination.py": {
+      "bytes": 3578,
+      "sha256": "1377ee31252ca7ecf31ab3799656c39659c7fed2dead70e1aa5088686dd6728b"
+    },
+    "well-founded-unions/general/supplement/check_representative_elimination.py": {
+      "bytes": 3959,
+      "sha256": "d4eb348250b3ac720fa4cdc004624669907550caec75de38a5ef197816ffafcc"
+    },
+    "well-founded-unions/general/supplement/checks/check_existential_folding.py": {
+      "bytes": 4717,
+      "sha256": "68c246f2ae27a4cdce2ab76ef7ea1a486e4b6163a8bf3e2731f1ead6dd75ae1e"
+    },
+    "well-founded-unions/general/supplement/checks/check_folding_obligations.py": {
+      "bytes": 3618,
+      "sha256": "692e1837fe983b17a42fbb81eec0e1429779a0f49321a9bd3e4704a0f0450c65"
+    },
+    "well-founded-unions/general/supplement/checks/check_height_obligations.py": {
+      "bytes": 7969,
+      "sha256": "2e75158356d95546eeec3f76fce94525de350f3ccb9c6df65c76b76b4a80ee06"
+    },
+    "well-founded-unions/general/supplement/checks/check_infinite_counterexample.py": {
+      "bytes": 5168,
+      "sha256": "dad5d24107473462723e51f263279687985556bd574ad5cbbcd1386561842950"
+    },
+    "well-founded-unions/general/supplement/checks/exhaustive_original_conditions.py": {
+      "bytes": 2515,
+      "sha256": "9039dcac8b4ddb9544514ea6b682b601006ecc3319fad652193192ae83232512"
+    },
+    "well-founded-unions/general/supplement/checks/exhaustive_three_points.py": {
+      "bytes": 3827,
+      "sha256": "6fcaf733870d7f9608d13f3e0ccd128eca7ec7146d9178fe2070ea4241230a29"
+    },
+    "well-founded-unions/general/supplement/checks/test_review_regressions.py": {
+      "bytes": 2402,
+      "sha256": "2c2796fc6969da4fd7793e08a9fdb806038936314c123ed76f9421c95b789cc1"
+    },
+    "well-founded-unions/general/supplement/checks/z3_runner.py": {
+      "bytes": 2096,
+      "sha256": "108d8f8a73ab8bb4f5026e42029c3c44d7e2945a3016c39dd11a0ad842979ee6"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/README.md": {
+      "bytes": 2715,
+      "sha256": "df404e719b75c5b358502316fcd640dda4473a75d4e4709e6378744efa3d696f"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/SHA256SUMS": {
+      "bytes": 6599,
+      "sha256": "75ca8f46bc9c6225a650db2e3981f26e62552a8a6925fae5a023f17eb5ffef32"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/CHECKED.json": {
+      "bytes": 5279,
+      "sha256": "9c968fa153129e832142b8e225217a74221503c254810e243f09d50c338897c6"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/branching-audit.log": {
+      "bytes": 784,
+      "sha256": "696be45e925096d6a3d8e0f7887ceb0a38ad828911fdd91500c7ae123ca14439"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/build.log": {
+      "bytes": 5421,
+      "sha256": "d6506ab19867465e6f5e9ecc596e72fe33bfdec6eb92cf4ab2613767d11075b4"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/certificate-tests.log": {
+      "bytes": 570,
+      "sha256": "9205d8e6be615abfabba374ff4e333b5756785ed40c50ecb8bd71e0b0f9a6e05"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/debruijn-kernel.log": {
+      "bytes": 4390,
+      "sha256": "139ea03161da32884104d4b1cf41b9564425cbd50e05df9da1d2337eb3a62d37"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/extension-tests.log": {
+      "bytes": 378,
+      "sha256": "c6c36afdf178f5c18aad4887abb01137e66bdaca23d5e132be98740533943a01"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/extensions-audit.log": {
+      "bytes": 927,
+      "sha256": "0716a281a02f952c9e9d5f9954f09989af7d47a7d509fe4e8865cd726e7b3a05"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/finite-audit.log": {
+      "bytes": 349,
+      "sha256": "f24fccfcab754220be082786d1782242e166db4793d098a01cf36d8aabf69563"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/kernel-tests.log": {
+      "bytes": 1349,
+      "sha256": "4c2c80302e9af83200f63a0b00c970180133b73b2a9e81a998f07612395b38db"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/named-kernel.log": {
+      "bytes": 5463,
+      "sha256": "77e5facd79214171545454ae6ece39317dc2c5c3e0fc882aa0a0e0eaf7186ca7"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/rebuild.log": {
+      "bytes": 5575,
+      "sha256": "80bf3a2d4193d60a9ea46552b7c63abc380c4eeb8d5b820460e5eee15ea1715e"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/rocq-export.log": {
+      "bytes": 79,
+      "sha256": "18e02420e8478bf8960669e2631139dbb1dd3fc8fd4a3029052f6771a629d76e"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/rocq_attempt.log": {
+      "bytes": 53,
+      "sha256": "83742c89812233f3c39d604358e6bf1c82187c364757978273d0b3dc8fe2f36f"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/logs/statement-tests.log": {
+      "bytes": 750,
+      "sha256": "a412eba734cd41a9d835b3c41802f3998ec8a695bc8c26910348d9f725f9865d"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/formal/rocq-results/compiler.log": {
+      "bytes": 53,
+      "sha256": "83742c89812233f3c39d604358e6bf1c82187c364757978273d0b3dc8fe2f36f"
+    },
+    "well-founded-unions/historical/generalized-2026-11-05/reports/RELEASE_CHECKS.md": {
+      "bytes": 1620,
+      "sha256": "5385d21bbb836a8b48c667de78f584067fb9f9e1ee475188c05356dc89be7d8e"
+    },
     "well-founded-unions/historical/publication-clone/finite_results.json": {
       "bytes": 708,
       "sha256": "42917d0e210727b3d085b2a640b254a625edf4201b7bddc2d381bfb65a530988"
@@ -257,6 +473,10 @@
     "well-founded-unions/historical/publication-clone/formal_proofs/verification.txt": {
       "bytes": 1091,
       "sha256": "9f2504c249c3809ef570ba37ebca5dfda50be94fdd219d912f4acfc64f608561"
+    },
+    "well-founded-unions/historical/reset-clean-revision/checks/reset_checks.json": {
+      "bytes": 527,
+      "sha256": "4253435366f9f01316ec8a6526b0b740878850beef620e0af7db3319f23ad9bc"
     },
     "well-founded-unions/historical/supplement-2026-10-20/ASSUMPTIONS.txt": {
       "bytes": 4288,
@@ -1279,8 +1499,12 @@
       "sha256": "770b3dcb4b72f87d5847b105701d8ee4c9f70422d0ec7827dd63ba5925ed65e0"
     },
     "well-founded-unions/package.py": {
-      "bytes": 2308,
-      "sha256": "39a2ccc84cce08e892e00ab4a19ae1cd1a11f2ad10582a7d4069fc2d088106f3"
+      "bytes": 2302,
+      "sha256": "759055f9011e56298475900b7fcff6022aeb5993be759e044c9be77465795922"
+    },
+    "well-founded-unions/reset/checks/check_reset.py": {
+      "bytes": 3193,
+      "sha256": "f9df1e9d823c6b1b2bf82de9a33fbbd1486eda426d3cb10f47c16c6923149769"
     },
     "well-founded-unions/supplement-2026-10-20/checks/check_folding_obligations.py": {
       "bytes": 3570,
@@ -1329,6 +1553,2046 @@
     "well-founded-unions/supplement-2026-10-20/scripts/verify.py": {
       "bytes": 7294,
       "sha256": "31e26ec7cfa16bc8f8c12e1b02c6579204704807d4846f04d99439d96e854207"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/RESULT.json": {
+      "bytes": 5533,
+      "sha256": "1e1a3ab4b279169dd654938320f94a6017ebf0e7dbcdd9836901131ca280846b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/check_folding_obligations.log": {
+      "bytes": 927,
+      "sha256": "e5e0163b496a53d2bc8c0b94667dca88fa85fca1322a4e71e4d05135d69a625c"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/check_height_obligations.log": {
+      "bytes": 2249,
+      "sha256": "f48b10e786b6d30acd8da49ce4beff6a6d33551b5b280badae74469c1e8c9f4c"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/counterexample.log": {
+      "bytes": 308,
+      "sha256": "860f4a40d1f4de1b54e683e398d0776e3caaaaeaeb45520e6351a9220e720053"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/exhaustive_original_conditions.log": {
+      "bytes": 1407,
+      "sha256": "e08f72794b7d098c2f61c09fa67787c5c527c0eb2be720858525e44ff87f4ed7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/exhaustive_three_points.log": {
+      "bytes": 856,
+      "sha256": "7916bb29bc1d03624d410286a5e3df8420da3fad11363a2bae3f67edc0a34afe"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/finite_coverage.log": {
+      "bytes": 943,
+      "sha256": "7cc6edf1e7c2fdae6a9be2ce23791c197187ab4963bc573ea8bb5241cbc4b3fc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/exhaustive_original_conditions.json": {
+      "bytes": 1182,
+      "sha256": "3cb94d96c8e59335952f38506e5204ed9b78056991380f56d7e95556c90b5e12"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/00_base_consistency.smt2": {
+      "bytes": 1553,
+      "sha256": "dc6b12bedca2b9475c94bc1c6facddf910b6775ec2b7490ea74532dc919170a5"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/01_surviving_target.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/01_surviving_target.smt2": {
+      "bytes": 1222,
+      "sha256": "9cc561cccff68ceba333f1c9ecee759f6586b4c4372f8f75fb4666f7803201fe"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/02_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/02_transfer.smt2": {
+      "bytes": 1307,
+      "sha256": "bd70837fb5b8b592332d9a61d0e3728f6d0ef90fdfb5bdc84bb3ad2aba88ba9e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/03_new_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/03_new_range.smt2": {
+      "bytes": 1243,
+      "sha256": "e2601813d162b9729d857ffd80cb7c035486ded0857f00b50d07bfc3aaae8b6b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/04_new_identity.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/04_new_identity.smt2": {
+      "bytes": 1260,
+      "sha256": "ca7e2f7da22bed686ca42f4b6d287f29e846bdd2453ed1abe17f89c417d82257"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/05_new_projection.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/05_new_projection.smt2": {
+      "bytes": 1298,
+      "sha256": "78f5a0f846e9a2a4606f0f10f9292fb0f057538ab937ca69eaf23d94f6dce84c"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/06_strict_image_decrease.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/06_strict_image_decrease.smt2": {
+      "bytes": 1249,
+      "sha256": "346378332323c157b5f5e4df35d48fd6b6dc1b3c13e24f90066ed022f8d91a3e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/exhaustive_three_points.json": {
+      "bytes": 638,
+      "sha256": "f5ac60689558a08e60c5c8cbad21f14469e227584630d97694fd63c2d056f711"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/folding_checks/results.json": {
+      "bytes": 791,
+      "sha256": "5f1039736232f3aef9ba76a0fe68e8c528e8560fa90261dc674141173db20f39"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/00_base_consistency.smt2": {
+      "bytes": 1467,
+      "sha256": "353b7951ada0735420c2ad48db0bb59388050a678c34ef5f8a9aa496d747ea01"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/01_incoming_top_edge_is_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/01_incoming_top_edge_is_F.smt2": {
+      "bytes": 1179,
+      "sha256": "d2d98c8c324a69a893b26ae7b2eef502106ea4ba5c3fd33671a208d1fd0b19e4"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/02_two_step_path_to_top_successor_impossible.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/02_two_step_path_to_top_successor_impossible.smt2": {
+      "bytes": 1205,
+      "sha256": "d8f6e818b8b8f81354abebf093134d9d5d6e140e0e8b6e96a47222e3803aae5b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/03_top_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/03_top_transfer.smt2": {
+      "bytes": 1244,
+      "sha256": "51f27078e87da5cca65631ac7d91bcc4a51ab169c8291c7aef609ab2c3a49856"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/04_top_has_dominating_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/04_top_has_dominating_representative.smt2": {
+      "bytes": 1198,
+      "sha256": "4805b0460757a39250190bafad65975095d5710e290d1a460d1987ec5d97b062"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/05_domination_is_transitive.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/05_domination_is_transitive.smt2": {
+      "bytes": 1190,
+      "sha256": "ffb59ae81335d144aa1f24f51f26b8f6eb849a9fb381931de2891d379110ed0d"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/06_top_domination_is_in_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/06_top_domination_is_in_F.smt2": {
+      "bytes": 1183,
+      "sha256": "e15fc8b9dce5d42735262ce188c7e12060598c9cc20d9b816c1b5576a7ab8b69"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/07_lower_has_smaller_uniform_bound.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/07_lower_has_smaller_uniform_bound.smt2": {
+      "bytes": 1132,
+      "sha256": "421d3324d59a3cb920c79df69fc9651fd91e1249b2bec6fbd5fd0c323dd41afc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/08_composed_representatives_preserve_edges.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/08_composed_representatives_preserve_edges.smt2": {
+      "bytes": 1328,
+      "sha256": "26d12417f45caf88d78c5433b3bcb00097b2984bdef11f8125929d93dfe64a59"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/09_composed_representatives_have_lower_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/09_composed_representatives_have_lower_range.smt2": {
+      "bytes": 1194,
+      "sha256": "01352d6f29e00408c523abf203127e120587f9ea0e7f8e6166e1f4b612b73e39"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/10_strong_F_does_not_increase_finite_height.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/10_strong_F_does_not_increase_finite_height.smt2": {
+      "bytes": 588,
+      "sha256": "dfc9725807c5117841ed1dc3299f856b2d7f605f9e6876d638471e8de0749ab9"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/11_incoming_bounded_subset_forces_bounded_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/11_incoming_bounded_subset_forces_bounded_representative.smt2": {
+      "bytes": 602,
+      "sha256": "ced176aa08c25bfb011ccc2f9fbd348db7c38e77a6f7d41f654802fbee1cc886"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.smt2": {
+      "bytes": 660,
+      "sha256": "95b5624806fc90c5ee2f840de37765440a6c63a8d362aff8ed104cce4c18b8aa"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/13_successor_rank_has_no_intermediate_value.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/13_successor_rank_has_no_intermediate_value.smt2": {
+      "bytes": 457,
+      "sha256": "3c10586d0417297b1a56b774fc60da1e99dc0f73a9a1b3e0d45f352ce62f2160"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/14_successor_rank_is_strictly_above_predecessor.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/14_successor_rank_is_strictly_above_predecessor.smt2": {
+      "bytes": 437,
+      "sha256": "fb04adc509f446970e184b2ad3d58b3373497ef3a45543a96463eb24ebb9de55"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/15_strong_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/15_strong_context_consistency.smt2": {
+      "bytes": 489,
+      "sha256": "5834998aad09fcc87d8e597dbbc9d2d849a1ce72738646844f081d3163dcc1c7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/16_rank_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/16_rank_context_consistency.smt2": {
+      "bytes": 405,
+      "sha256": "32d7bfecb93d59675f5467b901afb4a9325489bd1431379d7aa97f77d08a0374"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/17_negative_control_without_rerouting.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/17_negative_control_without_rerouting.smt2": {
+      "bytes": 289,
+      "sha256": "d2075d4b153fd7f1c292c59fbf00fb20cf3745b12678232565e4e6ef409caee1"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/fresh-experiments/height_checks/results.json": {
+      "bytes": 2821,
+      "sha256": "06639dcd94c7ccd47add33e60276a5c5af6d6e198d1d77e08b3e47ffda6545ef"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/AllGeneralAssumptions.v": {
+      "bytes": 17984,
+      "sha256": "8ee4ff2d46122ed829eed063ad9efe4e145c4e6f9f08ebbafd5e712a84919da2"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/RESULT.json": {
+      "bytes": 6094,
+      "sha256": "93c349f687b9698809eb30570c3fb893789b624ac6698cf38a3251a85efbf0ca"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/all_named_assumptions.log": {
+      "bytes": 339523,
+      "sha256": "0d48609f90b7c57a7d9c97607bacaea0889a040d4019652d7da6bda861bbd872"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_family_limit_rank_obstruction.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_family_mixed_height_and_ordinal_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_family_mixed_height_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_finite_acyclic_family_has_acyclic_union.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_finite_acyclic_family_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_finite_family_branching_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/arbitrary_finite_family_well_founded_union.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/binary_jumping_well_founded.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/branching_termination_excludes_infinite_forward_chains.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/color_total.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/cut_to_restricted_union.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/earlier_free_stage_full_rerouting.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/earlier_free_stage_strong_rerouting.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/earlier_restriction_in.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/earlier_restriction_out.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/earlier_total.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/eq_refl.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/eq_sym.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/family_union_transitive_subrelations_well_founded.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/final_two_relations_no_branching_needed.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_acyclic_family_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_acyclic_well_founded.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_branching_preserved_by_restriction.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_empty.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_family_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_height_profile_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_image_representative_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_insert.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_minimal_subset.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_pointwise_cover_aggregation.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_reachability_clears_shortened_stage.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_source.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_union_cover.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finite_union_transitive_subrelation_well_founded.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finitely_branching_internal_relations_terminate.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/finitely_branching_representative_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/fold_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/height_profile_successor.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/height_profile_zero.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/immortal_iff_nonaccessible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/immortal_set_is_backward_closed.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/immortal_set_is_serial.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/initial_nonempty.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/initial_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/internal_branching_data_preserved_by_restriction.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/minimum_layer_rank_is_not_a_successor.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/minimum_rank_stratum_has_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/mixed_height_and_ordinal_stages_are_eliminable.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/mixed_height_bounds_eliminate_each_internal_stage.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/non_well_founded_union_has_immortal_point.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/normal_tail.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/not_wf_serial.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/path_into_predecessor_rank_is_one_edge.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/plus_cons.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/plus_family_restriction.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/plus_one.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/plus_star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/plus_trans.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/pointwise_height_representative_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/positive_path_followed_by_path.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/positive_paths_strictly_decrease_rank.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/predecessor_closure_backward.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/predecessor_closure_nonempty.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/predecessor_closure_serial.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/rank_order_antisymmetry.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/rank_strict_then_nonstrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/representative_domination_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_G0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_Gi.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_colors_wf.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_domain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_serial.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/restricted_union_to_cut.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_binary_jumping_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_domain_arbitrary_family_branching_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_domain_mixed_height_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_domain_with_eliminable_internal_stages_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_family_has_a_nonzero_limit_rank_layer.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/serial_family_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/short_rerouting_propagates_positive_paths.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/shortened_conditions_preserved_by_restriction.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/shortened_internal_and_final_conditions_suffice.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/shortened_rerouting_does_not_increase_rank.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_backward.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_cons.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_family_restriction.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_forward.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_refl.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_restrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_split.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/star_trans.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/subset_refl.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/subset_trans.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/successor_layer_removal_preserves_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/successor_ordinal_layer_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/successor_rank_has_predecessor_rank_successor.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/tail_at_penultimate_is_last.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/tail_restriction_in.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/tail_restriction_out.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/tail_total.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/uniform_height_representative_elimination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/union_irrefl.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/well_founded_excludes_forward_chain.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/well_founded_finitely_branching_finite_reachability.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/well_ordered_ranks_attain_a_minimum.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/wf_acyclic.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/wf_minimum.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/wf_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/wf_no_serial.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/wf_normal.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/zero_minimum_rank_clears_the_stage.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions/zero_or_successor_internal_ranks_imply_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/assumptions.json": {
+      "bytes": 6598,
+      "sha256": "f9f675c41f73ed0d011d530b41001a549bb5647fee2a6510510e58758bae18d7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-CHECKED.json": {
+      "bytes": 5131,
+      "sha256": "4783c2e5841f7ca5b22fa2941bd4d235558587f02b2764283aec155f73d52f2a"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/branching-audit.log": {
+      "bytes": 784,
+      "sha256": "696be45e925096d6a3d8e0f7887ceb0a38ad828911fdd91500c7ae123ca14439"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/certificate-tests.log": {
+      "bytes": 570,
+      "sha256": "5e51a059be1e0bf6a020ddccdb2f6891381887e30bda883922cc81a5cf7539a4"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/debruijn-kernel.log": {
+      "bytes": 4390,
+      "sha256": "139ea03161da32884104d4b1cf41b9564425cbd50e05df9da1d2337eb3a62d37"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/extension-tests.log": {
+      "bytes": 378,
+      "sha256": "c6c36afdf178f5c18aad4887abb01137e66bdaca23d5e132be98740533943a01"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/extensions-audit.log": {
+      "bytes": 927,
+      "sha256": "0716a281a02f952c9e9d5f9954f09989af7d47a7d509fe4e8865cd726e7b3a05"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/finite-audit.log": {
+      "bytes": 349,
+      "sha256": "f24fccfcab754220be082786d1782242e166db4793d098a01cf36d8aabf69563"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/kernel-tests.log": {
+      "bytes": 1349,
+      "sha256": "a14647dd7857414db669d4e2779691d06eac93790b1df05826ba6ef062131818"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/named-kernel.log": {
+      "bytes": 5463,
+      "sha256": "77e5facd79214171545454ae6ece39317dc2c5c3e0fc882aa0a0e0eaf7186ca7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/rebuild.log": {
+      "bytes": 5575,
+      "sha256": "80bf3a2d4193d60a9ea46552b7c63abc380c4eeb8d5b820460e5eee15ea1715e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate-logs/statement-tests.log": {
+      "bytes": 750,
+      "sha256": "b3ee0329edfa8b12591b3354ffa0b65dda2c03c86be028797ab00abdf5b107ab"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/certificate.log": {
+      "bytes": 406,
+      "sha256": "45b8e51837dd88583f3f5823ec8fa6c31951b50150a2c8ae3379ddd5f151f99a"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_existential_folding.log": {
+      "bytes": 1702,
+      "sha256": "c6d2ce6d903bef6b2b2f8f22ffa9ebeb6e8530ab721bce998a944de96c5a5c9b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_folding_obligations.log": {
+      "bytes": 916,
+      "sha256": "6997f74df77c7490abd71b879d9630016bacbbb46068e770901f236d7dac32ca"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_height_elimination.log": {
+      "bytes": 476,
+      "sha256": "137a2ebdd1f905e35706d20fa4ee3ec8497876a03909602133a7694953d3e77d"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_height_obligations.log": {
+      "bytes": 2239,
+      "sha256": "7c94937ecf1e8a5d2db670c4434d4cc4b1504af2611022df5f3af0c5c1bdbf7b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_infinite_counterexample.log": {
+      "bytes": 2375,
+      "sha256": "196c921d68572012dac7964b6dbf8df9ddbb96f0df724554613d426ebce66e91"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/check_representative_elimination.log": {
+      "bytes": 402,
+      "sha256": "18632f31619c82b3c101d28b4200940e4650a649bb111da9a66296217517e7ad"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/compile_five_relations.log": {
+      "bytes": 200,
+      "sha256": "5833b44ffd0affc27b5c7135552241be5a20881f99f057637671875743837e24"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/cpp_version.log": {
+      "bytes": 315,
+      "sha256": "e7361da5f6f8c92fec30365ad442fc04cef7e3800bb8230a25010de6a8e4b82b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/exhaustive_original_conditions.log": {
+      "bytes": 1397,
+      "sha256": "8b6b3aaa34b20d05bf0cd8281f0d7af218384eff81130249e249bee8e21a718a"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/exhaustive_three_points.log": {
+      "bytes": 846,
+      "sha256": "8426563dc3055ee908bfed142669257fda8c11d1070ae4ac797be5126bd1955d"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/check_height_elimination.json": {
+      "bytes": 274,
+      "sha256": "db435b1a2c0befada3ba584e16c450bdd96acabb6799ee21b9ef86aa432106ba"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/exhaustive_original_conditions.json": {
+      "bytes": 1182,
+      "sha256": "4acbc6b572a67229635c93383925c54018a98f2278da1a023ac418d20c39b24e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/00_consistent_witnesses.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/00_consistent_witnesses.smt2": {
+      "bytes": 1466,
+      "sha256": "7c13d60830b3a1221144ebe4c5fbacd98d2daff914ca46fd073a693ad77a2709"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/01_target_survives.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/01_target_survives.smt2": {
+      "bytes": 1178,
+      "sha256": "c5e5b5f6a69965455df4c70aca0c1bd1342961055527674d9d810f3b4d7835d8"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/02_incoming_edge_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/02_incoming_edge_transfer.smt2": {
+      "bytes": 1281,
+      "sha256": "ef27ca9e653b9f8d71bdd1741840196133e023004a52ca2df8d386a302c73986"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/03_retained_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/03_retained_representative.smt2": {
+      "bytes": 1267,
+      "sha256": "93ec36c9925f9ef5b1585a794106886b6c1ea670509433482301cd377bb97d7e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/04_redirected_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/04_redirected_representative.smt2": {
+      "bytes": 1261,
+      "sha256": "03a807d26210c975524fd8ac31a1e823061c223d035121ed80831dab714ec4ed"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/05_witness_case_split.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/05_witness_case_split.smt2": {
+      "bytes": 1262,
+      "sha256": "3a621f285ebece4490e7a6ae51ffa862627ce7027af88e8d3c23cb5ab45f9fbc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/06_missing_P1_negative_control.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/06_missing_P1_negative_control.smt2": {
+      "bytes": 1388,
+      "sha256": "57e1367a0a6445f4edff710bb6e3bbc22c6b8785fee8b0e63b6fcb230d07f287"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/existential_folding_checks/results.json": {
+      "bytes": 1712,
+      "sha256": "3ac5885e4b1106c35e114a3566faf625ed2f5304dc8ddd8dcf2349f2e3f94abf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/00_base_consistency.smt2": {
+      "bytes": 1553,
+      "sha256": "dc6b12bedca2b9475c94bc1c6facddf910b6775ec2b7490ea74532dc919170a5"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/01_surviving_target.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/01_surviving_target.smt2": {
+      "bytes": 1222,
+      "sha256": "9cc561cccff68ceba333f1c9ecee759f6586b4c4372f8f75fb4666f7803201fe"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/02_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/02_transfer.smt2": {
+      "bytes": 1307,
+      "sha256": "bd70837fb5b8b592332d9a61d0e3728f6d0ef90fdfb5bdc84bb3ad2aba88ba9e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/03_new_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/03_new_range.smt2": {
+      "bytes": 1243,
+      "sha256": "e2601813d162b9729d857ffd80cb7c035486ded0857f00b50d07bfc3aaae8b6b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/04_new_identity.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/04_new_identity.smt2": {
+      "bytes": 1260,
+      "sha256": "ca7e2f7da22bed686ca42f4b6d287f29e846bdd2453ed1abe17f89c417d82257"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/05_new_projection.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/05_new_projection.smt2": {
+      "bytes": 1298,
+      "sha256": "78f5a0f846e9a2a4606f0f10f9292fb0f057538ab937ca69eaf23d94f6dce84c"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/06_strict_image_decrease.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/06_strict_image_decrease.smt2": {
+      "bytes": 1249,
+      "sha256": "346378332323c157b5f5e4df35d48fd6b6dc1b3c13e24f90066ed022f8d91a3e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/exhaustive_three_points.json": {
+      "bytes": 638,
+      "sha256": "f5ac60689558a08e60c5c8cbad21f14469e227584630d97694fd63c2d056f711"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/folding_checks/results.json": {
+      "bytes": 790,
+      "sha256": "f0520a7fb2ba13ffb9c686ec5a7bd01cae5ca3ab1d9d7bb969ac23ef0a02c464"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/00_base_consistency.smt2": {
+      "bytes": 1467,
+      "sha256": "353b7951ada0735420c2ad48db0bb59388050a678c34ef5f8a9aa496d747ea01"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/01_incoming_top_edge_is_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/01_incoming_top_edge_is_F.smt2": {
+      "bytes": 1179,
+      "sha256": "d2d98c8c324a69a893b26ae7b2eef502106ea4ba5c3fd33671a208d1fd0b19e4"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.smt2": {
+      "bytes": 1205,
+      "sha256": "d8f6e818b8b8f81354abebf093134d9d5d6e140e0e8b6e96a47222e3803aae5b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/03_top_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/03_top_transfer.smt2": {
+      "bytes": 1244,
+      "sha256": "51f27078e87da5cca65631ac7d91bcc4a51ab169c8291c7aef609ab2c3a49856"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/04_top_has_dominating_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/04_top_has_dominating_representative.smt2": {
+      "bytes": 1198,
+      "sha256": "4805b0460757a39250190bafad65975095d5710e290d1a460d1987ec5d97b062"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/05_domination_is_transitive.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/05_domination_is_transitive.smt2": {
+      "bytes": 1190,
+      "sha256": "ffb59ae81335d144aa1f24f51f26b8f6eb849a9fb381931de2891d379110ed0d"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/06_top_domination_is_in_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/06_top_domination_is_in_F.smt2": {
+      "bytes": 1183,
+      "sha256": "e15fc8b9dce5d42735262ce188c7e12060598c9cc20d9b816c1b5576a7ab8b69"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.smt2": {
+      "bytes": 1132,
+      "sha256": "421d3324d59a3cb920c79df69fc9651fd91e1249b2bec6fbd5fd0c323dd41afc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/08_composed_representatives_preserve_edges.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/08_composed_representatives_preserve_edges.smt2": {
+      "bytes": 1328,
+      "sha256": "26d12417f45caf88d78c5433b3bcb00097b2984bdef11f8125929d93dfe64a59"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/09_composed_representatives_have_lower_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/09_composed_representatives_have_lower_range.smt2": {
+      "bytes": 1194,
+      "sha256": "01352d6f29e00408c523abf203127e120587f9ea0e7f8e6166e1f4b612b73e39"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.smt2": {
+      "bytes": 588,
+      "sha256": "dfc9725807c5117841ed1dc3299f856b2d7f605f9e6876d638471e8de0749ab9"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.smt2": {
+      "bytes": 602,
+      "sha256": "ced176aa08c25bfb011ccc2f9fbd348db7c38e77a6f7d41f654802fbee1cc886"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.smt2": {
+      "bytes": 660,
+      "sha256": "95b5624806fc90c5ee2f840de37765440a6c63a8d362aff8ed104cce4c18b8aa"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.smt2": {
+      "bytes": 457,
+      "sha256": "3c10586d0417297b1a56b774fc60da1e99dc0f73a9a1b3e0d45f352ce62f2160"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.smt2": {
+      "bytes": 437,
+      "sha256": "fb04adc509f446970e184b2ad3d58b3373497ef3a45543a96463eb24ebb9de55"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/15_strong_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/15_strong_context_consistency.smt2": {
+      "bytes": 489,
+      "sha256": "5834998aad09fcc87d8e597dbbc9d2d849a1ce72738646844f081d3163dcc1c7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/16_rank_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/16_rank_context_consistency.smt2": {
+      "bytes": 405,
+      "sha256": "32d7bfecb93d59675f5467b901afb4a9325489bd1431379d7aa97f77d08a0374"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/17_negative_control_without_rerouting.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/17_negative_control_without_rerouting.smt2": {
+      "bytes": 289,
+      "sha256": "d2075d4b153fd7f1c292c59fbf00fb20cf3745b12678232565e4e6ef409caee1"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/height_checks/results.json": {
+      "bytes": 2821,
+      "sha256": "b771635b96dccee11ed7ace5baad7e8ac7d58b16db2e0abf79e6a9ce91be6940"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/01_endpoint_domain.out": {
+      "bytes": 11228,
+      "sha256": "aaea2dfd4a4f611b41ed1e2f184eff92d5ed1fd1f21c27a483a352748a999ee7"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/01_endpoint_domain.smt2": {
+      "bytes": 1294,
+      "sha256": "7c1e025f9c43d09f14b6ea88366a0c2124b0a77764a5c19a59c8265428351c7c"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/02_nonnegative_ranks.out": {
+      "bytes": 3045,
+      "sha256": "01c7969a3a14faa2ede9bc84f886aa2610fc277fff7504825f2b39191b07e834"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/02_nonnegative_ranks.smt2": {
+      "bytes": 1348,
+      "sha256": "b732b5ab0b024376f427fabc8fe7e8c08d1dc55df39e0a1b9c990450efe43755"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/03_A_rank_decrease.out": {
+      "bytes": 5833,
+      "sha256": "52d00943dd71b88993ef7e2f8872a1593062dcb96e6e7af0f97e31a3ac988810"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/03_A_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "490353a08199b5c9d18b4dcfa34fda92606d5d965b8e508298e13100f2e0524e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/04_B_lex_rank_decrease.out": {
+      "bytes": 13294,
+      "sha256": "25b1aea40484945d0abeb282113346c5d37b9772b6b2352e95da274d72d96ad2"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/04_B_lex_rank_decrease.smt2": {
+      "bytes": 1339,
+      "sha256": "1e0f55d8d89ea71b2d077f8c8888e09c609a4442d7cf4e81af34c4d39b848255"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/05_C_rank_decrease.out": {
+      "bytes": 5315,
+      "sha256": "4d88b9e6ddb8b7a48b523983b7e71f60258d5a155f1bde20539a7af87ce5a28e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/05_C_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "67b517683d597ce95a42542a043f193feed5d343f7be90936d78542faec331bf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/06_D_rank_decrease.out": {
+      "bytes": 10559,
+      "sha256": "08f52deb7448fc496e0165d00ffd0e40270d3f8e827aea318f55893884dc9d53"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/06_D_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "6155cf6528d7ad1da8b6776f83fdf1a9045299c4369a57d98bf051340635ea89"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/07_P0_stronger_explicit_witness.out": {
+      "bytes": 16469,
+      "sha256": "112c482104922028afba40311e63ecb1199a782f576271e109d2e8505d1e5067"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/07_P0_stronger_explicit_witness.smt2": {
+      "bytes": 1327,
+      "sha256": "2f2efb414afd4de82c9c5b808c33f6d71d802fc583c1dddc14aca6d2ec2c98bc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/08_P1_stronger_explicit_witness.out": {
+      "bytes": 16021,
+      "sha256": "a8bd65c41b83070b76b1907d942e15a66e34dd5b750a00e237c5373a7bfa9955"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/08_P1_stronger_explicit_witness.smt2": {
+      "bytes": 1371,
+      "sha256": "8f34998f0304ed73ba4fe20e4e9e3e4b11f748556d9b34147254b3975bf6ad45"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/09_Q2_stronger_explicit_witness.out": {
+      "bytes": 4413,
+      "sha256": "2b6e4bd6b357d4b2b6171d45b443f565c458dc92bc10589bc9215f10dd5c50a2"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/09_Q2_stronger_explicit_witness.smt2": {
+      "bytes": 1304,
+      "sha256": "e59c31c731adcb03e4d729a98ece22e97aec6f0523073cd562a07eac8a4b6e01"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/10_two_cycle.out": {
+      "bytes": 1704,
+      "sha256": "faecd395e919b6b4f1c7370eb42421ea4848adb04f3e456870ca3568109321fb"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/10_two_cycle.smt2": {
+      "bytes": 1303,
+      "sha256": "61a4328c8db008ac63dbd2aa6fe14ca4e7d1ebeee316cd2c44376dc2ced35231"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/11_cycle_even_steps.out": {
+      "bytes": 4714,
+      "sha256": "221e56bcd99c69c9a4e7649c8400b199ceee5c72ba125c97d4936933f8abfedd"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/11_cycle_even_steps.smt2": {
+      "bytes": 1347,
+      "sha256": "7a3af64ed6c2675f9d7abcac386853a55f43ff2fb8dd7c3dacda6c4b67926bbe"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/12_nonvacuity.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/12_nonvacuity.smt2": {
+      "bytes": 1318,
+      "sha256": "dfb5ec508d38a51c19ef9efe49a12ddb9b94172098ca9a1e7394b677624659f1"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/13_negative_control.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/13_negative_control.smt2": {
+      "bytes": 1243,
+      "sha256": "183c52ade8ff48915e1438a789b7e029d5f5ce597e47aa4ca8c073371d3003c3"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/checks/infinite_checks/results.json": {
+      "bytes": 3090,
+      "sha256": "6d5f0b633ae511ec8401c8b112c22a223e90e8f96fd4081493d64aee216a6639"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/general/supplement/review_regressions.json": {
+      "bytes": 3339,
+      "sha256": "6b014bbd545e0869ccb631327f92d5ae84d93d8d5ec06097f0e0ad877e9c20fe"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/experiments/reset/checks/reset_checks.json": {
+      "bytes": 527,
+      "sha256": "4253435366f9f01316ec8a6526b0b740878850beef620e0af7db3319f23ad9bc"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/five_relations.json": {
+      "bytes": 185,
+      "sha256": "50008f4c3f9873b2d8a14b22d5ec216008d4a7dcf336db3b0f87aee7b7cacb84"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/five_relations.log": {
+      "bytes": 346,
+      "sha256": "ff7790e7ad9ee5840496854b621f4016b4cd16d216d7e62df5e0c8ae9c6633a0"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/reset_bounded_check.log": {
+      "bytes": 710,
+      "sha256": "25593a9b68388816c0e9c2c2c2922ae880ef5ab6ae268893590d03807648c0cd"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/rocq-results/KERNEL_CHECK_PASSED": {
+      "bytes": 553,
+      "sha256": "c02dc81f131a9a1b882203cab40fa3da5679972fe16127ae2f687e0fc347d817"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/rocq-results/run.Att3xuqp/compile.log": {
+      "bytes": 484,
+      "sha256": "dd838f75deb4ae67bcf29dbec0001782c47f74741678c26986eb2d8153ab8bf2"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/rocq-results/run.Att3xuqp/kernel-check.log": {
+      "bytes": 2085804,
+      "sha256": "fdc8ac373f9b5aafb57864ba8af22a60ca2a7d533c2ba0ebc758fbe549eaaf86"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/rocq-results/run.Att3xuqp/version.log": {
+      "bytes": 57,
+      "sha256": "21d70c5468e7fb42f1d3b049a670071a88bf999b53319004e1f834435b87686b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/rocq.log": {
+      "bytes": 274,
+      "sha256": "fb5d24c933f7ee9eeb7c869971135c6cd4a5feaa29b72369fa5403d160cb10bb"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general-details/test_review_regressions.log": {
+      "bytes": 772,
+      "sha256": "0442e60b1afae6e992ddf5bc06372d050d539a87ce9f6795e2aa4176e26f0bf0"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/general_development.log": {
+      "bytes": 770,
+      "sha256": "5fd1ccdad83aa6b1cfed3883d1981a0ea412fd327cfb217a6548ef1b037d00e4"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/integrity.log": {
+      "bytes": 362,
+      "sha256": "4a034ebcf1003fd839226c93881a6233e9ffd8e86f2d16085e235ff9e18dc410"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/AllAssumptions.v": {
+      "bytes": 40928,
+      "sha256": "2e64d67fc8cc45740aa294f291078d26916d80ef37c0e7d1820ec56c6bfc8c4b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/RESULT.json": {
+      "bytes": 17152,
+      "sha256": "afc1a9c59353e27b920becbc1b1fb852657e6305cd9da2385cd0f84e40ec0105"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_core_finite_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_core_height_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_expanded_finite_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_finite_branching_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_finite_image_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_finite_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_local_branching_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_pointwise_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_unbounded_minimal_points_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Audit.audited_uniform_height_statement.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.E0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.E_irrefl.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.E_to_normal.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.F0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.I_backward.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.M.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P0_restrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P1.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P1_restrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P1_strong.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P1_strong_implies.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.P1_strong_restrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.Q2.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.Q2_restrict.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.R0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.WF.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.acc_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.acc_star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.active.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bad.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bad_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bad_star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bad_step.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bad_successor.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bounded_height_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bounded_immortal_height_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bounded_implies_wf.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.bounded_representatives_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cup.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_B_plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_C_plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_E_equiv.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_E_path.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_F_equiv.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_R_equiv.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_R_path.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_domain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_minimal_equiv.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_serial.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.cut_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.detour_tail.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.domination.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.domination_path_transfer.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.domination_transitive.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.empty_active_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_active_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_acyclic_four_relations.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_acyclic_wf.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_escape_target_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_family_bound.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_source.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finite_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finitely_branching.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finitely_branching_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.finitely_branching_wf_height.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.flip.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.fold_step.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.height_edge.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.height_implies_acc.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.height_le.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.height_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.initial_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.least_rank_is_nonzero_limit.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.least_rank_nonzero.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.least_rank_not_successor.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.long.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.long_down.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.long_le.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.long_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.lower_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.minimal_immortal.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.minimal_immortal_unbounded.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.normal.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.not_wf_has_bad.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_cut.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_long.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_one.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_split.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.plus_trans.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.pointwise_height_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.pointwise_minimal_height_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rank_F_nonincrease.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rank_le_antisym.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rank_min_representatives.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rank_plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rank_star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.rel.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.representatives.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.representatives_serial.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.serial_domain_bounded_height_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.serial_domain_finite_image_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.serial_domain_pointwise_height_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.serial_rerouting_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star_cut.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star_long.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star_one.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.star_trans.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.strong_F_long.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.top_domination_successor.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.top_domination_wf.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.transitive_subunion_wf.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.weak_jumping.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.well_founded_has_no_infinite_chain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_irrefl.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_minimum.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_mono.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_no_serial.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_normal_form.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelations.wf_plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.E.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P1.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.Q2.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.comp.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.included.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.num_injective.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.plus.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_A.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_C.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_D.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.relation.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.star.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.union.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.vertex.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.bounded_representative_core_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.core_representatives.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.finite_representative_core_impossible.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.locally_finitely_branching_termination.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.long_reachable_cut.txt": {
+      "bytes": 32,
+      "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/assumptions/FourRelations.Refinements.reachable_finitely_branching_height.txt": {
+      "bytes": 59,
+      "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/checker_version.log": {
+      "bytes": 88,
+      "sha256": "d777d04fe82b2cf02e40774c25f7ce15238051bc8ad9fbc19cd7b3cfcac029ec"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/compile_AllAssumptions.log": {
+      "bytes": 46197,
+      "sha256": "2b23bb2de689558a42693662a520c0ed524588f133fe02324964119a8ee7d8ce"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/compile_Audit.log": {
+      "bytes": 9815,
+      "sha256": "a29c533aaeac2ba8630f0f9432eab1c412d0e1b7618356f2a6b5ab7a9c32e276"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/compile_FourRelations.log": {
+      "bytes": 85556,
+      "sha256": "9bb0bb27fde284e6ecf2d12bebede178b1d9c532cfd4f007f02db13f4be408c5"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/compile_FourRelationsCounterexample.log": {
+      "bytes": 16194,
+      "sha256": "f770d3ad049417257aba4386d7f0bcf79c10a068f2d6b0fedfd3976d8bf9dc4b"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/compile_Refinements.log": {
+      "bytes": 9116,
+      "sha256": "0dd2a375200c38b23cabe16e7e15a97f0bf2e44ab224c50fff7401ba46bd9c77"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/rocqchk.log": {
+      "bytes": 2896170,
+      "sha256": "b8813bd2c8711e63077d803a6b90f08863785e57c4037e64b448624de0689bea"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/source_hygiene.json": {
+      "bytes": 323,
+      "sha256": "04d4c924e1353269728225c45f8b345fb07ddc96b907967a1b7cfba448a87f09"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/statement_preservation.json": {
+      "bytes": 53,
+      "sha256": "51b28f8fe9f8dcd99d1aef15132ce3082199276b4189925857afa9e1695dfa81"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october-proof-details/toolchain.log": {
+      "bytes": 104,
+      "sha256": "770b3dcb4b72f87d5847b105701d8ee4c9f70422d0ec7827dd63ba5925ed65e0"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/october_rocq.log": {
+      "bytes": 407,
+      "sha256": "12c5dbc6d9972251f1081bc7c7cf3b2ac68cdab3eda23d3a37f33b5f8ab43b23"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/python_version.log": {
+      "bytes": 228,
+      "sha256": "53fd494ff505d88365eaec1eed7726b9300e52ec8d774b59070efc3d12b03ec1"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/rocq_version.log": {
+      "bytes": 228,
+      "sha256": "cdc4f686d3051dc0938205a0785f1f9aa9a1a202610d3a1b2238fc85b22d4781"
+    },
+    "well-founded-unions/validation/2026-11-09-complete/rocqchk_version.log": {
+      "bytes": 212,
+      "sha256": "b2e3609d133233093f8ca8d257134c375f14afc4e6d4df08c2bbe4a3691e2676"
     },
     "well-founded-unions/validation/2026-11-09-full-scope/RESULT.json": {
       "bytes": 5698,
@@ -3414,6 +5678,546 @@
       "bytes": 212,
       "sha256": "b2e3609d133233093f8ca8d257134c375f14afc4e6d4df08c2bbe4a3691e2676"
     },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/CHECKED.json": {
+      "bytes": 5131,
+      "sha256": "ceacdcd003b62dd73863bafbc18027ae6c65f43dd3bf4672e1d615edd3fd8052"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/branching-audit.log": {
+      "bytes": 784,
+      "sha256": "696be45e925096d6a3d8e0f7887ceb0a38ad828911fdd91500c7ae123ca14439"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/certificate-tests.log": {
+      "bytes": 570,
+      "sha256": "af4cf4765a6148141c89d1b19382b00722949358f09aa5879cc6f7ff1ec62aa0"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/debruijn-kernel.log": {
+      "bytes": 4390,
+      "sha256": "139ea03161da32884104d4b1cf41b9564425cbd50e05df9da1d2337eb3a62d37"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/extension-tests.log": {
+      "bytes": 378,
+      "sha256": "c6c36afdf178f5c18aad4887abb01137e66bdaca23d5e132be98740533943a01"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/extensions-audit.log": {
+      "bytes": 927,
+      "sha256": "0716a281a02f952c9e9d5f9954f09989af7d47a7d509fe4e8865cd726e7b3a05"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/finite-audit.log": {
+      "bytes": 349,
+      "sha256": "f24fccfcab754220be082786d1782242e166db4793d098a01cf36d8aabf69563"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/kernel-tests.log": {
+      "bytes": 1349,
+      "sha256": "a14647dd7857414db669d4e2779691d06eac93790b1df05826ba6ef062131818"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/named-kernel.log": {
+      "bytes": 5463,
+      "sha256": "77e5facd79214171545454ae6ece39317dc2c5c3e0fc882aa0a0e0eaf7186ca7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/rebuild.log": {
+      "bytes": 5575,
+      "sha256": "80bf3a2d4193d60a9ea46552b7c63abc380c4eeb8d5b820460e5eee15ea1715e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate-details/logs/statement-tests.log": {
+      "bytes": 750,
+      "sha256": "52f48ee57945cc7c74bd86cb4e5d0be347e5b66053f039aace9f3ae8058ad6d5"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate.json": {
+      "bytes": 326,
+      "sha256": "72e9f65f5f50116bffb57c0367997c7d9b6327f968aee15552823742c324573c"
+    },
+    "well-founded-unions/validation/general-2026-11-09/certificate.log": {
+      "bytes": 426,
+      "sha256": "2e5c3a0a996e22f0ec080978593b2c19f79f5dbb870bae0e94afb4d9669043a8"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/00-c++.log": {
+      "bytes": 408,
+      "sha256": "326755c09919fce7b15e873c26bad69c3ebcb85fef5856c71aaa630e9b0afb2b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/01-c++.log": {
+      "bytes": 285,
+      "sha256": "61116b6d006d305956b642d1257a287930370a62d62d7014ff979f7d2a1daee7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/02-check_generalization.log": {
+      "bytes": 380,
+      "sha256": "a673c920fb1855eb9acb6964dc8d34edbe8540f629683dc6b0c624e08257f01c"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/03-check_representative_elimination.py.log": {
+      "bytes": 441,
+      "sha256": "7841bf6d45e72b51747e04d617d0c54ed7084ed3d0577183db72c9f1cf67383c"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/04-check_height_elimination.py.log": {
+      "bytes": 515,
+      "sha256": "deec4b11761f9c8ff6b09e7777d9be9a1cf5c6472f0526d4fbd4e56a5360183b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/05-exhaustive_original_conditions.py.log": {
+      "bytes": 1436,
+      "sha256": "2d39a0f6cfaffb04f778e31280460f2a6b4b5afc0a5ec33c658cdbe742ff6ef3"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/06-exhaustive_three_points.py.log": {
+      "bytes": 1605,
+      "sha256": "ae622edf3b5249918156958cfcc8108dfd45ab6325d86754da2ffe49aa200121"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/RESULT.json": {
+      "bytes": 1991,
+      "sha256": "d5f32bfe333bc9e94c326382e4df53d3094aa0bff2bc8a4c058f619f11f528c7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments/five-relations.json": {
+      "bytes": 185,
+      "sha256": "50008f4c3f9873b2d8a14b22d5ec216008d4a7dcf336db3b0f87aee7b7cacb84"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/RESULT.json": {
+      "bytes": 1170,
+      "sha256": "2944b3bc1cbc289fcaee3453cec85d277bf291613e57479838ac13a66265933e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/check_existential_folding.log": {
+      "bytes": 1742,
+      "sha256": "1dcdfab7b8aaccae2af94140dc1612acb3418186ceab2c912df34bb451b0a7de"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/check_folding_obligations.log": {
+      "bytes": 953,
+      "sha256": "821e75217d5d92b667072624ac6480b5a2fafd9442855522dce02d66951ab01b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/check_height_obligations.log": {
+      "bytes": 2277,
+      "sha256": "7291d072e656588e3034da68f0fade52f780bc7b7b94fcb4b471c7f28db2dfa3"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/check_infinite_counterexample.log": {
+      "bytes": 2414,
+      "sha256": "a4f5ce9a85a582758c26cae9ed566f075f5fb0dfe45682af63ad390efeb1f0a6"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/check_reset.log": {
+      "bytes": 757,
+      "sha256": "009dfd29a2923ad1d99e6d293a24d6b154dea42d7e67da7a6320328208f39fa7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/exhaustive_three_points.log": {
+      "bytes": 885,
+      "sha256": "8c14c7b04700b59a90adac5848629f33566a66a1bf385a9a1f701bf8498ce02a"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/reset/checks/reset_checks.json": {
+      "bytes": 527,
+      "sha256": "4253435366f9f01316ec8a6526b0b740878850beef620e0af7db3319f23ad9bc"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/check_height_elimination.json": {
+      "bytes": 274,
+      "sha256": "db435b1a2c0befada3ba584e16c450bdd96acabb6799ee21b9ef86aa432106ba"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/exhaustive_original_conditions.json": {
+      "bytes": 1182,
+      "sha256": "4e239e2fa50171bae000dc01d85e3add53d6c9b26d5ff27a0786252c8f63508d"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/00_consistent_witnesses.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/00_consistent_witnesses.smt2": {
+      "bytes": 1466,
+      "sha256": "7c13d60830b3a1221144ebe4c5fbacd98d2daff914ca46fd073a693ad77a2709"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/01_target_survives.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/01_target_survives.smt2": {
+      "bytes": 1178,
+      "sha256": "c5e5b5f6a69965455df4c70aca0c1bd1342961055527674d9d810f3b4d7835d8"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/02_incoming_edge_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/02_incoming_edge_transfer.smt2": {
+      "bytes": 1281,
+      "sha256": "ef27ca9e653b9f8d71bdd1741840196133e023004a52ca2df8d386a302c73986"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/03_retained_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/03_retained_representative.smt2": {
+      "bytes": 1267,
+      "sha256": "93ec36c9925f9ef5b1585a794106886b6c1ea670509433482301cd377bb97d7e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/04_redirected_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/04_redirected_representative.smt2": {
+      "bytes": 1261,
+      "sha256": "03a807d26210c975524fd8ac31a1e823061c223d035121ed80831dab714ec4ed"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/05_witness_case_split.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/05_witness_case_split.smt2": {
+      "bytes": 1262,
+      "sha256": "3a621f285ebece4490e7a6ae51ffa862627ce7027af88e8d3c23cb5ab45f9fbc"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/06_missing_P1_negative_control.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/06_missing_P1_negative_control.smt2": {
+      "bytes": 1388,
+      "sha256": "57e1367a0a6445f4edff710bb6e3bbc22c6b8785fee8b0e63b6fcb230d07f287"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/existential_folding_checks/results.json": {
+      "bytes": 1713,
+      "sha256": "49c4eb797db05c264303fa61e50cde4986457dfe05759d2b51a28e08727120ff"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/00_base_consistency.smt2": {
+      "bytes": 1553,
+      "sha256": "dc6b12bedca2b9475c94bc1c6facddf910b6775ec2b7490ea74532dc919170a5"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/01_surviving_target.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/01_surviving_target.smt2": {
+      "bytes": 1222,
+      "sha256": "9cc561cccff68ceba333f1c9ecee759f6586b4c4372f8f75fb4666f7803201fe"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/02_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/02_transfer.smt2": {
+      "bytes": 1307,
+      "sha256": "bd70837fb5b8b592332d9a61d0e3728f6d0ef90fdfb5bdc84bb3ad2aba88ba9e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/03_new_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/03_new_range.smt2": {
+      "bytes": 1243,
+      "sha256": "e2601813d162b9729d857ffd80cb7c035486ded0857f00b50d07bfc3aaae8b6b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/04_new_identity.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/04_new_identity.smt2": {
+      "bytes": 1260,
+      "sha256": "ca7e2f7da22bed686ca42f4b6d287f29e846bdd2453ed1abe17f89c417d82257"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/05_new_projection.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/05_new_projection.smt2": {
+      "bytes": 1298,
+      "sha256": "78f5a0f846e9a2a4606f0f10f9292fb0f057538ab937ca69eaf23d94f6dce84c"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/06_strict_image_decrease.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/06_strict_image_decrease.smt2": {
+      "bytes": 1249,
+      "sha256": "346378332323c157b5f5e4df35d48fd6b6dc1b3c13e24f90066ed022f8d91a3e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/exhaustive_three_points.json": {
+      "bytes": 638,
+      "sha256": "f5ac60689558a08e60c5c8cbad21f14469e227584630d97694fd63c2d056f711"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/folding_checks/results.json": {
+      "bytes": 788,
+      "sha256": "efda7d5d11953b6539197da07f1eaa06a80eb9c61720f18fbb31a7548add5ba1"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/00_base_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/00_base_consistency.smt2": {
+      "bytes": 1467,
+      "sha256": "353b7951ada0735420c2ad48db0bb59388050a678c34ef5f8a9aa496d747ea01"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/01_incoming_top_edge_is_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/01_incoming_top_edge_is_F.smt2": {
+      "bytes": 1179,
+      "sha256": "d2d98c8c324a69a893b26ae7b2eef502106ea4ba5c3fd33671a208d1fd0b19e4"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.smt2": {
+      "bytes": 1205,
+      "sha256": "d8f6e818b8b8f81354abebf093134d9d5d6e140e0e8b6e96a47222e3803aae5b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/03_top_transfer.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/03_top_transfer.smt2": {
+      "bytes": 1244,
+      "sha256": "51f27078e87da5cca65631ac7d91bcc4a51ab169c8291c7aef609ab2c3a49856"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/04_top_has_dominating_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/04_top_has_dominating_representative.smt2": {
+      "bytes": 1198,
+      "sha256": "4805b0460757a39250190bafad65975095d5710e290d1a460d1987ec5d97b062"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/05_domination_is_transitive.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/05_domination_is_transitive.smt2": {
+      "bytes": 1190,
+      "sha256": "ffb59ae81335d144aa1f24f51f26b8f6eb849a9fb381931de2891d379110ed0d"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/06_top_domination_is_in_F.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/06_top_domination_is_in_F.smt2": {
+      "bytes": 1183,
+      "sha256": "e15fc8b9dce5d42735262ce188c7e12060598c9cc20d9b816c1b5576a7ab8b69"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.smt2": {
+      "bytes": 1132,
+      "sha256": "421d3324d59a3cb920c79df69fc9651fd91e1249b2bec6fbd5fd0c323dd41afc"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/08_composed_representatives_preserve_edges.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/08_composed_representatives_preserve_edges.smt2": {
+      "bytes": 1328,
+      "sha256": "26d12417f45caf88d78c5433b3bcb00097b2984bdef11f8125929d93dfe64a59"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/09_composed_representatives_have_lower_range.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/09_composed_representatives_have_lower_range.smt2": {
+      "bytes": 1194,
+      "sha256": "01352d6f29e00408c523abf203127e120587f9ea0e7f8e6166e1f4b612b73e39"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.smt2": {
+      "bytes": 588,
+      "sha256": "dfc9725807c5117841ed1dc3299f856b2d7f605f9e6876d638471e8de0749ab9"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.smt2": {
+      "bytes": 602,
+      "sha256": "ced176aa08c25bfb011ccc2f9fbd348db7c38e77a6f7d41f654802fbee1cc886"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.smt2": {
+      "bytes": 660,
+      "sha256": "95b5624806fc90c5ee2f840de37765440a6c63a8d362aff8ed104cce4c18b8aa"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.smt2": {
+      "bytes": 457,
+      "sha256": "3c10586d0417297b1a56b774fc60da1e99dc0f73a9a1b3e0d45f352ce62f2160"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.out": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.smt2": {
+      "bytes": 437,
+      "sha256": "fb04adc509f446970e184b2ad3d58b3373497ef3a45543a96463eb24ebb9de55"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/15_strong_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/15_strong_context_consistency.smt2": {
+      "bytes": 489,
+      "sha256": "5834998aad09fcc87d8e597dbbc9d2d849a1ce72738646844f081d3163dcc1c7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/16_rank_context_consistency.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/16_rank_context_consistency.smt2": {
+      "bytes": 405,
+      "sha256": "32d7bfecb93d59675f5467b901afb4a9325489bd1431379d7aa97f77d08a0374"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/17_negative_control_without_rerouting.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/17_negative_control_without_rerouting.smt2": {
+      "bytes": 289,
+      "sha256": "d2075d4b153fd7f1c292c59fbf00fb20cf3745b12678232565e4e6ef409caee1"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/height_checks/results.json": {
+      "bytes": 2820,
+      "sha256": "2853da34f53f4f05856ecc55301a7b4d0f24ce7d245af2d67b89314f82d73978"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/01_endpoint_domain.out": {
+      "bytes": 11228,
+      "sha256": "aaea2dfd4a4f611b41ed1e2f184eff92d5ed1fd1f21c27a483a352748a999ee7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/01_endpoint_domain.smt2": {
+      "bytes": 1294,
+      "sha256": "7c1e025f9c43d09f14b6ea88366a0c2124b0a77764a5c19a59c8265428351c7c"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/02_nonnegative_ranks.out": {
+      "bytes": 3045,
+      "sha256": "01c7969a3a14faa2ede9bc84f886aa2610fc277fff7504825f2b39191b07e834"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/02_nonnegative_ranks.smt2": {
+      "bytes": 1348,
+      "sha256": "b732b5ab0b024376f427fabc8fe7e8c08d1dc55df39e0a1b9c990450efe43755"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/03_A_rank_decrease.out": {
+      "bytes": 5833,
+      "sha256": "52d00943dd71b88993ef7e2f8872a1593062dcb96e6e7af0f97e31a3ac988810"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/03_A_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "490353a08199b5c9d18b4dcfa34fda92606d5d965b8e508298e13100f2e0524e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/04_B_lex_rank_decrease.out": {
+      "bytes": 13294,
+      "sha256": "25b1aea40484945d0abeb282113346c5d37b9772b6b2352e95da274d72d96ad2"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/04_B_lex_rank_decrease.smt2": {
+      "bytes": 1339,
+      "sha256": "1e0f55d8d89ea71b2d077f8c8888e09c609a4442d7cf4e81af34c4d39b848255"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/05_C_rank_decrease.out": {
+      "bytes": 5315,
+      "sha256": "4d88b9e6ddb8b7a48b523983b7e71f60258d5a155f1bde20539a7af87ce5a28e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/05_C_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "67b517683d597ce95a42542a043f193feed5d343f7be90936d78542faec331bf"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/06_D_rank_decrease.out": {
+      "bytes": 10559,
+      "sha256": "08f52deb7448fc496e0165d00ffd0e40270d3f8e827aea318f55893884dc9d53"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/06_D_rank_decrease.smt2": {
+      "bytes": 1286,
+      "sha256": "6155cf6528d7ad1da8b6776f83fdf1a9045299c4369a57d98bf051340635ea89"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/07_P0_stronger_explicit_witness.out": {
+      "bytes": 16469,
+      "sha256": "112c482104922028afba40311e63ecb1199a782f576271e109d2e8505d1e5067"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/07_P0_stronger_explicit_witness.smt2": {
+      "bytes": 1327,
+      "sha256": "2f2efb414afd4de82c9c5b808c33f6d71d802fc583c1dddc14aca6d2ec2c98bc"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/08_P1_stronger_explicit_witness.out": {
+      "bytes": 16021,
+      "sha256": "a8bd65c41b83070b76b1907d942e15a66e34dd5b750a00e237c5373a7bfa9955"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/08_P1_stronger_explicit_witness.smt2": {
+      "bytes": 1371,
+      "sha256": "8f34998f0304ed73ba4fe20e4e9e3e4b11f748556d9b34147254b3975bf6ad45"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/09_Q2_stronger_explicit_witness.out": {
+      "bytes": 4413,
+      "sha256": "2b6e4bd6b357d4b2b6171d45b443f565c458dc92bc10589bc9215f10dd5c50a2"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/09_Q2_stronger_explicit_witness.smt2": {
+      "bytes": 1304,
+      "sha256": "e59c31c731adcb03e4d729a98ece22e97aec6f0523073cd562a07eac8a4b6e01"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/10_two_cycle.out": {
+      "bytes": 1704,
+      "sha256": "faecd395e919b6b4f1c7370eb42421ea4848adb04f3e456870ca3568109321fb"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/10_two_cycle.smt2": {
+      "bytes": 1303,
+      "sha256": "61a4328c8db008ac63dbd2aa6fe14ca4e7d1ebeee316cd2c44376dc2ced35231"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/11_cycle_even_steps.out": {
+      "bytes": 4714,
+      "sha256": "221e56bcd99c69c9a4e7649c8400b199ceee5c72ba125c97d4936933f8abfedd"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/11_cycle_even_steps.smt2": {
+      "bytes": 1347,
+      "sha256": "7a3af64ed6c2675f9d7abcac386853a55f43ff2fb8dd7c3dacda6c4b67926bbe"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/12_nonvacuity.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/12_nonvacuity.smt2": {
+      "bytes": 1318,
+      "sha256": "dfb5ec508d38a51c19ef9efe49a12ddb9b94172098ca9a1e7394b677624659f1"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/13_negative_control.out": {
+      "bytes": 4,
+      "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/13_negative_control.smt2": {
+      "bytes": 1243,
+      "sha256": "183c52ade8ff48915e1438a789b7e029d5f5ce597e47aa4ca8c073371d3003c3"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/checks/infinite_checks/results.json": {
+      "bytes": 3090,
+      "sha256": "b82957af06857f68d1410504a62296af371f3c4ee30291efbccc6aab7ac616f6"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/generated/supplement/review_regressions.json": {
+      "bytes": 3339,
+      "sha256": "07bdb9d68afc3cb77b9987b206cec5b45ceb53667076be8bb5da4ad5882ad3bb"
+    },
+    "well-founded-unions/validation/general-2026-11-09/experiments-repaired/test_review_regressions.log": {
+      "bytes": 811,
+      "sha256": "66dfebd2e155bfce2fa29646f847bfc743a0fda14a7dd429611c7f9a26de66bb"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq-details/KERNEL_CHECK_PASSED": {
+      "bytes": 558,
+      "sha256": "36c0204d87a8840a1bc5c79552b24cd0963b39897900cbdccf4595fb24c0dff7"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq-details/run.qdeIyuyf/compile.log": {
+      "bytes": 484,
+      "sha256": "dd838f75deb4ae67bcf29dbec0001782c47f74741678c26986eb2d8153ab8bf2"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq-details/run.qdeIyuyf/kernel-check.log": {
+      "bytes": 2085809,
+      "sha256": "d79b8caa7fe08cfe4537f4bfdb0bc0a6fe7fa534651a947670f87e93201a59a4"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq-details/run.qdeIyuyf/version.log": {
+      "bytes": 57,
+      "sha256": "21d70c5468e7fb42f1d3b049a670071a88bf999b53319004e1f834435b87686b"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq.json": {
+      "bytes": 331,
+      "sha256": "aefddb6c8a167ffc7267b13f3ed119189c9828106201f12d0f52e871cbda5bcd"
+    },
+    "well-founded-unions/validation/general-2026-11-09/rocq.log": {
+      "bytes": 287,
+      "sha256": "14368b79f875db66856cb6ce697b14d998822f754aeb0c879c45526224aa1716"
+    },
     "well-founded-unions/validation/package-checks/RESULT.json": {
       "bytes": 1617,
       "sha256": "d81e7675917d3bc81ee948c3b6aac88ae5a92969096c794782ab514d1959465d"
@@ -3443,16 +6247,20 @@
       "sha256": "917c995ae731cdcfa8ac53eff67adf490ae61f4db9106bc231360f6012b4a7d5"
     },
     "well-founded-unions/validation/source_preservation.json": {
-      "bytes": 206,
-      "sha256": "fcb3165badec7d6c87242ecb4773277102d1f059f5ea278618c00de18b9db636"
+      "bytes": 364,
+      "sha256": "7f87d4cfb3852c4140ca7badc06f3ccf1aa2c4057b483e4fe5f363b49c3e5af9"
+    },
+    "well-founded-unions/verification/verify_general.py": {
+      "bytes": 9105,
+      "sha256": "82fdb76385046fed53fd5e9815eb693634334b74a94542a1ea807fe94e9aba9e"
     },
     "well-founded-unions/verification/verify_results.py": {
       "bytes": 5064,
       "sha256": "7a2041dcd0cce87500fdd70f75ac83941fba69bd4818c4401290663290e9c342"
     },
     "well-founded-unions/verify.py": {
-      "bytes": 6660,
-      "sha256": "8bc0e59c592f6ed9e3f9bcd43f6656d23f59b69eec13ed6a4aaaefe4de2246f2"
+      "bytes": 7239,
+      "sha256": "23352a735edd2e89fac5506d0914cf4b08d5f30849315b691e07ae27a27e5437"
     },
     "well-founded-unions/verify_integrity.py": {
       "bytes": 768,
