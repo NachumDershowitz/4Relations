@@ -1,0 +1,53 @@
+[
+  {
+    "source": "/Users/Nachum/Downloads/FourRelations_line605_fixed.v",
+    "destination": "rocq/FourRelations.v",
+    "sha256": "21eb586b967dd70fd7988bd7819db7b71ebe88b8ec37118bdd4a7dd501b4d142"
+  },
+  {
+    "source": "/Users/Nachum/Documents/FourRelations/FourRelationsVerification/Audit.v",
+    "destination": "rocq/Audit.v",
+    "sha256": "15093020d78d662db32028080f299c100daf4ff84beaba74981dfb5333c6ca8e"
+  },
+  {
+    "source": "/Users/Nachum/Desktop/4/4Relations/formal_proofs/FourRelationsCounterexample.v",
+    "destination": "rocq/FourRelationsCounterexample.v",
+    "sha256": "e9d26504f57ec42d9532069375edecb41b2b4c464b2bc8e99535e6abf5c3d31d"
+  },
+  {
+    "source": "/Users/Nachum/Documents/FourRelations/Four_Well_Founded_Relations_LMCS_finite/Four_Well_Founded_Relations_LMCS_finite.tex",
+    "destination": "manuscript/Four_Well_Founded_Relations_LMCS_finite.tex",
+    "sha256": "e3460715d8cbf5843dcf90b6213b299eec9fed8caf5a4e4d33c91f58ceaf8fdb"
+  },
+  {
+    "source": "/Users/Nachum/Documents/FourRelations/Four_Well_Founded_Relations_LMCS_finite/Four_Well_Founded_Relations_LMCS_finite.bib",
+    "destination": "manuscript/Four_Well_Founded_Relations_LMCS_finite.bib",
+    "sha256": "e21c8c3fbb14e2d8d52ccae940b22ad5af4dcb3c1358138acb9217f44e9b9bb6"
+  },
+  {
+    "source": "/Users/Nachum/Documents/FourRelations/Four_Well_Founded_Relations_LMCS_finite/lmcs.cls",
+    "destination": "manuscript/lmcs.cls",
+    "sha256": "6768aa954b40a450daca25549ac9269628711827ca2dd773796c4f890458e22d"
+  },
+  {
+    "source": "/Users/Nachum/Documents/FourRelations/Four_Well_Founded_Relations_LMCS_finite/alphaurl.bst",
+    "destination": "manuscript/alphaurl.bst",
+    "sha256": "f218fe037634ba5ddda3abdcc237208f48aec18af0c27d44b847972456a38285"
+  },
+  {
+    "source": "/Users/Nachum/Desktop/4/Paper/Four_Well_Founded_Relations.tex",
+    "destination": "originals/user_manuscript.tex",
+    "sha256": "c40e2d094292661039e32aa0a3af8552a2af1d15efbc19eb3b32952571289280"
+  },
+  {
+    "source": "/Users/Nachum/Desktop/4/FourRelations-verification-results/verification-20261020T101945Z-2qccvwvl/original_sources/FourRelations.v",
+    "destination": "originals/failed_FourRelations.v",
+    "sha256": "7803dcc63124e2aea98bdcc809023a304b9030d3559d2fe529f9011f434597bc"
+  },
+  {
+    "source": "/Users/Nachum/Desktop/four-relations/manuscript/Four_Well_Founded_Relations.tex",
+    "destination": "originals/editorial-revision/supplied.tex",
+    "sha256": "53febad43d688f1cc4fe2f6682bf4dc7d5e53f50c21c4d7bb5826b4792463db8",
+    "use": "New base for the editorial revision requested on 20 October 2026."
+  }
+]

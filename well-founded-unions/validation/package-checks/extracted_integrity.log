@@ -1,0 +1,4 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'verify_integrity.py']
+Cwd: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions
+
+824 manifest entries; 0 errors.

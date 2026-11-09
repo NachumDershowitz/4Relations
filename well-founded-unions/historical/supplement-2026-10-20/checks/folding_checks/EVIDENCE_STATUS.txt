@@ -1,0 +1,4 @@
+The .smt2, .out, and results.json files are archived evidence from the input project.
+SMT solver calls were not rerun in this session. Original local solver: Z3 4.13.3.
+Python exhaustive diagnostics, where present, were rerun; see logs/.
+These results are not kernel proofs and no Rocq theorem depends on them.

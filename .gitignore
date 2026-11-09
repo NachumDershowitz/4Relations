@@ -12,3 +12,6 @@ paper/build/
 *.glob
 .*.aux
 .lia.cache
+
+# Manuscripts and their build products are outside publication scope.
+/paper/

@@ -1,0 +1,3 @@
+Command: ['/usr/local/bin/rocqchk', '--version']
+
+The Rocq Proof Checker, version 9.1.1

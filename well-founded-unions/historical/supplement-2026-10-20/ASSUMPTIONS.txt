@@ -1,0 +1,90 @@
+FOUR RELATIONS — ASSUMPTION RECORD
+20 October 2026
+
+Decisive evidence
+-----------------
+logs/final/RESULT.json records the successful fresh build, checked source
+hashes, proof-object hashes, commands, exit statuses, and all assumption sets.
+logs/final/rocqchk.log is the complete independent kernel-check transcript.
+logs/final/compile_AllAssumptions.log contains Check and Print Assumptions for
+every one of the 183 declared definitions, inductives, and proof constants.
+logs/final/assumptions/ contains each individual Print Assumptions output.
+logs/final/AllAssumptions.v is the exact generated audit source.
+
+Global logical assumptions
+--------------------------
+130 declarations: Closed under the global context.
+53 declarations: only
+
+    Stdlib.Logic.Classical_Prop.classic : forall P : Prop, P \/ ~ P.
+
+Excluded middle was already imported in the input development. No mathematical
+axioms were introduced. There is no axiom of choice, dependent choice,
+functional extensionality, admitted proof, unchecked cast, unsafe fixpoint,
+assumed positivity, or type-in-type dependency in the checked results.
+The concrete infinite-counterexample theorem is closed under the global context.
+
+The checker loads the standard library and explicitly reports its global
+classical axiom. Loading an axiom is distinguished from a theorem depending on
+it by the per-constant Print Assumptions outputs.
+
+Explicit mathematical hypotheses (universally quantified, not global axioms)
+--------------------------------------------------------------------------
+Conventions:
+  A x y means a forward edge from x to y.
+  WF P = well_founded (fun y x => P x y).
+  bad P x = ~ Acc (fun y x => P x y) x.
+  cut I P keeps both endpoints in I.
+  star P is finite reflexive-transitive closure; plus P is nonempty closure.
+  long P n x means an n-edge P-path from x; height_le P h x forbids h+1 edges.
+  F=C union D, E=B union F, R=A union E.
+  P0: EA is included in AR* union E.
+  P1: FB is included in AR* union B+ union F.
+  Q2: DC is included in BE* union C+ union D.
+  P1_strong removes only the F shortcut from P1.
+
+Finite termination:
+  WF A, WF B, WF C, WF D, P0, P1, Q2, and a finite covering list for X.
+
+Finite escape targets:
+  The same seven structural hypotheses; the covering list is required only for
+  B-successors in I=bad R of A-minimal points of I.
+
+Uniform height:
+  The same structural hypotheses, and a common natural bound on B restricted
+  to I, only for paths starting at A-minimal points of I.
+
+Representative cores:
+  A nonempty S contained in the A-minimal points of I. For every z in I, there
+  exists t in S such that every E-edge from S to z is also an edge to t.
+  Finite escape targets or a uniform finite B-height is required only for S.
+  Both impossibility statements retain WF A/B/C/D and P0/P1/Q2.
+  Existence of representatives is an explicit theorem premise; no choice
+  function is postulated.
+
+Pointwise height and local branching:
+  WF A/B/C/D, P0, P1_strong, Q2. Paths and branching may be restricted to I.
+  Every A-minimal immortal point has unbounded finite B-path lengths and
+  B*-reaches a point whose successor set has no finite covering list.
+  Thus finite branching only on these reachable cones suffices for termination.
+
+Abstract rank result:
+  A serial domain J containing both endpoints of every edge; WF A/C/D; P0 and
+  Q2; the strong middle rerouting premise; a strict total order (K,<);
+  rho(y)<rho(x) on B-edges; and the bound law
+
+    (forall y, B x y -> rho(y)<gamma) -> rho(x)<=gamma.
+
+  The value alpha is attained and is least among the A-minimal points of J.
+  The conclusion is that the segment below alpha is nonempty and has no
+  greatest member. The construction of ordinal ranks is not formalized.
+  The manuscript states these laws explicitly, so the checked abstract theorem
+  and its claimed scope agree.
+
+Foundation correspondence
+-------------------------
+The manuscript now uses accessibility and nonaccessibility, matching Rocq.
+Accessibility excludes every explicit infinite chain without any logical axiom.
+The converse implication from absence of chains requires dependent choice in
+general; it is not used or claimed as a choice-free theorem here.
+Finite acyclicity implies accessibility by a separate checked finite-list proof.

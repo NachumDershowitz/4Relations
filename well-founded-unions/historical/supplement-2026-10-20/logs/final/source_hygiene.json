@@ -1,0 +1,18 @@
+{
+  "FourRelations.v": {
+    "declarations": 116,
+    "forbidden_tokens": []
+  },
+  "Refinements.v": {
+    "declarations": 7,
+    "forbidden_tokens": []
+  },
+  "FourRelationsCounterexample.v": {
+    "declarations": 50,
+    "forbidden_tokens": []
+  },
+  "Audit.v": {
+    "declarations": 10,
+    "forbidden_tokens": []
+  }
+}

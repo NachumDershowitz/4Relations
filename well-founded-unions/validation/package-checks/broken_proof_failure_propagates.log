@@ -1,0 +1,10 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'verify.py', '--scope', 'recovered', '--log-dir', '/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/broken-proof-logs']
+Cwd: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions
+
+python_version
+rocq_version
+rocqchk_version
+integrity
+finite_coverage
+counterexample
+counterexample failed with exit 1; see /private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/broken-proof-logs

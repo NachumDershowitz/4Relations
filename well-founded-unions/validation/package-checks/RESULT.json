@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "check": "extracted_integrity",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verify_integrity.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "expected_exit_status": 0
+    },
+    {
+      "check": "checksum_failure_propagates",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verify.py",
+        "--scope",
+        "recovered",
+        "--log-dir",
+        "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/checksum-logs"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 1,
+      "expected_exit_status": 1
+    },
+    {
+      "check": "broken_proof_failure_propagates",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verify.py",
+        "--scope",
+        "recovered",
+        "--log-dir",
+        "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/broken-proof-logs"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 1,
+      "expected_exit_status": 1
+    },
+    {
+      "check": "full_scope_reports_missing_components",
+      "exit_status": 2,
+      "recovered_checks_passed": true,
+      "requested_package_complete": false
+    }
+  ],
+  "all_expected_results_observed": true
+}

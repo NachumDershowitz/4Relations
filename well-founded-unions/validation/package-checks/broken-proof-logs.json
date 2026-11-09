@@ -1,0 +1,79 @@
+{
+  "started_utc": "2026-11-09T13:14:39.647964+00:00",
+  "scope": "recovered",
+  "python": "3.14.5 (v3.14.5:5607950ef23, May 10 2026, 07:38:09) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "requested_package_complete": false,
+  "recovered_checks_passed": false,
+  "historical_smt_searches_rerun": false,
+  "stages": [
+    {
+      "name": "python_version",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "--version"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.018
+    },
+    {
+      "name": "rocq_version",
+      "command": [
+        "/usr/local/bin/rocq",
+        "--version"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.024
+    },
+    {
+      "name": "rocqchk_version",
+      "command": [
+        "/usr/local/bin/rocqchk",
+        "--version"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.024
+    },
+    {
+      "name": "integrity",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions/verify_integrity.py"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.147
+    },
+    {
+      "name": "finite_coverage",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verification/verify_results.py"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.167
+    },
+    {
+      "name": "counterexample",
+      "command": [
+        "sh",
+        "formal_proofs/check.sh"
+      ],
+      "cwd": "/private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/well-founded-unions",
+      "exit_status": 1,
+      "elapsed_seconds": 1.985
+    }
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "outcome": "FAILED",
+  "failure": "counterexample failed with exit 1; see /private/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-package-check-8pxj4m6h/broken-proof-logs",
+  "exit_status": 1,
+  "finished_utc": "2026-11-09T13:14:42.033112+00:00"
+}

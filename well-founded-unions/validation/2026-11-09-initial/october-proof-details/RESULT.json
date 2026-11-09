@@ -1,0 +1,425 @@
+{
+  "kernel_verified": true,
+  "stages": [
+    {
+      "name": "toolchain",
+      "command": [
+        "/usr/local/bin/rocq",
+        "--version"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "checker_version",
+      "command": [
+        "/usr/local/bin/rocqchk",
+        "--version"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "compile_FourRelations",
+      "command": [
+        "/usr/local/bin/rocq",
+        "compile",
+        "-q",
+        "-time",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-output-directory",
+        ".",
+        "FourRelations.v"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "compile_Refinements",
+      "command": [
+        "/usr/local/bin/rocq",
+        "compile",
+        "-q",
+        "-time",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-output-directory",
+        ".",
+        "Refinements.v"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "compile_FourRelationsCounterexample",
+      "command": [
+        "/usr/local/bin/rocq",
+        "compile",
+        "-q",
+        "-time",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-output-directory",
+        ".",
+        "FourRelationsCounterexample.v"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "compile_Audit",
+      "command": [
+        "/usr/local/bin/rocq",
+        "compile",
+        "-q",
+        "-time",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-output-directory",
+        ".",
+        "Audit.v"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "compile_AllAssumptions",
+      "command": [
+        "/usr/local/bin/rocq",
+        "compile",
+        "-q",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-output-directory",
+        ".",
+        "AllAssumptions.v"
+      ],
+      "exit_status": 0
+    },
+    {
+      "name": "rocqchk",
+      "command": [
+        "/usr/local/bin/rocqchk",
+        "-Q",
+        ".",
+        "FourRelations",
+        "-o",
+        "FourRelations.FourRelations",
+        "FourRelations.Refinements",
+        "FourRelations.FourRelationsCounterexample",
+        "FourRelations.Audit",
+        "FourRelations.AllAssumptions"
+      ],
+      "exit_status": 0
+    }
+  ],
+  "sources": {
+    "FourRelations.v": "e508141795057d77a923611afd1737a724c5462146a6bf79b6498eaa940e9212",
+    "Refinements.v": "65f453072702e994692086112b40b99f7e03a835cead85d6dc8ced8aefc94d29",
+    "FourRelationsCounterexample.v": "e9d26504f57ec42d9532069375edecb41b2b4c464b2bc8e99535e6abf5c3d31d",
+    "Audit.v": "e5b99ebd3ba94c1acdf684df65094d12a00194df086b1e5c0c6b9e2de4ccc00e"
+  },
+  "assumptions": {
+    "FourRelations.FourRelations.rel": [],
+    "FourRelations.FourRelations.cup": [],
+    "FourRelations.FourRelations.flip": [],
+    "FourRelations.FourRelations.WF": [],
+    "FourRelations.FourRelations.normal": [],
+    "FourRelations.FourRelations.bad": [],
+    "FourRelations.FourRelations.cut": [],
+    "FourRelations.FourRelations.star": [],
+    "FourRelations.FourRelations.plus": [],
+    "FourRelations.FourRelations.star_one": [],
+    "FourRelations.FourRelations.star_trans": [],
+    "FourRelations.FourRelations.star_mono": [],
+    "FourRelations.FourRelations.plus_one": [],
+    "FourRelations.FourRelations.plus_star": [],
+    "FourRelations.FourRelations.plus_mono": [],
+    "FourRelations.FourRelations.plus_trans": [],
+    "FourRelations.FourRelations.plus_split": [],
+    "FourRelations.FourRelations.acc_mono": [],
+    "FourRelations.FourRelations.wf_mono": [],
+    "FourRelations.FourRelations.acc_star": [],
+    "FourRelations.FourRelations.wf_plus": [],
+    "FourRelations.FourRelations.wf_minimum": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.wf_no_serial": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.wf_irrefl": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.wf_normal_form": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.bad_step": [],
+    "FourRelations.FourRelations.bad_star": [],
+    "FourRelations.FourRelations.bad_mono": [],
+    "FourRelations.FourRelations.bad_successor": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.not_wf_has_bad": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.serial_rerouting_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.weak_jumping": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.detour_tail": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.finite_source": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.finite_acyclic_wf": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.star_cut": [],
+    "FourRelations.FourRelations.plus_cut": [],
+    "FourRelations.FourRelations.transitive_subunion_wf": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.long": [],
+    "FourRelations.FourRelations.height_le": [],
+    "FourRelations.FourRelations.long_down": [],
+    "FourRelations.FourRelations.long_le": [],
+    "FourRelations.FourRelations.long_mono": [],
+    "FourRelations.FourRelations.star_long": [],
+    "FourRelations.FourRelations.plus_long": [],
+    "FourRelations.FourRelations.height_edge": [],
+    "FourRelations.FourRelations.height_mono": [],
+    "FourRelations.FourRelations.height_implies_acc": [],
+    "FourRelations.FourRelations.bounded_implies_wf": [],
+    "FourRelations.FourRelations.finite_family_bound": [],
+    "FourRelations.FourRelations.finitely_branching": [],
+    "FourRelations.FourRelations.finitely_branching_wf_height": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.R0": [],
+    "FourRelations.FourRelations.E0": [],
+    "FourRelations.FourRelations.F0": [],
+    "FourRelations.FourRelations.P0": [],
+    "FourRelations.FourRelations.P1": [],
+    "FourRelations.FourRelations.P1_strong": [],
+    "FourRelations.FourRelations.P1_strong_implies": [],
+    "FourRelations.FourRelations.Q2": [],
+    "FourRelations.FourRelations.M": [],
+    "FourRelations.FourRelations.representatives": [],
+    "FourRelations.FourRelations.active": [],
+    "FourRelations.FourRelations.E_irrefl": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.E_to_normal": [],
+    "FourRelations.FourRelations.initial_representatives": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.representatives_serial": [],
+    "FourRelations.FourRelations.empty_active_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.fold_step": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.finite_active_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.serial_domain_finite_image_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.domination": [],
+    "FourRelations.FourRelations.domination_transitive": [],
+    "FourRelations.FourRelations.domination_path_transfer": [],
+    "FourRelations.FourRelations.top_domination_successor": [],
+    "FourRelations.FourRelations.top_domination_wf": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.lower_representatives": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.bounded_representatives_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.serial_domain_bounded_height_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.strong_F_long": [],
+    "FourRelations.FourRelations.serial_domain_pointwise_height_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.rank_le_antisym": [],
+    "FourRelations.FourRelations.rank_star": [],
+    "FourRelations.FourRelations.rank_plus": [],
+    "FourRelations.FourRelations.rank_F_nonincrease": [],
+    "FourRelations.FourRelations.rank_min_representatives": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.least_rank_nonzero": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.least_rank_not_successor": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.least_rank_is_nonzero_limit": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.cut_R_equiv": [],
+    "FourRelations.FourRelations.cut_E_equiv": [],
+    "FourRelations.FourRelations.cut_F_equiv": [],
+    "FourRelations.FourRelations.I_backward": [],
+    "FourRelations.FourRelations.cut_R_path": [],
+    "FourRelations.FourRelations.cut_E_path": [],
+    "FourRelations.FourRelations.cut_B_plus": [],
+    "FourRelations.FourRelations.cut_C_plus": [],
+    "FourRelations.FourRelations.P0_restrict": [],
+    "FourRelations.FourRelations.P1_restrict": [],
+    "FourRelations.FourRelations.Q2_restrict": [],
+    "FourRelations.FourRelations.minimal_immortal": [],
+    "FourRelations.FourRelations.finite_escape_target_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.finite_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.cut_well_founded": [],
+    "FourRelations.FourRelations.cut_domain": [],
+    "FourRelations.FourRelations.cut_serial": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.cut_minimal_equiv": [],
+    "FourRelations.FourRelations.P1_strong_restrict": [],
+    "FourRelations.FourRelations.bounded_immortal_height_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.bounded_height_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.minimal_immortal_unbounded": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.pointwise_minimal_height_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.pointwise_height_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.finitely_branching_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelations.well_founded_has_no_infinite_chain": [],
+    "FourRelations.FourRelations.finite_acyclic_four_relations": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Refinements.core_representatives": [],
+    "FourRelations.Refinements.finite_representative_core_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Refinements.bounded_representative_core_impossible": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Refinements.long_reachable_cut": [],
+    "FourRelations.Refinements.reachable_finitely_branching_height": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Refinements.minimal_immortal_reaches_infinite_branching": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Refinements.locally_finitely_branching_termination": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.FourRelationsCounterexample.FourRelations.vertex": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.relation": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.union": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.comp": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.included": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.star": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.plus": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.WF": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.A": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.B": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.C": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.D": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.F": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.E": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.R": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.num_injective": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.enumerate": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.rank_A": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.rank_C": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.rank_D": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.P0": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.P1": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.Q2": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.B_in_R": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.F_in_R": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.D_in_E": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.alternating": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded": [],
+    "FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample": [],
+    "FourRelations.Audit.audited_core_finite_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_core_height_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_local_branching_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_finite_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_finite_image_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_uniform_height_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_pointwise_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_unbounded_minimal_points_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_finite_branching_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ],
+    "FourRelations.Audit.audited_expanded_finite_statement": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ]
+  },
+  "proof_objects": {
+    "AllAssumptions.vo": "3c686816594c69b3a5a82d81b70ed1e728087c9387bc557b3883bfd192a47a6d",
+    "Audit.vo": "531bdbe23d6d5a9f49ebda7c65e837bf7d763c5337a1806e04b03aa473feb951",
+    "FourRelations.vo": "99b6bc11c987967e3f1ef080747f9cd6da23afe204a01838fb81e42dbf21cd18",
+    "FourRelationsCounterexample.vo": "4bcc5bbd35ff662bd06f4f880257e727c44f718f4717d3a50abf55e18c1d2047",
+    "Refinements.vo": "1866d20684dbe6f92826e47e7021d656d957264a7f71f856bb0b819bbfd079ea"
+  },
+  "global_axioms": [
+    "Stdlib.Logic.Classical_Prop.classic"
+  ],
+  "checked_declarations": 183,
+  "elapsed_seconds": 40.332
+}

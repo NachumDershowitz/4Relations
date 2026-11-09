@@ -1,0 +1,165 @@
+{
+  "started_utc": "2026-11-09T13:12:18.203043+00:00",
+  "scope": "full",
+  "python": "3.14.5 (v3.14.5:5607950ef23, May 10 2026, 07:38:09) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "requested_package_complete": false,
+  "recovered_checks_passed": true,
+  "historical_smt_searches_rerun": false,
+  "stages": [
+    {
+      "name": "python_version",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.017
+    },
+    {
+      "name": "rocq_version",
+      "command": [
+        "/usr/local/bin/rocq",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.041
+    },
+    {
+      "name": "rocqchk_version",
+      "command": [
+        "/usr/local/bin/rocqchk",
+        "--version"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.042
+    },
+    {
+      "name": "finite_coverage",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "verification/verify_results.py"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 0.162
+    },
+    {
+      "name": "counterexample",
+      "command": [
+        "sh",
+        "formal_proofs/check.sh"
+      ],
+      "cwd": "/Users/Nachum/Documents/Codex/2026-11-09/carry-out-these-instructions-in-the/outputs/well-founded-unions",
+      "exit_status": 0,
+      "elapsed_seconds": 25.908
+    },
+    {
+      "name": "october_rocq",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "scripts/verify.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 43.72
+    },
+    {
+      "name": "exhaustive_three_points",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/exhaustive_three_points.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.237
+    },
+    {
+      "name": "exhaustive_original_conditions",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/exhaustive_original_conditions.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.598
+    },
+    {
+      "name": "check_folding_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/check_folding_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.315
+    },
+    {
+      "name": "check_height_obligations",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "checks/check_height_obligations.py"
+      ],
+      "cwd": "/var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement",
+      "exit_status": 0,
+      "elapsed_seconds": 0.58
+    }
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "LIBZ3": "/Applications/MATLAB_R2026a.app/bin/maca64/libz3.4.12.2.0.dylib"
+  },
+  "integrity": "Manifest not yet generated during initial preparation.",
+  "october_rocq": {
+    "kernel_verified": true,
+    "checked_declarations": 183,
+    "global_axioms": [
+      "Stdlib.Logic.Classical_Prop.classic"
+    ]
+  },
+  "missing_components": [
+    {
+      "component": "November general proof-certificate development",
+      "missing": [
+        "proof.json",
+        "kernel.py",
+        "check_debruijn.py",
+        "check.sh",
+        "check_rocq.sh",
+        "rebuild.sh",
+        "export_rocq.py",
+        "base_build.py",
+        "build_branching.py",
+        "build_extensions.py",
+        "audit_finite.py",
+        "audit_branching.py",
+        "audit_extensions.py",
+        "statement_syntax.py",
+        "THEOREM_MAP.md",
+        "STATEMENT.md",
+        "WellFoundedUnionsProofTerms.v",
+        "associated dependencies and regression tests"
+      ],
+      "status": "No exact source recovered; October Rocq supplement is a distinct development, not a substitute."
+    },
+    {
+      "component": "Five-relation/three-point experiment",
+      "status": "Original program and recorded 9,765,625-tuple results not recovered. The recovered four-relation and folding diagnostics are distinct."
+    },
+    {
+      "component": "Small reset-example bounded check",
+      "status": "Original reset-check source not recovered; no claim of an infinite-domain proof."
+    },
+    {
+      "component": "Current-paper theorem correspondence",
+      "status": "Current Well-Founded Unions on Finite and Infinite Sets source or authoritative theorem map not recovered. Requested numbering is listed without guessing correspondences."
+    }
+  ],
+  "outcome": "INCOMPLETE_REQUESTED_PACKAGE",
+  "exit_status": 2,
+  "finished_utc": "2026-11-09T13:13:30.142866+00:00"
+}

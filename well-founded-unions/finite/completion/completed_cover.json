@@ -1,0 +1,38 @@
+{
+  "result": "COMPLETE_UNSAT_COVER",
+  "n": 10,
+  "root_cases": 316,
+  "root_unsat": 312,
+  "root_cases_refined": 4,
+  "refinement_cases": 260,
+  "refinement_unsat": 240,
+  "residual_cases": 20,
+  "residual_previously_unsat": 18,
+  "completed_branches": [
+    {
+      "branch": [
+        7,
+        3,
+        "F"
+      ],
+      "result": "unsat",
+      "elapsed_seconds": 154.338,
+      "z3_version": "4.12.2.0",
+      "input_sha256": "36aae7b4da85ed03d601657ff93b406a425dfd736ccc168b48d1a81b1b6d91e3"
+    },
+    {
+      "branch": [
+        8,
+        4,
+        "F"
+      ],
+      "result": "unsat",
+      "elapsed_seconds": 119.612,
+      "z3_version": "4.12.2.0",
+      "input_sha256": "b847b75a38bf3389de10c50280f8fe5315ab0e07321ca8b7f67103da8064b4de"
+    }
+  ],
+  "final_leaf_obligations": 572,
+  "unresolved": [],
+  "scope": "Checks exhaustive case coverage, zero exit codes of archived UNSAT leaves, exact regeneration and hashes of both completed branch inputs, and saved Z3 outputs. It does not independently verify Z3 proof certificates."
+}

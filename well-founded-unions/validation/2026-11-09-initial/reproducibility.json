@@ -1,0 +1,34 @@
+{
+  "exhaustive_original_conditions.json": {
+    "same_logical_results": true,
+    "comparison_excludes": [
+      "seconds",
+      "solver"
+    ]
+  },
+  "folding_checks/exhaustive_three_points.json": {
+    "same_logical_results": true,
+    "comparison_excludes": [
+      "seconds",
+      "solver"
+    ]
+  },
+  "folding_checks/results.json": {
+    "same_logical_results": true,
+    "comparison_excludes": [
+      "seconds",
+      "solver"
+    ]
+  },
+  "height_checks/results.json": {
+    "same_logical_results": true,
+    "comparison_excludes": [
+      "seconds",
+      "solver"
+    ]
+  },
+  "proof_statements": {
+    "identical": true,
+    "original_statements": 92
+  }
+}

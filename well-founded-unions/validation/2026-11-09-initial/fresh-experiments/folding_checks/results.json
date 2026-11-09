@@ -1,0 +1,38 @@
+[
+  {
+    "obligation": "01_surviving_target",
+    "status": "unsat",
+    "seconds": 0.0209,
+    "solver": "(:version \"4.12.2\")"
+  },
+  {
+    "obligation": "02_transfer",
+    "status": "unsat",
+    "seconds": 0.0177,
+    "solver": "(:version \"4.12.2\")"
+  },
+  {
+    "obligation": "03_new_range",
+    "status": "unsat",
+    "seconds": 0.0221,
+    "solver": "(:version \"4.12.2\")"
+  },
+  {
+    "obligation": "04_new_identity",
+    "status": "unsat",
+    "seconds": 0.0171,
+    "solver": "(:version \"4.12.2\")"
+  },
+  {
+    "obligation": "05_new_projection",
+    "status": "unsat",
+    "seconds": 0.0181,
+    "solver": "(:version \"4.12.2\")"
+  },
+  {
+    "obligation": "06_strict_image_decrease",
+    "status": "unsat",
+    "seconds": 0.0152,
+    "solver": "(:version \"4.12.2\")"
+  }
+]

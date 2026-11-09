@@ -1,20 +1,16 @@
-Four Relations companion archive, version 1.0.0
+Proposed proofs-and-tests publication — 9 November 2026
 
-This release contains the current paper and editable source, its enlarged
-vector figure, the Rocq formal proof of the infinite counterexample,
-and the finite-search encoders, tables, final SMT inputs/outputs, and
-coverage checks.
+Remove the ten tracked files under paper/ from the current branch. Preserve
+existing history and releases. Update the README, citation metadata, and manifest
+for a proofs-and-tests package, and ignore paper/ to avoid accidental re-addition.
 
-Verified results:
-- Rocq 9.1.1 compilation and independent kernel check pass.
-- The combined Rocq theorem is closed under the global context.
-- The finite-coverage audit passes: 150 nine-point cases and 572 terminal
-  ten-point obligations, with no unresolved cases.
-- The two final SMT inputs regenerate byte for byte from the archived
-  generator, with matching SHA-256 hashes.
+Add the recovered well-founded-unions/ artifact with fresh Rocq checks, an
+assumption audit, saved finite-search evidence, exhaustive tests, local SMT
+diagnostics, source provenance, and complete logs.
 
-The finite audit checks coverage and saved solver results; it does not
-independently check Z3 proof certificates. The Rocq formalization covers
-the explicit infinite counterexample.
+The requested general certificate/checkers, five-relation and reset experiments,
+and current-paper theorem correspondence remain incomplete. The recovered-scope
+checks passed; full scope reports incompleteness. See well-founded-unions/STATUS.md.
 
-Start with README.md. The paper is paper/Four_Well_Founded_Relations.pdf.
+This is a local preparation, not a published release. Final publication requires
+user approval. Do not overwrite earlier releases or attach any paper files.

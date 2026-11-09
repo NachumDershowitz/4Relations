@@ -1,0 +1,151 @@
+FOUR RELATIONS — INDEPENDENT MATHEMATICAL REVIEW AND PROOF MAP
+20 October 2026
+
+Scope and correspondence
+------------------------
+Every line of the 1,280-line input termination development and the standalone
+counterexample was read, together with both the supplied AMS manuscript and
+the newer LMCS finite manuscript. Proof scripts were checked against their
+definitions, not inferred from theorem names. The final termination source
+differs in its introductory status comment only from the latest locally found
+proof-repaired version; all additional results are in Refinements.v.
+
+The typed audit expands the finite theorem's unions, composition direction,
+well-foundedness convention, and every alternative of P0/P1/Q2 independently.
+Its only shared closure is the inspected inductive finite-path relation star.
+The other typed aliases check the finite-image, restricted uniform-height,
+pointwise, branching, core, and local-branching statements. Complete printed
+types and assumptions are retained, including the abstract rank hypotheses.
+
+Manuscript item                         Formal coverage
+--------------------------------------  ---------------------------------------
+Concrete countable counterexample       FourRelationsCounterexample.v:
+                                        FourRelationsCounterexample (bundled)
+Finite escape targets; finite domain    finite_escape_target_termination;
+                                        finite_termination
+Finite acyclic formulation              finite_acyclic_four_relations
+Finite escape targets of a core         finite_representative_core_impossible
+Uniform height on I_A                   bounded_immortal_height_termination
+Uniform height of a core                bounded_representative_core_impossible
+Every point of I_A has unbounded paths  minimal_immortal_unbounded
+Pointwise height implies termination    pointwise_minimal_height_termination;
+                                        pointwise_height_termination
+Finite branching                        finitely_branching_termination
+Local branching                         minimal_immortal_reaches_infinite_branching;
+                                        locally_finitely_branching_termination
+Least abstract rank                     least_rank_is_nonzero_limit
+Surviving-tail constriction assertion   detour_tail
+Transitive subunion argument            transitive_subunion_wf
+Accessibility excludes explicit chains well_founded_has_no_infinite_chain
+
+General Jumping, Tripartite, Detour, and the positive four-relation theorem
+are cited published results, not claimed as newly Rocq-checked in their full
+generality. The specialized detour and binary-union results used by the new
+proofs are proved internally. The historical first surviving-tail assertion,
+finite search normal forms, surjective exact-size reduction, and encoder
+correctness are retained in the archived source, not the revised manuscript.
+These are mathematical/computational arguments, not new Rocq claims. The original
+published positive result, including rearrangement, remains attributed to
+Dawson, Dershowitz, and Goré.
+
+Dependency structure and independent checks
+-------------------------------------------
+1. Accessibility is used for forward edges by reversing Rocq's relation.
+   The positive-length closure has at least one edge. Finiteness is a covering
+   list, not an assumed decidable equality or enumerable universe.
+   Nonaccessibility propagates backwards along finite paths. Consequently
+   every rerouting witness ending at an immortal point remains immortal.
+
+2. The serial_rerouting_impossible proof first minimizes under P, then under Q,
+   and minimizes a set of Q-successors under P. The last minimization supplies
+   a P-minimal Q-successor without choosing an infinite sequence. This proves
+   the required weak jumping and detour instances. They are not postulates.
+
+3. A-normalization provides existential representatives of all immortal
+   targets. P0 preserves incoming E-edges from A-normal sources. A nonempty
+   representative core therefore has a serial E-restriction. With no active
+   B-target, its F-edges survive the proved detour constriction, contradiction.
+
+4. The folding proof chooses a PREDECESSOR-free active target for B+, not a
+   forward-normal target. This direction is essential. A two-or-more-edge
+   B-path from the core to it is impossible. P1 therefore transfers incoming
+   E-edges from all deleted B-predecessors to a surviving representative.
+   That representative survives because otherwise irreflexivity of E fails.
+   The finite-list induction deletes a target, even with repeated list entries.
+   It changes neither relations nor theorem hypotheses.
+
+5. The bounded-height proof removes a whole maximum-height layer. Incoming
+   domination is transitive; between points of that layer it cannot contain
+   a B-edge. Its intersections with C and D are well-founded, so the proved
+   transitive-subunion result applies. Accessibility yields a finite domination
+   path to the lower layer. Transferring incoming edges along that path
+   preserves representatives. Natural-number induction supplies the final
+   contradiction; no transfinite induction is silently used here.
+
+6. Under strong P1, F-edges out of A-minimal points propagate every nonempty
+   B-path without shortening it. Thus a fixed finite-height slice of I_A is
+   closed under E-edges between minimal points. For a target with an incoming
+   edge from this slice, its initial representative is in the slice. With no
+   such incoming edge, a fixed seed represents it vacuously. This gives a
+   bounded core and proves the stronger I_A conclusion.
+
+7. Local branching restricts B to the B*-reachable cone of the selected
+   minimal immortal point. Every path from that point stays in the cone,
+   and accessibility is inherited by restriction. Finite branching there
+   gives a bound by accessibility induction and finite-list maxima, without
+   dependent choice. The new formal result proves the negated finite-cover
+   statement at some reachable point, not merely the failure of a global bound.
+
+8. The rank proof uses only a strict total order, strict decrease on B, and
+   the displayed rank-bound law. At the least attained rank, its level set
+   is a core. An empty lower segment gives no B-target. A greatest lower value
+   beta must be attained by a B-successor: otherwise the bound law lowers
+   the source rank. Reroutings to rank beta have one B-edge because no
+   intermediate rank fits. This makes domination serial and well-founded,
+   a contradiction. Ordinal ranks satisfy these laws by their usual supremum
+   definition, but their set-theoretic construction is outside the Rocq scope.
+
+9. The concrete example was checked directly: A and C have no two-step path,
+   D has no three-step path, and B after leaving p or q decreases the selected
+   natural number. The seven displayed P0'/P1' reroutings and the single Q2'
+   detour have exactly the stated endpoints. The union has the explicit
+   p,q,p,q,... chain. Every vertex is immortal; I_A={p,q}; the escape targets
+   are precisely N; height(n)=n; rank(p)=rank(q)=omega.
+   Therefore countability of targets and pointwise finite height at the
+   targets themselves do not suffice, even under the stronger middle premise.
+
+10. The historical surviving-tail proof iterates P0 and P1 by finite path
+    induction, then minimizes within the sets of admissible successors.
+    Appending the remainder of the path preserves an AR* alternative.
+    For search normalization, a sink component of the immortal restriction
+    contains a cycle and is closed under reroutings. A shortest F-cycle has
+    no extra directed chord. Its monochromaticity would contradict C or D
+    acyclicity. The L=2 detour follows from Q2, and its B-target is outside I_A.
+    Surjective lifting preserves acyclicity and positive-length reroutings;
+    a cyclic strongly connected component also has positive-length paths
+    from each vertex to itself, as needed when two preimages share an image.
+    These checks support the historical reductions independently of the new
+    finite theorem, which would otherwise make their premises vacuous.
+
+Research limitations
+--------------------
+The original shortcut option can increase B-height across an F-edge, so the
+pointwise proof cannot be transplanted unchanged to P1. No proof or counterexample
+settling that broader question was found here. The manuscript says so explicitly.
+No claim of a complete classification, or of new solver proof certificates,
+is made. A finite or bounded core is a sufficient condition, not an assertion
+that every infinite subset of I_A has the representative property.
+
+Published-source checks
+-----------------------
+The positive four-relation conditions and Isabelle attribution agree with the
+authors' paper; the final-paper references are Theorem 4 (Tripartite),
+Corollary 6 (Jumping), Lemma 25 (Detour), and Theorems 28–29 (Preferential Jumping
+and Rearrangement).
+https://www.cs.tau.ac.il/~nachumd/papers/WFU.pdf
+https://www.cs.tau.ac.il/~nachumd/papers/Union.pdf
+https://doi.org/10.1007/978-3-319-94205-6_9
+
+The supplement keeps the prior release separate from the newly verified
+termination development:
+https://github.com/NachumDershowitz/4Relations/releases/tag/v1.0.0

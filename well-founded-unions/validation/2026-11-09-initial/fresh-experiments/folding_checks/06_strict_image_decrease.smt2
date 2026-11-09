@@ -1,0 +1,33 @@
+
+(set-option :timeout 15000)
+(set-logic ALL)
+(declare-sort X 0)
+(declare-fun S (X) Bool)
+(declare-fun B (X X) Bool)
+(declare-fun Bp (X X) Bool)
+(declare-fun F (X X) Bool)
+(define-fun E ((x X) (y X)) Bool (or (B x y) (F x y)))
+(declare-fun p (X) X)
+(declare-const z X)
+(declare-const y0 X)
+(assert (S y0))
+(assert (B y0 z))
+(assert (forall ((x X)) (not (E x x))))
+(assert (forall ((x X) (y X)) (=> (B x y) (Bp x y))))
+(assert (forall ((x X) (y X))
+  (=> (Bp x y) (or (B x y) (exists ((v X)) (and (B x v) (Bp v y)))))))
+; z has no B+-predecessor among the B-successors of S.
+(assert (forall ((x X) (v X)) (=> (and (S x) (B x v)) (not (Bp v z)))))
+; The original P1 on A-minimal sources, with all F shortcuts allowed.
+(assert (forall ((x X) (y X) (v X))
+  (=> (and (S x) (F x y) (B y v)) (or (Bp x v) (F x v)))))
+; Projection range, identity on S, and incoming-edge invariant.
+(assert (forall ((v X)) (S (p v))))
+(assert (forall ((v X)) (=> (S v) (= (p v) v))))
+(assert (forall ((x X) (v X)) (=> (and (S x) (E x v)) (E x (p v)))))
+(define-fun Y ((x X)) Bool (and (S x) (B x z)))
+(define-fun Sp ((x X)) Bool (and (S x) (not (Y x))))
+(define-fun pp ((v X)) X (ite (Y (p v)) (p z) (p v)))
+
+(declare-const x X) (assert (Sp x)) (assert (B x z))
+(check-sat)

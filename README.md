@@ -1,98 +1,57 @@
-# Four Relations: companion archive
+# Well-founded unions: formal proofs and tests
 
-Companion materials for Nachum Dershowitz, **Four Well-Founded Relations: A Sufficient Rule, an Infinite Counterexample, and a Finite Bound**.
+This branch contains formal proof sources, test programs, saved experimental
+evidence, and verification records. Paper files are excluded from the current
+branch. Earlier commits and releases remain unchanged and may retain them.
 
-- [Read the paper](paper/Four_Well_Founded_Relations.pdf)
-- [Rocq formal proof](formal_proofs/FourRelationsCounterexample.v)
-- [Finite-search verification record](verification/finite_results.json)
-- [Version 1.0.0](https://github.com/NachumDershowitz/4Relations/releases/tag/v1.0.0)
-
-The paper gives a countably infinite counterexample to the proposed replacement condition: all four relations are individually well-founded, but their union has a two-cycle. The concrete counterexample is formally proved in Rocq. A separate computer-assisted finite search excludes counterexamples on at most ten points.
-
-## Contents
+The recovered November preparation is in
+[well-founded-unions/](well-founded-unions/README.md). Its
+[status](well-founded-unions/STATUS.md) explicitly records missing source
+components; it is not a complete recovery of the general certificate development.
 
 | Path | Contents |
 | --- | --- |
-| `paper/` | Current PDF, editable LaTeX, full-width vector figure, build script |
-| `formal_proofs/` | Standalone `.v` proof, compilation/kernel-check script, verification records |
-| `finite/computation/` | Original Boolean and bit-vector encoders and saved result tables |
-| `finite/completion/` | Original coverage audit; exact inputs, outputs, and metadata for the two final UNSAT runs |
-| `verification/` | Portable archive integrity and finite-coverage checks and their recorded output |
-| `MANIFEST.json` | SHA-256 hashes and sizes of the distributed files |
-| `CITATION.cff` | Citation metadata for the archive |
+| `well-founded-unions/` | Recovered October Rocq development, counterexample, tests, evidence, fresh logs, theorem-map limitations, and checksums |
+| `formal_proofs/` | Original standalone infinite-counterexample source and checker |
+| `finite/` | Original encoders, saved result tables, and final SMT inputs/outputs |
+| `verification/` | Root manifest and saved finite-coverage verification |
+| `MANIFEST.json` | SHA-256 hashes and sizes for the current tracked source package |
 
-## Check the archive and finite coverage
+## Verification
 
-Python 3's standard library is sufficient:
+With Python 3 and Rocq 9.1.1 (`rocq` and `rocqchk`) installed:
 
 ```sh
 python3 verification/verify_archive.py
+python3 well-founded-unions/verify.py --scope recovered
 ```
 
-This checks every distributed file against the manifest and reruns the finite-coverage audit. To run the coverage audit alone:
+The first command checks current package integrity and the historical finite
+coverage audit. The second compiles and independently kernel-checks the recovered
+proofs, audits assumptions and statement preservation, and reruns the exhaustive
+small tests. Add `--with-smt` with Z3 installed to repeat the local SMT diagnostics.
+The default full-scope command deliberately exits 2 until missing evidence is
+recovered and integrated; see the detailed status before citing coverage.
 
-```sh
-python3 verification/verify_results.py
-```
+Freshly checked results include the axiom-free infinite counterexample and the
+separate October development's 183 declarations (130 closed; 53 using only
+classical excluded middle). The saved-result audit checks 150 nine-point cases
+plus 572 ten-point terminal obligations. It regenerates the final two inputs
+exactly, but does not rerun historical SMT searches or check Z3 proof certificates.
+Fresh local SMT checks are separate evidence. Full logs and experimental records
+are included under `well-founded-unions/validation/`.
 
-The expected result is `PASS`, with:
+## Publication scope
 
-- 150 nine-point root cases, all recorded UNSAT;
-- 316 ten-point roots: 312 close directly and four require refinement;
-- 260 refinements, of which 240 close directly;
-- 20 residual cases: 18 close in the residual table and two in the final whole-branch runs;
-- **572 terminal ten-point obligations**, with none unresolved.
+Only proofs, tests, supporting evidence, and documentation belong in this
+branch's publication package. `paper/` is ignored to prevent accidental additions.
+No source history or existing release has been rewritten. No release of this
+recovery has been published; the user's final approval is required.
 
-The ten-point total consists of 280 cases with cycle length at least three and 292 length-two leaves (`32 + 240 + 18 + 2`). The exact-size reduction in the paper covers all smaller cardinalities.
+The November general certificate and independent replay checkers, the original
+five-relation experiment, the reset check, and an authoritative current-paper
+numbering map remain unavailable. The recovered October proof is explicitly
+identified as a distinct development.
 
-The audit checks exact case coverage, recorded statuses and exit codes, and byte-for-byte regeneration and hashes of the two final SMT inputs. It runs the original audit on temporary copies, preserving the archived evidence. It does not rerun the solver or independently check Z3 proof certificates. Earlier terminal outcomes are supplied as result tables; the final two runs additionally include exact SMT-LIB inputs and raw solver output.
-
-`finite/computation/escc_v7w3F_results.tsv` records an earlier incomplete component-mask exploration. It is retained as provenance and contributes no leaves to the completed cover. The two whole-branch UNSAT results make further component splitting unnecessary.
-
-## Check the formal proof
-
-With Rocq installed:
-
-```sh
-sh formal_proofs/check.sh
-```
-
-Verified with **Rocq 9.1.1**, compiled with OCaml 5.4.1. The script compiles the source and runs the independent `rocq check` verifier in a temporary directory. The combined theorem reports:
-
-```text
-Closed under the global context
-```
-
-It proves all four individual well-foundedness claims, the three stronger interaction inclusions, conditions (P0), (P1), (Q2), the two-cycle, an explicit infinite alternating chain, and the failure of forward well-foundedness of the union. It has no axiomatic dependencies or unfinished proofs and imports only Stdlib. Its `WF` definition uses the converse of Rocq's predecessor relation so that it expresses forward termination, as in the paper.
-
-The source retains internal abbreviations `E` and `F`; the paper writes their unions explicitly. The Rocq development proves the concrete infinite counterexample, not the finite SMT exclusion theorem.
-
-## Rerun the final SMT calls
-
-The recorded runs used Z3 **4.12.2.0**, seed zero, the default solver, and a 300-second timeout. They returned UNSAT in 154.338 and 119.612 seconds on the recorded machine. With a compatible `z3` executable:
-
-```sh
-z3 finite/completion/runs/v7_a3_baseline/input.smt2
-z3 finite/completion/runs/v8_a4_baseline/input.smt2
-```
-
-The saved timeout is part of each input; a different machine or solver version can time out. `unknown` is not an UNSAT result.
-
-The archived encoders and original runner remain byte-for-byte copies of the previous research package. Their original direct entry points contain machine-specific library defaults. Replaying the saved `.smt2` inputs as above avoids those defaults. Machine paths in run metadata identify the original environment; no Z3 or other runtime binary is redistributed.
-
-## Rebuild the paper
-
-With a TeX distribution containing pdfLaTeX and TikZ:
-
-```sh
-cd paper
-sh build.sh
-```
-
-The script runs LaTeX twice and writes `paper/Four_Well_Founded_Relations.pdf`. On macOS it prefers MacTeX's executable if present; `PDFLATEX` can specify another executable.
-
-## Provenance and citation
-
-The finite encoders, result tables, and completed whole-branch records come from the September 2026 research package. This release adds the Rocq formalization, the revised note, and a portable wrapper that also audits the nine-point cover. Earlier drafts' claim of 256 completed component-mask leaves is replaced by the complete whole-branch evidence actually distributed here.
-
-Use the citation metadata in `CITATION.cff` and cite the versioned release rather than an evolving working copy. The repository is [NachumDershowitz/4Relations](https://github.com/NachumDershowitz/4Relations).
+Use [CITATION.cff](CITATION.cff) for repository attribution and identify the exact
+commit or a verified release when citing checked artifacts.

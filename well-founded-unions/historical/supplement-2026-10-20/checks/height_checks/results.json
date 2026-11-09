@@ -1,0 +1,115 @@
+{
+  "scope": "local first-order obligations only; not kernel verification",
+  "kernel_verified": false,
+  "solver": "(:version \"4.13.3\")",
+  "results": [
+    {
+      "obligation": "00_base_consistency",
+      "status": "sat",
+      "expected": "sat",
+      "seconds": 0.0216
+    },
+    {
+      "obligation": "01_incoming_top_edge_is_F",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0082
+    },
+    {
+      "obligation": "02_two_step_path_to_top_successor_impossible",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0073
+    },
+    {
+      "obligation": "03_top_transfer",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0083
+    },
+    {
+      "obligation": "04_top_has_dominating_representative",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.008
+    },
+    {
+      "obligation": "05_domination_is_transitive",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0078
+    },
+    {
+      "obligation": "06_top_domination_is_in_F",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0076
+    },
+    {
+      "obligation": "07_lower_has_smaller_uniform_bound",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0078
+    },
+    {
+      "obligation": "08_composed_representatives_preserve_edges",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0077
+    },
+    {
+      "obligation": "09_composed_representatives_have_lower_range",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0074
+    },
+    {
+      "obligation": "10_strong_F_does_not_increase_finite_height",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0081
+    },
+    {
+      "obligation": "11_incoming_bounded_subset_forces_bounded_representative",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0093
+    },
+    {
+      "obligation": "12_no_incoming_edge_allows_arbitrary_bounded_seed",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0072
+    },
+    {
+      "obligation": "13_successor_rank_has_no_intermediate_value",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0071
+    },
+    {
+      "obligation": "14_successor_rank_is_strictly_above_predecessor",
+      "status": "unsat",
+      "expected": "unsat",
+      "seconds": 0.0072
+    },
+    {
+      "obligation": "15_strong_context_consistency",
+      "status": "sat",
+      "expected": "sat",
+      "seconds": 0.0079
+    },
+    {
+      "obligation": "16_rank_context_consistency",
+      "status": "sat",
+      "expected": "sat",
+      "seconds": 0.0089
+    },
+    {
+      "obligation": "17_negative_control_without_rerouting",
+      "status": "sat",
+      "expected": "sat",
+      "seconds": 0.0059
+    }
+  ]
+}

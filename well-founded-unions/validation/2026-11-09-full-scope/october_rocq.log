@@ -1,0 +1,12 @@
+Command: ['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', 'scripts/verify.py']
+Working directory: /var/folders/lx/k4sjvxvn3s16mg45s0rdn1lm0000gp/T/wfu-proof-build-gcvi3c9h/supplement
+
+toolchain
+checker_version
+compile_FourRelations
+compile_Refinements
+compile_FourRelationsCounterexample
+compile_Audit
+compile_AllAssumptions
+rocqchk
+VERIFIED: 183 declarations; independent rocqchk passed.

@@ -1,14 +1,13 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying paper and this versioned archive when using these materials."
-title: "Four Relations: Companion Archive"
+message: "Please cite this repository and identify the exact commit or verified artifact release used."
+title: "Well-founded unions: formal proofs and tests"
 type: software
 authors:
   - family-names: Dershowitz
     given-names: Nachum
-version: 1.0.0
-url: "https://github.com/NachumDershowitz/4Relations/releases/tag/v1.0.0"
+url: "https://github.com/NachumDershowitz/4Relations"
 repository-code: "https://github.com/NachumDershowitz/4Relations"
-abstract: "Paper, Rocq formal proof of a countable four-relation counterexample, and finite-search evidence excluding counterexamples on at most ten points."
+abstract: "Formal proofs, tests, finite-search evidence, and verification records for well-founded unions. Recovery limitations are recorded in STATUS.md."
 keywords:
   - well-founded relations
   - termination

@@ -1,0 +1,13 @@
+# Proof objects and caches are never publication inputs.
+.DS_Store
+__pycache__/
+*.pyc
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+.lia.cache
+build/
+# Parent repository ignores *.out; these are deliberate solver/assumption logs.
+!*.out

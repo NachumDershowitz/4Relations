@@ -1,0 +1,1462 @@
+[
+  {
+    "destination": "finite/completion/audit_completed_cover.py",
+    "source": "publication-clone/finite/completion/audit_completed_cover.py",
+    "sha256": "7cdfd4cab06e9315ca8ed7fa9d48e91d2e5a3e549925a727333cbeb559c7e01e"
+  },
+  {
+    "destination": "finite/completion/completed_cover.json",
+    "source": "publication-clone/finite/completion/completed_cover.json",
+    "sha256": "b76158de3642f8dab18740d3de6a50d739397cbe1016bb6ffb04eabdc7446af0"
+  },
+  {
+    "destination": "finite/completion/runs/v7_a3_baseline/input.smt2",
+    "source": "publication-clone/finite/completion/runs/v7_a3_baseline/input.smt2",
+    "sha256": "36aae7b4da85ed03d601657ff93b406a425dfd736ccc168b48d1a81b1b6d91e3"
+  },
+  {
+    "destination": "finite/completion/runs/v7_a3_baseline/metadata.json",
+    "source": "publication-clone/finite/completion/runs/v7_a3_baseline/metadata.json",
+    "sha256": "73b485589605585ecc35b2b23997ce507076d41150a9f897695f471d005fbc8c"
+  },
+  {
+    "destination": "finite/completion/runs/v7_a3_baseline/result.json",
+    "source": "publication-clone/finite/completion/runs/v7_a3_baseline/result.json",
+    "sha256": "a69d53c48457ee4902341256d47b5df88f5758c0c21dfacca4630340bfe67827"
+  },
+  {
+    "destination": "finite/completion/runs/v7_a3_baseline/solver_output.txt",
+    "source": "publication-clone/finite/completion/runs/v7_a3_baseline/solver_output.txt",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "finite/completion/runs/v8_a4_baseline/input.smt2",
+    "source": "publication-clone/finite/completion/runs/v8_a4_baseline/input.smt2",
+    "sha256": "b847b75a38bf3389de10c50280f8fe5315ab0e07321ca8b7f67103da8064b4de"
+  },
+  {
+    "destination": "finite/completion/runs/v8_a4_baseline/metadata.json",
+    "source": "publication-clone/finite/completion/runs/v8_a4_baseline/metadata.json",
+    "sha256": "1b16471b07fefd04688fb1c152116f0ee3a29dd1ebc9f5bdc8d0abbc06ee3395"
+  },
+  {
+    "destination": "finite/completion/runs/v8_a4_baseline/result.json",
+    "source": "publication-clone/finite/completion/runs/v8_a4_baseline/result.json",
+    "sha256": "1305220a54e947669a68f89eb22b0864fb2330b3bf697fa477c06d15295a9966"
+  },
+  {
+    "destination": "finite/completion/runs/v8_a4_baseline/solver_output.txt",
+    "source": "publication-clone/finite/completion/runs/v8_a4_baseline/solver_output.txt",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "finite/completion/solve_branch.py",
+    "source": "publication-clone/finite/completion/solve_branch.py",
+    "sha256": "a2d2888791489d8bcae11e76fbf355b13972e03173381c2097b5b81583f49f07"
+  },
+  {
+    "destination": "finite/computation/bv_residual20_results.tsv",
+    "source": "publication-clone/finite/computation/bv_residual20_results.tsv",
+    "sha256": "b732cb4b3bd76ec4c57d8d588b04bc04d4f33857277a1227ae7630fccfd8f268"
+  },
+  {
+    "destination": "finite/computation/escc_v7w3F_results.tsv",
+    "source": "publication-clone/finite/computation/escc_v7w3F_results.tsv",
+    "sha256": "f626d749c65db831a8adb92b4c3a9f899529edf9521bcbe4893fd98bc2cf5f08"
+  },
+  {
+    "destination": "finite/computation/l2_refine1_results.tsv",
+    "source": "publication-clone/finite/computation/l2_refine1_results.tsv",
+    "sha256": "d7b95778c02dd37972285b4dcd24c6014d3aa857e56543b562e8c71ddcf72038"
+  },
+  {
+    "destination": "finite/computation/n10_strong_results_results.tsv",
+    "source": "publication-clone/finite/computation/n10_strong_results_results.tsv",
+    "sha256": "f75fa3a12567f66ca68581b7b4c1f93b66378c1e63e002ced2638cc69ed353fd"
+  },
+  {
+    "destination": "finite/computation/n9_strong_results_results.tsv",
+    "source": "publication-clone/finite/computation/n9_strong_results_results.tsv",
+    "sha256": "44e3e1338dec25ffb1c327159c4bedd43768b99df96884285e56c61f8c2b6872"
+  },
+  {
+    "destination": "finite/computation/quad_work_search_quad_bool_strong.py",
+    "source": "publication-clone/finite/computation/quad_work_search_quad_bool_strong.py",
+    "sha256": "0bcc6820dca92d67db3c22c1cbf1d1ef28f816598d9dc4806d3027e69286f06b"
+  },
+  {
+    "destination": "finite/computation/quad_work_search_quad_bv_strong.py",
+    "source": "publication-clone/finite/computation/quad_work_search_quad_bv_strong.py",
+    "sha256": "ccd38f0887009091930ba8c44ccf18f8b66b50689a7c89cd04a352922fc5ed53"
+  },
+  {
+    "destination": "finite/computation/remaining_strong_results_results.tsv",
+    "source": "publication-clone/finite/computation/remaining_strong_results_results.tsv",
+    "sha256": "04ed61ae1f34fea1485fb0ea62bbada02d3343e54a79e68edac8d5aaec3fd5ee"
+  },
+  {
+    "destination": "verification/verify_results.py",
+    "source": "publication-clone/verification/verify_results.py",
+    "sha256": "7a2041dcd0cce87500fdd70f75ac83941fba69bd4818c4401290663290e9c342"
+  },
+  {
+    "destination": "historical/publication-clone/finite_results.json",
+    "source": "publication-clone/verification/finite_results.json",
+    "sha256": "42917d0e210727b3d085b2a640b254a625edf4201b7bddc2d381bfb65a530988"
+  },
+  {
+    "destination": "formal_proofs/FourRelationsCounterexample.v",
+    "source": "publication-clone/formal_proofs/FourRelationsCounterexample.v",
+    "sha256": "e9d26504f57ec42d9532069375edecb41b2b4c464b2bc8e99535e6abf5c3d31d"
+  },
+  {
+    "destination": "formal_proofs/check.sh",
+    "source": "publication-clone/formal_proofs/check.sh",
+    "sha256": "fce89ca6765fe0cfd9077f06ae0551c8ab838039338a7c3be111527b627267f8"
+  },
+  {
+    "destination": "historical/publication-clone/formal_proofs/verification.log",
+    "source": "publication-clone/formal_proofs/verification.log",
+    "sha256": "84f17ac933d046192497046f36d79fe5d6283083c7ccd176c6fa1256bb4a566e"
+  },
+  {
+    "destination": "historical/publication-clone/formal_proofs/verification.txt",
+    "source": "publication-clone/formal_proofs/verification.txt",
+    "sha256": "9f2504c249c3809ef570ba37ebca5dfda50be94fdd219d912f4acfc64f608561"
+  },
+  {
+    "destination": "supplement-2026-10-20/rocq/Audit.v",
+    "source": "october-supplement/rocq/Audit.v",
+    "sha256": "e5b99ebd3ba94c1acdf684df65094d12a00194df086b1e5c0c6b9e2de4ccc00e"
+  },
+  {
+    "destination": "supplement-2026-10-20/rocq/FourRelations.v",
+    "source": "october-supplement/rocq/FourRelations.v",
+    "sha256": "e508141795057d77a923611afd1737a724c5462146a6bf79b6498eaa940e9212"
+  },
+  {
+    "destination": "supplement-2026-10-20/rocq/FourRelationsCounterexample.v",
+    "source": "october-supplement/rocq/FourRelationsCounterexample.v",
+    "sha256": "e9d26504f57ec42d9532069375edecb41b2b4c464b2bc8e99535e6abf5c3d31d"
+  },
+  {
+    "destination": "supplement-2026-10-20/rocq/Refinements.v",
+    "source": "october-supplement/rocq/Refinements.v",
+    "sha256": "65f453072702e994692086112b40b99f7e03a835cead85d6dc8ced8aefc94d29"
+  },
+  {
+    "destination": "supplement-2026-10-20/rocq/_CoqProject",
+    "source": "october-supplement/rocq/_CoqProject",
+    "sha256": "82c330d2f9d5eedd753ba5bdac853a776d4fc7bac8557acfa3480175bceb37bd"
+  },
+  {
+    "destination": "supplement-2026-10-20/checks/check_folding_obligations.py",
+    "source": "october-supplement/checks/check_folding_obligations.py",
+    "sha256": "dfd658b86fac524f7bf17a9d91af26063f09bd31862619c9fba680133bd85e58"
+  },
+  {
+    "destination": "supplement-2026-10-20/checks/check_height_obligations.py",
+    "source": "october-supplement/checks/check_height_obligations.py",
+    "sha256": "2e75158356d95546eeec3f76fce94525de350f3ccb9c6df65c76b76b4a80ee06"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/exhaustive_original_conditions.json",
+    "source": "october-supplement/checks/exhaustive_original_conditions.json",
+    "sha256": "4a6fdfd26a51b0dbdc83ff673e2f162e3786903d46f0d69f3bd30884102d561d"
+  },
+  {
+    "destination": "supplement-2026-10-20/checks/exhaustive_original_conditions.py",
+    "source": "october-supplement/checks/exhaustive_original_conditions.py",
+    "sha256": "9039dcac8b4ddb9544514ea6b682b601006ecc3319fad652193192ae83232512"
+  },
+  {
+    "destination": "supplement-2026-10-20/checks/exhaustive_three_points.py",
+    "source": "october-supplement/checks/exhaustive_three_points.py",
+    "sha256": "d0ed0248669ee8a611faee33cd900a7b64f7e2a6f0cd036368a79d5394dbb666"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/00_base_consistency.out",
+    "source": "october-supplement/checks/folding_checks/00_base_consistency.out",
+    "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/00_base_consistency.smt2",
+    "source": "october-supplement/checks/folding_checks/00_base_consistency.smt2",
+    "sha256": "dc6b12bedca2b9475c94bc1c6facddf910b6775ec2b7490ea74532dc919170a5"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/01_surviving_target.out",
+    "source": "october-supplement/checks/folding_checks/01_surviving_target.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/01_surviving_target.smt2",
+    "source": "october-supplement/checks/folding_checks/01_surviving_target.smt2",
+    "sha256": "9cc561cccff68ceba333f1c9ecee759f6586b4c4372f8f75fb4666f7803201fe"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/02_transfer.out",
+    "source": "october-supplement/checks/folding_checks/02_transfer.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/02_transfer.smt2",
+    "source": "october-supplement/checks/folding_checks/02_transfer.smt2",
+    "sha256": "bd70837fb5b8b592332d9a61d0e3728f6d0ef90fdfb5bdc84bb3ad2aba88ba9e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/03_new_range.out",
+    "source": "october-supplement/checks/folding_checks/03_new_range.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/03_new_range.smt2",
+    "source": "october-supplement/checks/folding_checks/03_new_range.smt2",
+    "sha256": "e2601813d162b9729d857ffd80cb7c035486ded0857f00b50d07bfc3aaae8b6b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/04_new_identity.out",
+    "source": "october-supplement/checks/folding_checks/04_new_identity.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/04_new_identity.smt2",
+    "source": "october-supplement/checks/folding_checks/04_new_identity.smt2",
+    "sha256": "ca7e2f7da22bed686ca42f4b6d287f29e846bdd2453ed1abe17f89c417d82257"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/05_new_projection.out",
+    "source": "october-supplement/checks/folding_checks/05_new_projection.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/05_new_projection.smt2",
+    "source": "october-supplement/checks/folding_checks/05_new_projection.smt2",
+    "sha256": "78f5a0f846e9a2a4606f0f10f9292fb0f057538ab937ca69eaf23d94f6dce84c"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/06_strict_image_decrease.out",
+    "source": "october-supplement/checks/folding_checks/06_strict_image_decrease.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/06_strict_image_decrease.smt2",
+    "source": "october-supplement/checks/folding_checks/06_strict_image_decrease.smt2",
+    "sha256": "346378332323c157b5f5e4df35d48fd6b6dc1b3c13e24f90066ed022f8d91a3e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/EVIDENCE_STATUS.txt",
+    "source": "october-supplement/checks/folding_checks/EVIDENCE_STATUS.txt",
+    "sha256": "83f099fa769053873e245085d4c9e259e26be2a71003e827e3dbca8fce6cb039"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/exhaustive_three_points.json",
+    "source": "october-supplement/checks/folding_checks/exhaustive_three_points.json",
+    "sha256": "f5ac60689558a08e60c5c8cbad21f14469e227584630d97694fd63c2d056f711"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/folding_checks/results.json",
+    "source": "october-supplement/checks/folding_checks/results.json",
+    "sha256": "d6870288586aa97c1e56dafb96734b884290786134bae88f7613ae2566aae292"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/00_base_consistency.out",
+    "source": "october-supplement/checks/height_checks/00_base_consistency.out",
+    "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/00_base_consistency.smt2",
+    "source": "october-supplement/checks/height_checks/00_base_consistency.smt2",
+    "sha256": "353b7951ada0735420c2ad48db0bb59388050a678c34ef5f8a9aa496d747ea01"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/01_incoming_top_edge_is_F.out",
+    "source": "october-supplement/checks/height_checks/01_incoming_top_edge_is_F.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/01_incoming_top_edge_is_F.smt2",
+    "source": "october-supplement/checks/height_checks/01_incoming_top_edge_is_F.smt2",
+    "sha256": "d2d98c8c324a69a893b26ae7b2eef502106ea4ba5c3fd33671a208d1fd0b19e4"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/02_two_step_path_to_top_successor_impossible.out",
+    "source": "october-supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/02_two_step_path_to_top_successor_impossible.smt2",
+    "source": "october-supplement/checks/height_checks/02_two_step_path_to_top_successor_impossible.smt2",
+    "sha256": "d8f6e818b8b8f81354abebf093134d9d5d6e140e0e8b6e96a47222e3803aae5b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/03_top_transfer.out",
+    "source": "october-supplement/checks/height_checks/03_top_transfer.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/03_top_transfer.smt2",
+    "source": "october-supplement/checks/height_checks/03_top_transfer.smt2",
+    "sha256": "51f27078e87da5cca65631ac7d91bcc4a51ab169c8291c7aef609ab2c3a49856"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/04_top_has_dominating_representative.out",
+    "source": "october-supplement/checks/height_checks/04_top_has_dominating_representative.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/04_top_has_dominating_representative.smt2",
+    "source": "october-supplement/checks/height_checks/04_top_has_dominating_representative.smt2",
+    "sha256": "4805b0460757a39250190bafad65975095d5710e290d1a460d1987ec5d97b062"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/05_domination_is_transitive.out",
+    "source": "october-supplement/checks/height_checks/05_domination_is_transitive.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/05_domination_is_transitive.smt2",
+    "source": "october-supplement/checks/height_checks/05_domination_is_transitive.smt2",
+    "sha256": "ffb59ae81335d144aa1f24f51f26b8f6eb849a9fb381931de2891d379110ed0d"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/06_top_domination_is_in_F.out",
+    "source": "october-supplement/checks/height_checks/06_top_domination_is_in_F.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/06_top_domination_is_in_F.smt2",
+    "source": "october-supplement/checks/height_checks/06_top_domination_is_in_F.smt2",
+    "sha256": "e15fc8b9dce5d42735262ce188c7e12060598c9cc20d9b816c1b5576a7ab8b69"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/07_lower_has_smaller_uniform_bound.out",
+    "source": "october-supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/07_lower_has_smaller_uniform_bound.smt2",
+    "source": "october-supplement/checks/height_checks/07_lower_has_smaller_uniform_bound.smt2",
+    "sha256": "421d3324d59a3cb920c79df69fc9651fd91e1249b2bec6fbd5fd0c323dd41afc"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/08_composed_representatives_preserve_edges.out",
+    "source": "october-supplement/checks/height_checks/08_composed_representatives_preserve_edges.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/08_composed_representatives_preserve_edges.smt2",
+    "source": "october-supplement/checks/height_checks/08_composed_representatives_preserve_edges.smt2",
+    "sha256": "26d12417f45caf88d78c5433b3bcb00097b2984bdef11f8125929d93dfe64a59"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/09_composed_representatives_have_lower_range.out",
+    "source": "october-supplement/checks/height_checks/09_composed_representatives_have_lower_range.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/09_composed_representatives_have_lower_range.smt2",
+    "source": "october-supplement/checks/height_checks/09_composed_representatives_have_lower_range.smt2",
+    "sha256": "01352d6f29e00408c523abf203127e120587f9ea0e7f8e6166e1f4b612b73e39"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/10_strong_F_does_not_increase_finite_height.out",
+    "source": "october-supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/10_strong_F_does_not_increase_finite_height.smt2",
+    "source": "october-supplement/checks/height_checks/10_strong_F_does_not_increase_finite_height.smt2",
+    "sha256": "dfc9725807c5117841ed1dc3299f856b2d7f605f9e6876d638471e8de0749ab9"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.out",
+    "source": "october-supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.smt2",
+    "source": "october-supplement/checks/height_checks/11_incoming_bounded_subset_forces_bounded_representative.smt2",
+    "sha256": "ced176aa08c25bfb011ccc2f9fbd348db7c38e77a6f7d41f654802fbee1cc886"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.out",
+    "source": "october-supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.smt2",
+    "source": "october-supplement/checks/height_checks/12_no_incoming_edge_allows_arbitrary_bounded_seed.smt2",
+    "sha256": "95b5624806fc90c5ee2f840de37765440a6c63a8d362aff8ed104cce4c18b8aa"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/13_successor_rank_has_no_intermediate_value.out",
+    "source": "october-supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/13_successor_rank_has_no_intermediate_value.smt2",
+    "source": "october-supplement/checks/height_checks/13_successor_rank_has_no_intermediate_value.smt2",
+    "sha256": "3c10586d0417297b1a56b774fc60da1e99dc0f73a9a1b3e0d45f352ce62f2160"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.out",
+    "source": "october-supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.out",
+    "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.smt2",
+    "source": "october-supplement/checks/height_checks/14_successor_rank_is_strictly_above_predecessor.smt2",
+    "sha256": "fb04adc509f446970e184b2ad3d58b3373497ef3a45543a96463eb24ebb9de55"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/15_strong_context_consistency.out",
+    "source": "october-supplement/checks/height_checks/15_strong_context_consistency.out",
+    "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/15_strong_context_consistency.smt2",
+    "source": "october-supplement/checks/height_checks/15_strong_context_consistency.smt2",
+    "sha256": "5834998aad09fcc87d8e597dbbc9d2d849a1ce72738646844f081d3163dcc1c7"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/16_rank_context_consistency.out",
+    "source": "october-supplement/checks/height_checks/16_rank_context_consistency.out",
+    "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/16_rank_context_consistency.smt2",
+    "source": "october-supplement/checks/height_checks/16_rank_context_consistency.smt2",
+    "sha256": "32d7bfecb93d59675f5467b901afb4a9325489bd1431379d7aa97f77d08a0374"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/17_negative_control_without_rerouting.out",
+    "source": "october-supplement/checks/height_checks/17_negative_control_without_rerouting.out",
+    "sha256": "d9dbf94b05b8314af9ca7f2034e92685c33447917605a7243b1099c693a12e5e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/17_negative_control_without_rerouting.smt2",
+    "source": "october-supplement/checks/height_checks/17_negative_control_without_rerouting.smt2",
+    "sha256": "d2075d4b153fd7f1c292c59fbf00fb20cf3745b12678232565e4e6ef409caee1"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/EVIDENCE_STATUS.txt",
+    "source": "october-supplement/checks/height_checks/EVIDENCE_STATUS.txt",
+    "sha256": "83f099fa769053873e245085d4c9e259e26be2a71003e827e3dbca8fce6cb039"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/checks/height_checks/results.json",
+    "source": "october-supplement/checks/height_checks/results.json",
+    "sha256": "6e0872b190e6d44a3ba89cbe40892108a9d4035ad5787d05350e4d5d6d08ed38"
+  },
+  {
+    "destination": "supplement-2026-10-20/checks/z3_runner.py",
+    "source": "october-supplement/checks/z3_runner.py",
+    "sha256": "1b3c3792054b6712ed94ca09516499bc32ed2de1f2b0817fe5f411abaca90f1e"
+  },
+  {
+    "destination": "supplement-2026-10-20/scripts/verify.py",
+    "source": "october-supplement/scripts/verify.py",
+    "sha256": "31e26ec7cfa16bc8f8c12e1b02c6579204704807d4846f04d99439d96e854207"
+  },
+  {
+    "destination": "supplement-2026-10-20/originals/failed_FourRelations.v",
+    "source": "october-supplement/originals/failed_FourRelations.v",
+    "sha256": "7803dcc63124e2aea98bdcc809023a304b9030d3559d2fe529f9011f434597bc"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/AllAssumptions.v",
+    "source": "october-supplement/logs/final/AllAssumptions.v",
+    "sha256": "2e64d67fc8cc45740aa294f291078d26916d80ef37c0e7d1820ec56c6bfc8c4b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/RESULT.json",
+    "source": "october-supplement/logs/final/RESULT.json",
+    "sha256": "52d9d94b87070f0b46f650983e2006b56f597fca23b85d719c8f864bc19ad5b2"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_core_finite_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_core_finite_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_core_height_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_core_height_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_expanded_finite_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_expanded_finite_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_finite_branching_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_finite_branching_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_finite_image_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_finite_image_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_finite_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_finite_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_local_branching_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_local_branching_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_pointwise_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_pointwise_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_unbounded_minimal_points_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_unbounded_minimal_points_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Audit.audited_uniform_height_statement.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Audit.audited_uniform_height_statement.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.E0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.E0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.E_irrefl.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.E_irrefl.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.E_to_normal.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.E_to_normal.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.F0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.F0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.I_backward.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.I_backward.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.M.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.M.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P0_restrict.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P0_restrict.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P1.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P1.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P1_restrict.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P1_restrict.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P1_strong.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P1_strong.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P1_strong_implies.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P1_strong_implies.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.P1_strong_restrict.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.P1_strong_restrict.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.Q2.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.Q2.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.Q2_restrict.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.Q2_restrict.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.R0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.R0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.WF.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.WF.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.acc_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.acc_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.acc_star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.acc_star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.active.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.active.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bad.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bad.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bad_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bad_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bad_star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bad_star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bad_step.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bad_step.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bad_successor.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bad_successor.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bounded_height_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bounded_height_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bounded_immortal_height_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bounded_immortal_height_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bounded_implies_wf.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bounded_implies_wf.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.bounded_representatives_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.bounded_representatives_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cup.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cup.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_B_plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_B_plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_C_plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_C_plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_E_equiv.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_E_equiv.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_E_path.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_E_path.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_F_equiv.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_F_equiv.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_R_equiv.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_R_equiv.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_R_path.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_R_path.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_domain.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_domain.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_minimal_equiv.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_minimal_equiv.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_serial.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_serial.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.cut_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.cut_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.detour_tail.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.detour_tail.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.domination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.domination.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.domination_path_transfer.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.domination_path_transfer.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.domination_transitive.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.domination_transitive.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.empty_active_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.empty_active_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_active_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_active_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_acyclic_four_relations.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_acyclic_four_relations.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_acyclic_wf.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_acyclic_wf.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_escape_target_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_escape_target_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_family_bound.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_family_bound.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_source.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_source.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finite_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finite_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finitely_branching.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finitely_branching.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finitely_branching_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finitely_branching_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.finitely_branching_wf_height.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.finitely_branching_wf_height.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.flip.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.flip.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.fold_step.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.fold_step.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.height_edge.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.height_edge.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.height_implies_acc.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.height_implies_acc.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.height_le.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.height_le.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.height_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.height_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.initial_representatives.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.initial_representatives.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.least_rank_is_nonzero_limit.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.least_rank_is_nonzero_limit.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.least_rank_nonzero.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.least_rank_nonzero.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.least_rank_not_successor.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.least_rank_not_successor.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.long.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.long.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.long_down.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.long_down.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.long_le.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.long_le.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.long_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.long_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.lower_representatives.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.lower_representatives.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.minimal_immortal.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.minimal_immortal.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.minimal_immortal_unbounded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.minimal_immortal_unbounded.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.normal.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.normal.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.not_wf_has_bad.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.not_wf_has_bad.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_cut.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_cut.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_long.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_long.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_one.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_one.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_split.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_split.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.plus_trans.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.plus_trans.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.pointwise_height_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.pointwise_height_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.pointwise_minimal_height_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.pointwise_minimal_height_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rank_F_nonincrease.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rank_F_nonincrease.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rank_le_antisym.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rank_le_antisym.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rank_min_representatives.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rank_min_representatives.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rank_plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rank_plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rank_star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rank_star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.rel.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.rel.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.representatives.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.representatives.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.representatives_serial.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.representatives_serial.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.serial_domain_bounded_height_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.serial_domain_bounded_height_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.serial_domain_finite_image_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.serial_domain_finite_image_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.serial_domain_pointwise_height_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.serial_domain_pointwise_height_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.serial_rerouting_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.serial_rerouting_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star_cut.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star_cut.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star_long.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star_long.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star_one.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star_one.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.star_trans.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.star_trans.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.strong_F_long.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.strong_F_long.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.top_domination_successor.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.top_domination_successor.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.top_domination_wf.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.top_domination_wf.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.transitive_subunion_wf.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.transitive_subunion_wf.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.weak_jumping.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.weak_jumping.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.well_founded_has_no_infinite_chain.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.well_founded_has_no_infinite_chain.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_irrefl.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_irrefl.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_minimum.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_minimum.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_mono.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_mono.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_no_serial.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_no_serial.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_normal_form.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_normal_form.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelations.wf_plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelations.wf_plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_squared_empty.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.A_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_in_R.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_num_accessible.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.B_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_squared_empty.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.C_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.DC_in_BD.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_cubed_empty.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_in_E.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.D_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.E.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.E.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.EA_in_AF_or_F.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FB_in_BB_or_ABB.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.F_in_R.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.FourRelationsCounterexample.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P1.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.P1.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.Q2.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.Q2.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_not_well_founded.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.R_two_cycle.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.WF_of_rank.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.accessible_no_infinite_chain.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_infinite_R_chain.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.alternating_is_p_or_q.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.comp.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.comp.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.enumerate_surjective.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.included.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.included.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.infinite_chain.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.num_injective.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.num_injective.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.plus.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.plus.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_A.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_A.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_C.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_C.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_D.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.rank_D.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.relation.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.relation.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P0.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_P1.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.satisfies_Q2.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.star.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.star.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.union.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.union.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.vertex.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.FourRelationsCounterexample.FourRelations.vertex.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.bounded_representative_core_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.bounded_representative_core_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.core_representatives.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.core_representatives.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.finite_representative_core_impossible.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.finite_representative_core_impossible.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.locally_finitely_branching_termination.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.locally_finitely_branching_termination.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.long_reachable_cut.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.long_reachable_cut.txt",
+    "sha256": "188ff29b8a0705f491438ebf47623e533fe60658944f3f1f58e1f9b5badb1bcf"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.minimal_immortal_reaches_infinite_branching.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/assumptions/FourRelations.Refinements.reachable_finitely_branching_height.txt",
+    "source": "october-supplement/logs/final/assumptions/FourRelations.Refinements.reachable_finitely_branching_height.txt",
+    "sha256": "74ce8132bbaf72fd10a61c90cd115e60fd5f989a00b18bf6f53edb2ef3a54e3b"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/checker_version.log",
+    "source": "october-supplement/logs/final/checker_version.log",
+    "sha256": "d777d04fe82b2cf02e40774c25f7ce15238051bc8ad9fbc19cd7b3cfcac029ec"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/compile_AllAssumptions.log",
+    "source": "october-supplement/logs/final/compile_AllAssumptions.log",
+    "sha256": "2b23bb2de689558a42693662a520c0ed524588f133fe02324964119a8ee7d8ce"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/compile_Audit.log",
+    "source": "october-supplement/logs/final/compile_Audit.log",
+    "sha256": "7874502f454710bbd642ba90efcb7f237a8b27fa694e3369e23fcda0ea7db287"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/compile_FourRelations.log",
+    "source": "october-supplement/logs/final/compile_FourRelations.log",
+    "sha256": "c60dcda055a0ac12f1193eb13c70d63813b190047a76449fd6808b5793fc2424"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/compile_FourRelationsCounterexample.log",
+    "source": "october-supplement/logs/final/compile_FourRelationsCounterexample.log",
+    "sha256": "473f109967ed0570086d3aa67fa3dca529e50689e20bcfa97aeb2e863935d1d7"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/compile_Refinements.log",
+    "source": "october-supplement/logs/final/compile_Refinements.log",
+    "sha256": "f99e18aeb693b17a76239e38714b4f0747bcc7c61d977f5c4b8f379f2088ff82"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/rocqchk.log",
+    "source": "october-supplement/logs/final/rocqchk.log",
+    "sha256": "56850c19f4f30b9f71953aa5078c3c12f37cb34038906394a2ec4b61d479ae9d"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/source_hygiene.json",
+    "source": "october-supplement/logs/final/source_hygiene.json",
+    "sha256": "04d4c924e1353269728225c45f8b345fb07ddc96b907967a1b7cfba448a87f09"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/statement_preservation.json",
+    "source": "october-supplement/logs/final/statement_preservation.json",
+    "sha256": "51b28f8fe9f8dcd99d1aef15132ce3082199276b4189925857afa9e1695dfa81"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/logs/final/toolchain.log",
+    "source": "october-supplement/logs/final/toolchain.log",
+    "sha256": "770b3dcb4b72f87d5847b105701d8ee4c9f70422d0ec7827dd63ba5925ed65e0"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/ASSUMPTIONS.txt",
+    "source": "october-supplement/ASSUMPTIONS.txt",
+    "sha256": "e782f4ccefa74b14c731844abf5a9333e0b682a20ac9773b05492ac1b277155f"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/MATHEMATICAL_REVIEW.txt",
+    "source": "october-supplement/MATHEMATICAL_REVIEW.txt",
+    "sha256": "4c9cf7ac0ac6df2c17e9b31a18c4ee0ccc61e4a6c756ef10574fc17b7bb75c3e"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/README.md",
+    "source": "october-supplement/README.md",
+    "sha256": "1ba76e84d220ee0704e0da45cbf162777be53512efccff75df94afc099dd0447"
+  },
+  {
+    "destination": "historical/supplement-2026-10-20/PROVENANCE.json",
+    "source": "october-supplement/PROVENANCE.json",
+    "sha256": "e387da83ea4aea1b18c6fd6065ef1aaa5794f9ba1afae7f3409f625af1a96c5e"
+  }
+]

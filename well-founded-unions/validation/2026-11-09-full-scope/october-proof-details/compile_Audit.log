@@ -1,0 +1,239 @@
+Command: ['/usr/local/bin/rocq', 'compile', '-q', '-time', '-Q', '.', 'FourRelations', '-output-directory', '.', 'Audit.v']
+
+Chars 159 - 191 [From~Stdlib~Require~Import~List.] 0.107 secs (0.082u,0.024s)
+Chars 192 - 240 [From~FourRelations~Require~Imp...] 0.252 secs (0.223u,0.024s)
+Chars 241 - 287 [From~FourRelations~Require~Imp...] 0. secs (0.u,0.s)
+Chars 288 - 313 [Unset~Implicit~Arguments.] 0. secs (0.u,0.s)
+Chars 315 - 804 [Definition~audited_core_finite...] 0.009 secs (0.007u,0.001s)
+Chars 806 - 1288 [Definition~audited_core_height...] 0.004 secs (0.003u,0.s)
+Chars 1290 - 1684 [Definition~audited_local_branc...] 0.003 secs (0.002u,0.s)
+Chars 1686 - 1923 [Definition~audited_finite_stat...] 0.002 secs (0.002u,0.s)
+Chars 1925 - 2253 [Definition~audited_finite_imag...] 0.002 secs (0.001u,0.s)
+Chars 2255 - 2576 [Definition~audited_uniform_hei...] 0.001 secs (0.001u,0.s)
+Chars 2578 - 2835 [Definition~audited_pointwise_s...] 0.001 secs (0.001u,0.s)
+Chars 2837 - 3138 [Definition~audited_unbounded_m...] 0.002 secs (0.001u,0.s)
+Chars 3140 - 3389 [Definition~audited_finite_bran...] 0.001 secs (0.001u,0.s)
+Chars 3687 - 4596 [Definition~audited_expanded_fi...] 0.007 secs (0.005u,0.001s)
+audited_expanded_finite_statement
+     : forall (X : Type) (A B C D : X -> X -> Prop),
+       well_founded (fun y x : X => A x y) ->
+       well_founded (fun y x : X => B x y) ->
+       well_founded (fun y x : X => C x y) ->
+       well_founded (fun y x : X => D x y) ->
+       (forall x y z : X,
+        B x y \/ C x y \/ D x y ->
+        A y z ->
+        (exists u : X,
+           A x u /\
+           star (fun s t : X => A s t \/ B s t \/ C s t \/ D s t) u z) \/
+        B x z \/ C x z \/ D x z) ->
+       (forall x y z : X,
+        C x y \/ D x y ->
+        B y z ->
+        (exists u : X,
+           A x u /\
+           star (fun s t : X => A s t \/ B s t \/ C s t \/ D s t) u z) \/
+        (exists u : X, B x u /\ star B u z) \/ C x z \/ D x z) ->
+       (forall x y z : X,
+        D x y ->
+        C y z ->
+        (exists u : X,
+           B x u /\ star (fun s t : X => B s t \/ C s t \/ D s t) u z) \/
+        (exists u : X, C x u /\ star C u z) \/ D x z) ->
+       (exists l : list X, forall x : X, In x l) ->
+       well_founded (fun y x : X => A x y \/ B x y \/ C x y \/ D x y)
+Chars 4598 - 4638 [Check~audited_expanded_finite_...] 0.006 secs (0.003u,0.001s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 4639 - 4691 [Print~Assumptions~audited_expa...] 0.441 secs (0.379u,0.059s)
+Chars 4692 - 4803 [Redirect~"assumptions_audited_...] 0.244 secs (0.236u,0.008s)
+audited_finite_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists l : list X, forall x : X, In x l) -> WF (R0 A B C D)
+Chars 4805 - 4836 [Check~audited_finite_statement.] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 4837 - 4880 [Print~Assumptions~audited_fini...] 0.219 secs (0.218u,0.001s)
+Chars 4881 - 4972 [Redirect~"assumptions_audited_...] 0.219 secs (0.217u,0.001s)
+audited_finite_image_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists l : list X,
+          forall x z : X,
+          minimal_immortal A B C D x -> B x z -> bad (R0 A B C D) z -> In z l) ->
+       WF (R0 A B C D)
+Chars 4973 - 5010 [Check~audited_finite_image_sta...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 5011 - 5060 [Print~Assumptions~audited_fini...] 0.218 secs (0.217u,0.001s)
+Chars 5061 - 5164 [Redirect~"assumptions_audited_...] 0.226 secs (0.222u,0.003s)
+audited_uniform_height_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists h : nat,
+          forall x : X,
+          minimal_immortal A B C D x ->
+          height_le (cut (bad (R0 A B C D)) B) h x) ->
+       WF (R0 A B C D)
+Chars 5165 - 5204 [Check~audited_uniform_height_s...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 5205 - 5256 [Print~Assumptions~audited_unif...] 0.003 secs (0.003u,0.s)
+Chars 5257 - 5364 [Redirect~"assumptions_audited_...] 0.003 secs (0.003u,0.s)
+audited_pointwise_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       (forall x : X, exists h : nat, height_le B h x) -> WF (R0 A B C D)
+Chars 5365 - 5399 [Check~audited_pointwise_statem...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 5400 - 5446 [Print~Assumptions~audited_poin...] 0.003 secs (0.003u,0.s)
+Chars 5447 - 5544 [Redirect~"assumptions_audited_...] 0.003 secs (0.003u,0.s)
+audited_unbounded_minimal_points_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       forall x : X,
+       minimal_immortal A B C D x ->
+       forall n : nat, long (cut (bad (R0 A B C D)) B) n x
+Chars 5545 - 5594 [Check~audited_unbounded_minima...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 5595 - 5656 [Print~Assumptions~audited_unbo...] 0.003 secs (0.003u,0.s)
+Chars 5657 - 5784 [Redirect~"assumptions_audited_...] 0.003 secs (0.003u,0.s)
+audited_finite_branching_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D -> finitely_branching B -> WF (R0 A B C D)
+Chars 5785 - 5826 [Check~audited_finite_branching...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 5827 - 5880 [Print~Assumptions~audited_fini...] 0.219 secs (0.217u,0.002s)
+Chars 5881 - 5992 [Redirect~"assumptions_audited_...] 0.226 secs (0.222u,0.003s)
+least_rank_is_nonzero_limit
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u : K, ~ ltK u u) ->
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall u v : K, u = v \/ ltK u v \/ ltK v u) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) ->
+        rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y ->
+        B y z ->
+        (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall alpha : K,
+       (exists x : ?X, M A J x /\ rho x = alpha) ->
+       (forall x : ?X, M A J x -> alpha = rho x \/ ltK alpha (rho x)) ->
+       (exists beta : K, ltK beta alpha) /\
+       (forall beta : K,
+        ltK beta alpha -> exists gamma : K, ltK beta gamma /\ ltK gamma alpha)
+where
+?X : [ |- Type]
+Chars 5993 - 6027 [Check~least_rank_is_nonzero_li...] 0.002 secs (0.001u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 6028 - 6074 [Print~Assumptions~least_rank_i...] 0.002 secs (0.002u,0.s)
+Chars 6075 - 6172 [Redirect~"assumptions_least_ra...] 0.002 secs (0.002u,0.s)
+finite_acyclic_four_relations
+     : forall A B C D : rel ?X,
+       (exists l : list ?X, forall x : ?X, In x l) ->
+       (forall x : ?X, ~ plus A x x) ->
+       (forall x : ?X, ~ plus B x x) ->
+       (forall x : ?X, ~ plus C x x) ->
+       (forall x : ?X, ~ plus D x x) ->
+       P0 A B C D -> P1 A B C D -> Q2 B C D -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Chars 6173 - 6209 [Check~finite_acyclic_four_rela...] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 6210 - 6258 [Print~Assumptions~finite_acycl...] 0.221 secs (0.218u,0.002s)
+Chars 6259 - 6360 [Redirect~"assumptions_finite_a...] 0.224 secs (0.22u,0.003s)
+detour_tail
+     : forall B C D : rel ?X,
+       WF C ->
+       WF D ->
+       (forall x y z : ?X,
+        D x y ->
+        C y z ->
+        (exists u : ?X, B x u /\ star (cup B (cup C D)) u z) \/
+        plus C x z \/ D x z) ->
+       WF
+         (fun x y : ?X =>
+          (C x y \/ D x y) /\
+          (forall z : ?X, B x z -> ~ bad (cup B (cup C D)) z))
+where
+?X : [ |- Type]
+Chars 6361 - 6379 [Check~detour_tail.] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 6380 - 6410 [Print~Assumptions~detour_tail.] 0. secs (0.u,0.s)
+Chars 6411 - 6476 [Redirect~"assumptions_detour_t...] 0. secs (0.u,0.s)
+transitive_subunion_wf
+     : forall T C D : rel ?X,
+       WF C ->
+       WF D ->
+       (forall x y : ?X, T x y -> C x y \/ D x y) ->
+       (forall x y z : ?X, T x y -> T y z -> T x z) -> WF T
+where
+?X : [ |- Type]
+Chars 6477 - 6506 [Check~transitive_subunion_wf.] 0. secs (0.u,0.s)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Chars 6507 - 6548 [Print~Assumptions~transitive_s...] 0. secs (0.u,0.s)
+Chars 6549 - 6636 [Redirect~"assumptions_transiti...] 0. secs (0.u,0.s)
+well_founded_has_no_infinite_chain
+     : forall P : rel ?X,
+       WF P ->
+       forall f : nat -> ?X, (forall n : nat, P (f n) (f (S n))) -> False
+where
+?X : [ |- Type]
+Chars 6637 - 6678 [Check~well_founded_has_no_infi...] 0. secs (0.u,0.s)
+Closed under the global context
+Chars 6679 - 6732 [Print~Assumptions~well_founded...] 0. secs (0.u,0.s)
+Chars 6733 - 6844 [Redirect~"assumptions_well_fou...] 0. secs (0.u,0.s)

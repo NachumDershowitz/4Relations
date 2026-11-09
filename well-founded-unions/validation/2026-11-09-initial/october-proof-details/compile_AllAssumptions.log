@@ -1,0 +1,1404 @@
+Command: ['/usr/local/bin/rocq', 'compile', '-q', '-Q', '.', 'FourRelations', '-output-directory', '.', 'AllAssumptions.v']
+
+rel
+     : Type -> Type
+Closed under the global context
+cup
+     : rel ?X -> rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+flip
+     : rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+WF
+     : rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+normal
+     : rel ?X -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+bad
+     : rel ?X -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+cut
+     : (?X -> Prop) -> rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+star
+     : rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+plus
+     : rel ?X -> ?X -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+star_one
+     : forall (P : rel ?X) (x y : ?X), P x y -> star P x y
+where
+?X : [ |- Type]
+Closed under the global context
+star_trans
+     : forall (P : rel ?X) (x y z : ?X), star P x y -> star P y z -> star P x z
+where
+?X : [ |- Type]
+Closed under the global context
+star_mono
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) -> forall x y : ?X, star P x y -> star Q x y
+where
+?X : [ |- Type]
+Closed under the global context
+plus_one
+     : forall (P : rel ?X) (x y : ?X), P x y -> plus P x y
+where
+?X : [ |- Type]
+Closed under the global context
+plus_star
+     : forall (P : rel ?X) (x y : ?X), plus P x y -> star P x y
+where
+?X : [ |- Type]
+Closed under the global context
+plus_mono
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) -> forall x y : ?X, plus P x y -> plus Q x y
+where
+?X : [ |- Type]
+Closed under the global context
+plus_trans
+     : forall (P : rel ?X) (x y z : ?X), plus P x y -> plus P y z -> plus P x z
+where
+?X : [ |- Type]
+Closed under the global context
+plus_split
+     : forall (P : rel ?X) (x z : ?X), plus P x z -> P x z \/ (exists y : ?X, P x y /\ plus P y z)
+where
+?X : [ |- Type]
+Closed under the global context
+acc_mono
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) -> forall x : ?X, Acc (flip Q) x -> Acc (flip P) x
+where
+?X : [ |- Type]
+Closed under the global context
+wf_mono
+     : forall P Q : rel ?X, (forall x y : ?X, P x y -> Q x y) -> WF Q -> WF P
+where
+?X : [ |- Type]
+Closed under the global context
+acc_star
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) ->
+       forall x y : ?X, star P x y -> Acc (flip Q) x -> Acc (flip Q) y
+where
+?X : [ |- Type]
+Closed under the global context
+wf_plus
+     : forall P : rel ?X, WF P -> WF (plus P)
+where
+?X : [ |- Type]
+Closed under the global context
+wf_minimum
+     : forall (P : rel ?X) (U : ?X -> Prop),
+       WF P -> (exists x : ?X, U x) -> exists x : ?X, U x /\ (forall y : ?X, P x y -> ~ U y)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+wf_no_serial
+     : forall (P : rel ?X) (U : ?X -> Prop),
+       WF P -> (exists x : ?X, U x) -> (forall x : ?X, U x -> exists y : ?X, U y /\ P x y) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+wf_irrefl
+     : forall P : rel ?X, WF P -> forall x : ?X, ~ P x x
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+wf_normal_form
+     : forall P : rel ?X, WF P -> forall x : ?X, exists y : ?X, star P x y /\ normal P y
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+bad_step
+     : forall (P : rel ?X) (x y : ?X), P x y -> bad P y -> bad P x
+where
+?X : [ |- Type]
+Closed under the global context
+bad_star
+     : forall (P : rel ?X) (x y : ?X), star P x y -> bad P y -> bad P x
+where
+?X : [ |- Type]
+Closed under the global context
+bad_mono
+     : forall P Q : rel ?X, (forall x y : ?X, P x y -> Q x y) -> forall x : ?X, bad P x -> bad Q x
+where
+?X : [ |- Type]
+Closed under the global context
+bad_successor
+     : forall (P : rel ?X) (x : ?X), bad P x -> exists y : ?X, P x y /\ bad P y
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+not_wf_has_bad
+     : forall P : rel ?X, ~ WF P -> exists x : ?X, bad P x
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+serial_rerouting_impossible
+     : forall (P Q : rel ?X) (K : ?X -> Prop),
+       WF P ->
+       WF Q ->
+       (exists x : ?X, K x) ->
+       (forall x : ?X, K x -> exists y : ?X, K y /\ (P x y \/ Q x y)) ->
+       (forall x y z : ?X, K x -> (forall t : ?X, P x t -> ~ K t) -> Q x y -> P y z -> K z -> Q x z) ->
+       False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+weak_jumping
+     : forall P Q : rel ?X,
+       WF P -> WF Q -> (forall x y z : ?X, Q x y -> P y z -> plus P x z \/ Q x z) -> WF (cup P Q)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+detour_tail
+     : forall B C D : rel ?X,
+       WF C ->
+       WF D ->
+       (forall x y z : ?X,
+        D x y ->
+        C y z -> (exists u : ?X, B x u /\ star (cup B (cup C D)) u z) \/ plus C x z \/ D x z) ->
+       WF (fun x y : ?X => (C x y \/ D x y) /\ (forall z : ?X, B x z -> ~ bad (cup B (cup C D)) z))
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+finite_source
+     : forall T : rel ?X,
+       (forall x : ?X, ~ T x x) ->
+       (forall x y z : ?X, T x y -> T y z -> T x z) ->
+       forall (V : ?X -> Prop) (l : list ?X),
+       (forall x : ?X, V x -> List.In x l) ->
+       (exists x : ?X, V x) -> exists z : ?X, V z /\ (forall y : ?X, V y -> ~ T y z)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+finite_acyclic_wf
+     : forall P : rel ?X,
+       (exists l : list ?X, forall x : ?X, List.In x l) -> (forall x : ?X, ~ plus P x x) -> WF P
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+star_cut
+     : forall (J : ?X -> Prop) (P : rel ?X),
+       (forall x y : ?X, P x y -> J y -> J x) ->
+       forall x y : ?X, star P x y -> J y -> J x /\ star (cut J P) x y
+where
+?X : [ |- Type]
+Closed under the global context
+plus_cut
+     : forall (J : ?X -> Prop) (P : rel ?X),
+       (forall x y : ?X, P x y -> J y -> J x) ->
+       forall x y : ?X, plus P x y -> J y -> J x /\ plus (cut J P) x y
+where
+?X : [ |- Type]
+Closed under the global context
+transitive_subunion_wf
+     : forall T C D : rel ?X,
+       WF C ->
+       WF D ->
+       (forall x y : ?X, T x y -> C x y \/ D x y) ->
+       (forall x y z : ?X, T x y -> T y z -> T x z) -> WF T
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+long
+     : rel ?X -> nat -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+height_le
+     : rel ?X -> nat -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+long_down
+     : forall (P : rel ?X) (n : nat) (x : ?X), long P (S n) x -> long P n x
+where
+?X : [ |- Type]
+Closed under the global context
+long_le
+     : forall (P : rel ?X) (n m : nat), n <= m -> forall x : ?X, long P m x -> long P n x
+where
+?X : [ |- Type]
+Closed under the global context
+long_mono
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) -> forall (n : nat) (x : ?X), long P n x -> long Q n x
+where
+?X : [ |- Type]
+Closed under the global context
+star_long
+     : forall (P : rel ?X) (x y : ?X), star P x y -> forall n : nat, long P n y -> long P n x
+where
+?X : [ |- Type]
+Closed under the global context
+plus_long
+     : forall (P : rel ?X) (x y : ?X), plus P x y -> forall n : nat, long P n y -> long P (S n) x
+where
+?X : [ |- Type]
+Closed under the global context
+height_edge
+     : forall (P : rel ?X) (n : nat) (x y : ?X), height_le P (S n) x -> P x y -> height_le P n y
+where
+?X : [ |- Type]
+Closed under the global context
+height_mono
+     : forall P Q : rel ?X,
+       (forall x y : ?X, P x y -> Q x y) ->
+       forall (n : nat) (x : ?X), height_le Q n x -> height_le P n x
+where
+?X : [ |- Type]
+Closed under the global context
+height_implies_acc
+     : forall (P : rel ?X) (n : nat) (x : ?X), height_le P n x -> Acc (flip P) x
+where
+?X : [ |- Type]
+Closed under the global context
+bounded_implies_wf
+     : forall P : rel ?X, (forall x : ?X, exists n : nat, height_le P n x) -> WF P
+where
+?X : [ |- Type]
+Closed under the global context
+finite_family_bound
+     : forall (P : rel ?X) (l : list ?X),
+       (forall x : ?X, List.In x l -> exists n : nat, height_le P n x) ->
+       exists n : nat, forall x : ?X, List.In x l -> height_le P n x
+where
+?X : [ |- Type]
+Closed under the global context
+finitely_branching
+     : rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+finitely_branching_wf_height
+     : forall P : rel ?X,
+       WF P -> finitely_branching P -> forall x : ?X, exists n : nat, height_le P n x
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+R0
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+E0
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+F0
+     : rel ?X -> rel ?X -> rel ?X
+where
+?X : [ |- Type]
+Closed under the global context
+P0
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+P1
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+P1_strong
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+P1_strong_implies
+     : forall A B C D : rel ?X, P1_strong A B C D -> P1 A B C D
+where
+?X : [ |- Type]
+Closed under the global context
+Q2
+     : rel ?X -> rel ?X -> rel ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+M
+     : rel ?X -> (?X -> Prop) -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+representatives
+     : rel ?X -> rel ?X -> rel ?X -> (?X -> Prop) -> (?X -> Prop) -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+active
+     : rel ?X -> (?X -> Prop) -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+E_irrefl
+     : forall B C D : rel ?X, WF B -> WF C -> WF D -> forall x : ?X, ~ E0 B C D x x
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+E_to_normal
+     : forall A B C D : rel ?X,
+       P0 A B C D -> forall x z t : ?X, normal A x -> E0 B C D x z -> star A z t -> E0 B C D x t
+where
+?X : [ |- Type]
+Closed under the global context
+initial_representatives
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       P0 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) -> representatives B C D J (M A J)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+representatives_serial
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall S : ?X -> Prop,
+       (forall x : ?X, S x -> M A J x) ->
+       representatives B C D J S -> forall x : ?X, S x -> exists y : ?X, S y /\ E0 B C D x y
+where
+?X : [ |- Type]
+Closed under the global context
+empty_active_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF C ->
+       WF D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall S : ?X -> Prop,
+       (exists x : ?X, S x) ->
+       (forall x : ?X, S x -> M A J x) ->
+       representatives B C D J S -> (forall z : ?X, ~ active B S z) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+fold_step
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF B ->
+       WF C ->
+       WF D ->
+       P1 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       forall (S : ?X -> Prop) (z : ?X),
+       (forall x : ?X, S x -> M A J x) ->
+       representatives B C D J S ->
+       active B S z ->
+       (forall y : ?X, active B S y -> ~ plus B y z) ->
+       exists S' : ?X -> Prop,
+         (exists x : ?X, S' x) /\
+         (forall x : ?X, S' x -> S x) /\
+         representatives B C D J S' /\ (forall u : ?X, active B S' u -> active B S u /\ u <> z)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+finite_active_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF B ->
+       WF C ->
+       WF D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall (n : nat) (l : list ?X) (S : ?X -> Prop),
+       length l <= n ->
+       (exists x : ?X, S x) ->
+       (forall x : ?X, S x -> M A J x) ->
+       representatives B C D J S -> (forall z : ?X, active B S z -> List.In z l) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+serial_domain_finite_image_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       (exists x : ?X, J x) ->
+       (exists l : list ?X, forall z : ?X, active B (M A J) z -> List.In z l) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+domination
+     : rel ?X -> rel ?X -> rel ?X -> (?X -> Prop) -> ?X -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+domination_transitive
+     : forall (B C D : rel ?X) (S : ?X -> Prop) (x y z : ?X),
+       domination B C D S x y -> domination B C D S y z -> domination B C D S x z
+where
+?X : [ |- Type]
+Closed under the global context
+domination_path_transfer
+     : forall (B C D : rel ?X) (S : ?X -> Prop) (u v : ?X),
+       star (domination B C D S) u v -> forall x : ?X, S x -> E0 B C D x u -> E0 B C D x v
+where
+?X : [ |- Type]
+Closed under the global context
+top_domination_successor
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       P1 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       forall (S0 : ?X -> Prop) (h : nat),
+       (forall x : ?X, S0 x -> M A J x) ->
+       representatives B C D J S0 ->
+       (forall x : ?X, S0 x -> height_le B (S h) x) ->
+       forall y : ?X, S0 y -> long B (S h) y -> exists t : ?X, domination B C D S0 y t
+where
+?X : [ |- Type]
+Closed under the global context
+top_domination_wf
+     : forall B C D : rel ?X,
+       WF C ->
+       WF D ->
+       forall (S0 : ?X -> Prop) (h : nat),
+       (forall x : ?X, S0 x -> height_le B (S h) x) ->
+       WF (cut (fun x : ?X => S0 x /\ long B (S h) x) (domination B C D S0))
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+lower_representatives
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF C ->
+       WF D ->
+       P1 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       forall (S0 : ?X -> Prop) (h : nat),
+       (exists x : ?X, S0 x) ->
+       (forall x : ?X, S0 x -> M A J x) ->
+       representatives B C D J S0 ->
+       (forall x : ?X, S0 x -> height_le B (S h) x) ->
+       let Lower := fun x : ?X => S0 x /\ height_le B h x in
+       (exists x : ?X, Lower x) /\ representatives B C D J Lower
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+bounded_representatives_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF C ->
+       WF D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall (h : nat) (S : ?X -> Prop),
+       (exists x : ?X, S x) ->
+       (forall x : ?X, S x -> M A J x) ->
+       representatives B C D J S -> (forall x : ?X, S x -> height_le B h x) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+serial_domain_bounded_height_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       (exists x : ?X, J x) -> (exists h : nat, forall x : ?X, M A J x -> height_le B h x) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+strong_F_long
+     : forall A B C D : rel ?X,
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall x y : ?X, normal A x -> F0 C D x y -> forall n : nat, long B n y -> long B n x
+where
+?X : [ |- Type]
+Closed under the global context
+serial_domain_pointwise_height_impossible
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall a : ?X, M A J a -> forall h : nat, height_le B h a -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+rank_le_antisym
+     : forall ltK : ?K -> ?K -> Prop,
+       (forall u : ?K, ~ ltK u u) ->
+       (forall u v w : ?K, ltK u v -> ltK v w -> ltK u w) ->
+       forall u v : ?K, u = v \/ ltK u v -> v = u \/ ltK v u -> u = v
+where
+?K : [ |- Type]
+Closed under the global context
+rank_star
+     : forall (B : rel ?X) (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       forall x y : ?X, star B x y -> rho y = rho x \/ ltK (rho y) (rho x)
+where
+?X : [ |- Type]
+Closed under the global context
+rank_plus
+     : forall (B : rel ?X) (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       forall x y : ?X, plus B x y -> ltK (rho y) (rho x)
+where
+?X : [ |- Type]
+Closed under the global context
+rank_F_nonincrease
+     : forall (A B C D : rel ?X) (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) -> rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall x y : ?X, normal A x -> F0 C D x y -> rho y = rho x \/ ltK (rho y) (rho x)
+where
+?X : [ |- Type]
+Closed under the global context
+rank_min_representatives
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       P0 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       forall (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u : K, ~ ltK u u) ->
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) -> rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall alpha : K,
+       (exists x : ?X, M A J x /\ rho x = alpha) ->
+       (forall x : ?X, M A J x -> alpha = rho x \/ ltK alpha (rho x)) ->
+       representatives B C D J (fun x : ?X => M A J x /\ rho x = alpha)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+least_rank_nonzero
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u : K, ~ ltK u u) ->
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) -> rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall alpha : K,
+       (exists x : ?X, M A J x /\ rho x = alpha) ->
+       (forall x : ?X, M A J x -> alpha = rho x \/ ltK alpha (rho x)) ->
+       exists beta : K, ltK beta alpha
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+least_rank_not_successor
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       forall (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u : K, ~ ltK u u) ->
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) -> rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall alpha : K,
+       (exists x : ?X, M A J x /\ rho x = alpha) ->
+       (forall x : ?X, M A J x -> alpha = rho x \/ ltK alpha (rho x)) ->
+       forall beta : K,
+       (forall gamma : K, ltK gamma alpha <-> gamma = beta \/ ltK gamma beta) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+least_rank_is_nonzero_limit
+     : forall (A B C D : rel ?X) (J : ?X -> Prop),
+       WF A ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       Q2 B C D ->
+       (forall x y : ?X, R0 A B C D x y -> J x /\ J y) ->
+       (forall x : ?X, J x -> exists y : ?X, R0 A B C D x y) ->
+       forall (K : Type) (ltK : K -> K -> Prop) (rho : ?X -> K),
+       (forall u : K, ~ ltK u u) ->
+       (forall u v w : K, ltK u v -> ltK v w -> ltK u w) ->
+       (forall u v : K, u = v \/ ltK u v \/ ltK v u) ->
+       (forall x y : ?X, B x y -> ltK (rho y) (rho x)) ->
+       (forall (x : ?X) (alpha : K),
+        (forall y : ?X, B x y -> ltK (rho y) alpha) -> rho x = alpha \/ ltK (rho x) alpha) ->
+       (forall x y z : ?X,
+        F0 C D x y -> B y z -> (exists u : ?X, A x u /\ star (R0 A B C D) u z) \/ plus B x z) ->
+       forall alpha : K,
+       (exists x : ?X, M A J x /\ rho x = alpha) ->
+       (forall x : ?X, M A J x -> alpha = rho x \/ ltK alpha (rho x)) ->
+       (exists beta : K, ltK beta alpha) /\
+       (forall beta : K, ltK beta alpha -> exists gamma : K, ltK beta gamma /\ ltK gamma alpha)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+cut_R_equiv
+     : forall (A B C D : rel ?X) (x y : ?X),
+       R0 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+         (cut (bad (R0 A B C D)) D) x y <->
+       cut (bad (R0 A B C D)) (R0 A B C D) x y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_E_equiv
+     : forall (A B C D : rel ?X) (x y : ?X),
+       E0 (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C) (cut (bad (R0 A B C D)) D) x y <->
+       cut (bad (R0 A B C D)) (E0 B C D) x y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_F_equiv
+     : forall (A B C D : rel ?X) (x y : ?X),
+       F0 (cut (bad (R0 A B C D)) C) (cut (bad (R0 A B C D)) D) x y <->
+       cut (bad (R0 A B C D)) (F0 C D) x y
+where
+?X : [ |- Type]
+Closed under the global context
+I_backward
+     : forall (A B C D : rel ?X) (x y : ?X),
+       R0 A B C D x y -> bad (R0 A B C D) y -> bad (R0 A B C D) x
+where
+?X : [ |- Type]
+Closed under the global context
+cut_R_path
+     : forall (A B C D : rel ?X) (x y : ?X),
+       star (R0 A B C D) x y ->
+       bad (R0 A B C D) y ->
+       bad (R0 A B C D) x /\
+       star
+         (R0 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+            (cut (bad (R0 A B C D)) D))
+         x y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_E_path
+     : forall (A B C D : rel ?X) (x y : ?X),
+       star (E0 B C D) x y ->
+       bad (R0 A B C D) y ->
+       bad (R0 A B C D) x /\
+       star (E0 (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C) (cut (bad (R0 A B C D)) D)) x
+         y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_B_plus
+     : forall (A B C D : rel ?X) (x y : ?X),
+       plus B x y ->
+       bad (R0 A B C D) y -> bad (R0 A B C D) x /\ plus (cut (bad (R0 A B C D)) B) x y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_C_plus
+     : forall (A B C D : rel ?X) (x y : ?X),
+       plus C x y ->
+       bad (R0 A B C D) y -> bad (R0 A B C D) x /\ plus (cut (bad (R0 A B C D)) C) x y
+where
+?X : [ |- Type]
+Closed under the global context
+P0_restrict
+     : forall A B C D : rel ?X,
+       P0 A B C D ->
+       P0 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+         (cut (bad (R0 A B C D)) D)
+where
+?X : [ |- Type]
+Closed under the global context
+P1_restrict
+     : forall A B C D : rel ?X,
+       P1 A B C D ->
+       P1 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+         (cut (bad (R0 A B C D)) D)
+where
+?X : [ |- Type]
+Closed under the global context
+Q2_restrict
+     : forall A B C D : rel ?X,
+       Q2 B C D ->
+       Q2 (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C) (cut (bad (R0 A B C D)) D)
+where
+?X : [ |- Type]
+Closed under the global context
+minimal_immortal
+     : rel ?X -> rel ?X -> rel ?X -> rel ?X -> ?X -> Prop
+where
+?X : [ |- Type]
+Closed under the global context
+finite_escape_target_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists l : list ?X,
+          forall x z : ?X, minimal_immortal A B C D x -> B x z -> bad (R0 A B C D) z -> List.In z l) ->
+       WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+finite_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D -> (exists l : list ?X, forall x : ?X, List.In x l) -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+cut_well_founded
+     : forall A B C D P : rel ?X, WF P -> WF (cut (bad (R0 A B C D)) P)
+where
+?X : [ |- Type]
+Closed under the global context
+cut_domain
+     : forall (A B C D : rel ?X) (x y : ?X),
+       R0 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+         (cut (bad (R0 A B C D)) D) x y ->
+       bad (R0 A B C D) x /\ bad (R0 A B C D) y
+where
+?X : [ |- Type]
+Closed under the global context
+cut_serial
+     : forall (A B C D : rel ?X) (x : ?X),
+       bad (R0 A B C D) x ->
+       exists y : ?X,
+         R0 (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+           (cut (bad (R0 A B C D)) D) x y
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+cut_minimal_equiv
+     : forall (A B C D : rel ?X) (x : ?X),
+       M (cut (bad (R0 A B C D)) A) (bad (R0 A B C D)) x <-> minimal_immortal A B C D x
+where
+?X : [ |- Type]
+Closed under the global context
+P1_strong_restrict
+     : forall A B C D : rel ?X,
+       P1_strong A B C D ->
+       P1_strong (cut (bad (R0 A B C D)) A) (cut (bad (R0 A B C D)) B) 
+         (cut (bad (R0 A B C D)) C) (cut (bad (R0 A B C D)) D)
+where
+?X : [ |- Type]
+Closed under the global context
+bounded_immortal_height_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists h : nat,
+          forall x : ?X, minimal_immortal A B C D x -> height_le (cut (bad (R0 A B C D)) B) h x) ->
+       WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+bounded_height_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D -> (exists h : nat, forall x : ?X, height_le B h x) -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+minimal_immortal_unbounded
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       forall x : ?X,
+       minimal_immortal A B C D x -> forall n : nat, long (cut (bad (R0 A B C D)) B) n x
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+pointwise_minimal_height_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       (forall x : ?X,
+        minimal_immortal A B C D x -> exists h : nat, height_le (cut (bad (R0 A B C D)) B) h x) ->
+       WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+pointwise_height_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D -> (forall x : ?X, exists h : nat, height_le B h x) -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+finitely_branching_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D -> P1_strong A B C D -> Q2 B C D -> finitely_branching B -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+well_founded_has_no_infinite_chain
+     : forall P : rel ?X,
+       WF P -> forall f : nat -> ?X, (forall n : nat, P (f n) (f (S n))) -> False
+where
+?X : [ |- Type]
+Closed under the global context
+finite_acyclic_four_relations
+     : forall A B C D : rel ?X,
+       (exists l : list ?X, forall x : ?X, List.In x l) ->
+       (forall x : ?X, ~ plus A x x) ->
+       (forall x : ?X, ~ plus B x x) ->
+       (forall x : ?X, ~ plus C x x) ->
+       (forall x : ?X, ~ plus D x x) -> P0 A B C D -> P1 A B C D -> Q2 B C D -> WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+core_representatives
+     : forall (A B C D : rel ?X) (S : ?X -> Prop),
+       (forall x : ?X, S x -> minimal_immortal A B C D x) ->
+       (forall z : ?X,
+        bad (R0 A B C D) z ->
+        exists t : ?X, S t /\ (forall x : ?X, S x -> E0 B C D x z -> E0 B C D x t)) ->
+       representatives (cut (bad (R0 A B C D)) B) (cut (bad (R0 A B C D)) C)
+         (cut (bad (R0 A B C D)) D) (bad (R0 A B C D)) S
+where
+?X : [ |- Type]
+Closed under the global context
+finite_representative_core_impossible
+     : forall (A B C D : rel ?X) (S : ?X -> Prop),
+       (forall x : ?X, S x -> minimal_immortal A B C D x) ->
+       (forall z : ?X,
+        bad (R0 A B C D) z ->
+        exists t : ?X, S t /\ (forall x : ?X, S x -> E0 B C D x z -> E0 B C D x t)) ->
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists x : ?X, S x) ->
+       (exists l : list ?X, forall x z : ?X, S x -> B x z -> bad (R0 A B C D) z -> List.In z l) ->
+       False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+bounded_representative_core_impossible
+     : forall (A B C D : rel ?X) (S : ?X -> Prop),
+       (forall x : ?X, S x -> minimal_immortal A B C D x) ->
+       (forall z : ?X,
+        bad (R0 A B C D) z ->
+        exists t : ?X, S t /\ (forall x : ?X, S x -> E0 B C D x z -> E0 B C D x t)) ->
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists x : ?X, S x) ->
+       (exists h : nat, forall x : ?X, S x -> height_le (cut (bad (R0 A B C D)) B) h x) -> False
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+long_reachable_cut
+     : forall (P : rel ?X) (a : ?X) (n : nat) (x : ?X),
+       star P a x -> long P n x -> long (cut (star P a) P) n x
+where
+?X : [ |- Type]
+Closed under the global context
+reachable_finitely_branching_height
+     : forall (P : rel ?X) (a : ?X),
+       WF P ->
+       (forall x : ?X, star P a x -> exists l : list ?X, forall y : ?X, P x y -> List.In y l) ->
+       exists h : nat, height_le P h a
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+minimal_immortal_reaches_infinite_branching
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       forall x : ?X,
+       minimal_immortal A B C D x ->
+       exists y : ?X,
+         star (cut (bad (R0 A B C D)) B) x y /\
+         ~ (exists l : list ?X, forall z : ?X, cut (bad (R0 A B C D)) B y z -> List.In z l)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+locally_finitely_branching_termination
+     : forall A B C D : rel ?X,
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       (forall x : ?X,
+        minimal_immortal A B C D x ->
+        forall y : ?X,
+        star (cut (bad (R0 A B C D)) B) x y ->
+        exists l : list ?X, forall z : ?X, cut (bad (R0 A B C D)) B y z -> List.In z l) ->
+       WF (R0 A B C D)
+where
+?X : [ |- Type]
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+FourRelations.vertex
+     : Set
+Closed under the global context
+FourRelations.relation
+     : Type
+Closed under the global context
+FourRelations.union
+     : FourRelations.relation -> FourRelations.relation -> FourRelations.relation
+Closed under the global context
+FourRelations.comp
+     : FourRelations.relation -> FourRelations.relation -> FourRelations.relation
+Closed under the global context
+FourRelations.included
+     : FourRelations.relation -> FourRelations.relation -> Prop
+Closed under the global context
+FourRelations.star
+     : FourRelations.relation -> FourRelations.relation
+Closed under the global context
+FourRelations.plus
+     : FourRelations.relation -> FourRelations.relation
+Closed under the global context
+FourRelations.WF
+     : FourRelations.relation -> Prop
+Closed under the global context
+FourRelations.infinite_chain
+     : FourRelations.relation -> (nat -> FourRelations.vertex) -> Prop
+Closed under the global context
+FourRelations.A
+     : FourRelations.relation
+Closed under the global context
+FourRelations.B
+     : FourRelations.relation
+Closed under the global context
+FourRelations.C
+     : FourRelations.relation
+Closed under the global context
+FourRelations.D
+     : FourRelations.relation
+Closed under the global context
+FourRelations.F
+     : FourRelations.relation
+Closed under the global context
+FourRelations.E
+     : FourRelations.relation
+Closed under the global context
+FourRelations.R
+     : FourRelations.relation
+Closed under the global context
+FourRelations.num_injective
+     : forall n m : nat, FourRelations.num n = FourRelations.num m -> n = m
+Closed under the global context
+FourRelations.enumerate
+     : nat -> FourRelations.vertex
+Closed under the global context
+FourRelations.enumerate_surjective
+     : forall x : FourRelations.vertex, exists n : nat, FourRelations.enumerate n = x
+Closed under the global context
+FourRelations.WF_of_rank
+     : forall (P : FourRelations.relation) (rank : FourRelations.vertex -> nat),
+       (forall x y : FourRelations.vertex, P x y -> rank y < rank x) -> FourRelations.WF P
+Closed under the global context
+FourRelations.rank_A
+     : FourRelations.vertex -> nat
+Closed under the global context
+FourRelations.rank_C
+     : FourRelations.vertex -> nat
+Closed under the global context
+FourRelations.rank_D
+     : FourRelations.vertex -> nat
+Closed under the global context
+FourRelations.A_well_founded
+     : FourRelations.WF FourRelations.A
+Closed under the global context
+FourRelations.B_num_accessible
+     : forall n : nat,
+       Acc (fun y x : FourRelations.vertex => FourRelations.B x y) (FourRelations.num n)
+Closed under the global context
+FourRelations.B_well_founded
+     : FourRelations.WF FourRelations.B
+Closed under the global context
+FourRelations.C_well_founded
+     : FourRelations.WF FourRelations.C
+Closed under the global context
+FourRelations.D_well_founded
+     : FourRelations.WF FourRelations.D
+Closed under the global context
+FourRelations.A_squared_empty
+     : forall x y z : FourRelations.vertex, FourRelations.A x y -> FourRelations.A y z -> False
+Closed under the global context
+FourRelations.C_squared_empty
+     : forall x y z : FourRelations.vertex, FourRelations.C x y -> FourRelations.C y z -> False
+Closed under the global context
+FourRelations.D_cubed_empty
+     : forall w x y z : FourRelations.vertex,
+       FourRelations.D w x -> FourRelations.D x y -> FourRelations.D y z -> False
+Closed under the global context
+FourRelations.EA_in_AF_or_F
+     : FourRelations.included (FourRelations.comp FourRelations.E FourRelations.A)
+         (FourRelations.union (FourRelations.comp FourRelations.A FourRelations.F) FourRelations.F)
+Closed under the global context
+FourRelations.FB_in_BB_or_ABB
+     : FourRelations.included (FourRelations.comp FourRelations.F FourRelations.B)
+         (FourRelations.union (FourRelations.comp FourRelations.B FourRelations.B)
+            (FourRelations.comp FourRelations.A
+               (FourRelations.comp FourRelations.B FourRelations.B)))
+Closed under the global context
+FourRelations.DC_in_BD
+     : FourRelations.included (FourRelations.comp FourRelations.D FourRelations.C)
+         (FourRelations.comp FourRelations.B FourRelations.D)
+Closed under the global context
+FourRelations.P0
+     : Prop
+Closed under the global context
+FourRelations.P1
+     : Prop
+Closed under the global context
+FourRelations.Q2
+     : Prop
+Closed under the global context
+FourRelations.B_in_R
+     : FourRelations.included FourRelations.B FourRelations.R
+Closed under the global context
+FourRelations.F_in_R
+     : FourRelations.included FourRelations.F FourRelations.R
+Closed under the global context
+FourRelations.D_in_E
+     : FourRelations.included FourRelations.D FourRelations.E
+Closed under the global context
+FourRelations.satisfies_P0
+     : FourRelations.P0
+Closed under the global context
+FourRelations.satisfies_P1
+     : FourRelations.P1
+Closed under the global context
+FourRelations.satisfies_Q2
+     : FourRelations.Q2
+Closed under the global context
+FourRelations.R_two_cycle
+     : FourRelations.R FourRelations.p FourRelations.q /\
+       FourRelations.R FourRelations.q FourRelations.p
+Closed under the global context
+FourRelations.alternating
+     : nat -> FourRelations.vertex
+Closed under the global context
+FourRelations.alternating_is_p_or_q
+     : forall n : nat,
+       FourRelations.alternating n = FourRelations.p \/
+       FourRelations.alternating n = FourRelations.q
+Closed under the global context
+FourRelations.alternating_infinite_R_chain
+     : FourRelations.infinite_chain FourRelations.R FourRelations.alternating
+Closed under the global context
+FourRelations.accessible_no_infinite_chain
+     : forall (P : FourRelations.relation) (x : FourRelations.vertex),
+       Acc (fun y x0 : FourRelations.vertex => P x0 y) x ->
+       forall f : nat -> FourRelations.vertex, f 0 = x -> FourRelations.infinite_chain P f -> False
+Closed under the global context
+FourRelations.R_not_well_founded
+     : ~ FourRelations.WF FourRelations.R
+Closed under the global context
+FourRelations.FourRelationsCounterexample
+     : FourRelations.WF FourRelations.A /\
+       FourRelations.WF FourRelations.B /\
+       FourRelations.WF FourRelations.C /\
+       FourRelations.WF FourRelations.D /\
+       FourRelations.included (FourRelations.comp FourRelations.E FourRelations.A)
+         (FourRelations.union (FourRelations.comp FourRelations.A FourRelations.F) FourRelations.F) /\
+       FourRelations.included (FourRelations.comp FourRelations.F FourRelations.B)
+         (FourRelations.union (FourRelations.comp FourRelations.B FourRelations.B)
+            (FourRelations.comp FourRelations.A
+               (FourRelations.comp FourRelations.B FourRelations.B))) /\
+       FourRelations.included (FourRelations.comp FourRelations.D FourRelations.C)
+         (FourRelations.comp FourRelations.B FourRelations.D) /\
+       FourRelations.P0 /\
+       FourRelations.P1 /\
+       FourRelations.Q2 /\
+       (FourRelations.R FourRelations.p FourRelations.q /\
+        FourRelations.R FourRelations.q FourRelations.p) /\
+       FourRelations.infinite_chain FourRelations.R FourRelations.alternating /\
+       ~ FourRelations.WF FourRelations.R
+Closed under the global context
+audited_core_finite_statement
+     : forall (X : Type) (A B C D : rel X) (S : X -> Prop),
+       (forall x : X, S x -> minimal_immortal A B C D x) ->
+       (forall z : X,
+        bad (R0 A B C D) z ->
+        exists t : X, S t /\ (forall x : X, S x -> E0 B C D x z -> E0 B C D x t)) ->
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists x : X, S x) ->
+       (exists l : list X, forall x z : X, S x -> B x z -> bad (R0 A B C D) z -> List.In z l) ->
+       False
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_core_height_statement
+     : forall (X : Type) (A B C D : rel X) (S : X -> Prop),
+       (forall x : X, S x -> minimal_immortal A B C D x) ->
+       (forall z : X,
+        bad (R0 A B C D) z ->
+        exists t : X, S t /\ (forall x : X, S x -> E0 B C D x z -> E0 B C D x t)) ->
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists x : X, S x) ->
+       (exists h : nat, forall x : X, S x -> height_le (cut (bad (R0 A B C D)) B) h x) -> False
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_local_branching_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       forall x : X,
+       minimal_immortal A B C D x ->
+       exists y : X,
+         star (cut (bad (R0 A B C D)) B) x y /\
+         ~ (exists l : list X, forall z : X, cut (bad (R0 A B C D)) B y z -> List.In z l)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_finite_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D -> Q2 B C D -> (exists l : list X, forall x : X, List.In x l) -> WF (R0 A B C D)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_finite_image_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists l : list X,
+          forall x z : X, minimal_immortal A B C D x -> B x z -> bad (R0 A B C D) z -> List.In z l) ->
+       WF (R0 A B C D)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_uniform_height_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1 A B C D ->
+       Q2 B C D ->
+       (exists h : nat,
+          forall x : X, minimal_immortal A B C D x -> height_le (cut (bad (R0 A B C D)) B) h x) ->
+       WF (R0 A B C D)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_pointwise_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D -> (forall x : X, exists h : nat, height_le B h x) -> WF (R0 A B C D)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_unbounded_minimal_points_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D ->
+       P1_strong A B C D ->
+       Q2 B C D ->
+       forall x : X,
+       minimal_immortal A B C D x -> forall n : nat, long (cut (bad (R0 A B C D)) B) n x
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_finite_branching_statement
+     : forall (X : Type) (A B C D : rel X),
+       WF A ->
+       WF B ->
+       WF C ->
+       WF D ->
+       P0 A B C D -> P1_strong A B C D -> Q2 B C D -> finitely_branching B -> WF (R0 A B C D)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
+audited_expanded_finite_statement
+     : forall (X : Type) (A B C D : X -> X -> Prop),
+       well_founded (fun y x : X => A x y) ->
+       well_founded (fun y x : X => B x y) ->
+       well_founded (fun y x : X => C x y) ->
+       well_founded (fun y x : X => D x y) ->
+       (forall x y z : X,
+        B x y \/ C x y \/ D x y ->
+        A y z ->
+        (exists u : X, A x u /\ star (fun s t : X => A s t \/ B s t \/ C s t \/ D s t) u z) \/
+        B x z \/ C x z \/ D x z) ->
+       (forall x y z : X,
+        C x y \/ D x y ->
+        B y z ->
+        (exists u : X, A x u /\ star (fun s t : X => A s t \/ B s t \/ C s t \/ D s t) u z) \/
+        (exists u : X, B x u /\ star B u z) \/ C x z \/ D x z) ->
+       (forall x y z : X,
+        D x y ->
+        C y z ->
+        (exists u : X, B x u /\ star (fun s t : X => B s t \/ C s t \/ D s t) u z) \/
+        (exists u : X, C x u /\ star C u z) \/ D x z) ->
+       (exists l : list X, forall x : X, List.In x l) ->
+       well_founded (fun y x : X => A x y \/ B x y \/ C x y \/ D x y)
+Axioms:
+Classical_Prop.classic : forall P : Prop, P \/ ~ P
