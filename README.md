@@ -8,6 +8,11 @@ The complete artifact is in [well-founded-unions/](well-founded-unions/README.md
 Its [theorem map](well-founded-unions/THEOREM_MAP.md) and
 [verification status](well-founded-unions/STATUS.md) identify the exact scope.
 
+Published release: [wfu-2026-11-09](https://github.com/NachumDershowitz/4Relations/releases/tag/wfu-2026-11-09).
+The ZIP and checksum were downloaded after publication and verified byte for byte.
+The artifact’s bundled `STATUS.md` is the verification snapshot made before
+publication; its pending-publication wording is superseded by this release.
+
 | Path | Contents |
 | --- | --- |
 | `well-founded-unions/general/formal/` | Certificate, two replay checkers, generators, audits, regressions, and Rocq proof-term export |
