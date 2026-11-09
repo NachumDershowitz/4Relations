@@ -49,7 +49,8 @@ set-theoretic ordinals and rank existence are not constructed here.
 
 Only proofs, tests, supporting evidence, and documentation belong in the current
 publication tree. `/paper/` is ignored to prevent accidental re-addition. The
-paper-folder removal is prepared; publication requires the user's final approval.
+current branch contains the complete verified proof-and-test artifact and excludes
+the former paper folder.
 No existing repository history or release has been replaced.
 
 Use [CITATION.cff](CITATION.cff) for attribution and identify the exact commit or

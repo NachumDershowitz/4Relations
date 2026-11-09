@@ -1,4 +1,4 @@
-Well-founded unions: proofs and experiments — prepared 9 November 2026
+Well-founded unions: proofs and experiments — 9 November 2026
 
 Adds the complete paper-free well-founded-unions/ verification artifact and
 removes ten previously tracked paper/ files from the current tree. Existing
@@ -21,5 +21,5 @@ are explicitly distinguished. No set-theoretic ordinal construction or general
 infinite-domain reset proof is claimed. See well-founded-unions/STATUS.md and
 THEOREM_MAP.md. No paper, runtime binary, or compiled proof object is included.
 
-Prepared locally; publication requires final user approval. Use a new release;
-do not replace earlier tags or assets.
+Publication approved on 9 November 2026. New releases preserve earlier tags
+and assets.

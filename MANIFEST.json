@@ -3,7 +3,7 @@
   "title": "Well-founded unions: formal proofs and experiments",
   "repository": "https://github.com/NachumDershowitz/4Relations",
   "preparation_date": "2026-11-09",
-  "publication_status": "not_published",
+  "publication_status": "approved",
   "verification_status": "complete_pass",
   "files": {
     ".gitignore": {
@@ -15,16 +15,16 @@
       "sha256": "905a15be7c18e7600d2c2673e1a228d310f8d55ebad07d1c5ddbe16ae8ba1ea9"
     },
     "README.md": {
-      "bytes": 3024,
-      "sha256": "368695f806b0f0910ed0316d81feab70875c79b62a71beeb874eac3679539aea"
+      "bytes": 3050,
+      "sha256": "8db5ee02d1f06e9b4b5a208e2441d1873783d8d84bfea2fd79c51eb4ac3d744c"
     },
     "RELEASE_NOTES.txt": {
-      "bytes": 1478,
-      "sha256": "e0379ceb6dec22be78f8a6e4c787f2af43c2ebba68d51e18ead292a4347889ca"
+      "bytes": 1439,
+      "sha256": "d23133fd7a5178a8a999109cb823364528037ff5728d916423b5dd99c9740c9e"
     },
     "UPLOAD_TO_GITHUB.txt": {
-      "bytes": 966,
-      "sha256": "0c0bb4359161c7d021ce5e18c70d6219d67e4817ba19704b659cf057f8596003"
+      "bytes": 955,
+      "sha256": "4601736fbc8f6f6d6103387b6acd54d442c5e4b93926e5bb4340828427fbaee8"
     },
     "finite/completion/audit_completed_cover.py": {
       "bytes": 4091,
